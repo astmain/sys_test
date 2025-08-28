@@ -13,13 +13,13 @@
 
 # github初始化仓库和强制上传
 
-## 绑定目录
+### 绑定目录
 
 - git init && git remote add origin git@github.com:astmain/sys_test.git
 
-## 强制上传
+### 强制上传
 
 - echo "确定:强制上传吗?" && TIMEOUT /T 60 && echo "确定?:请回车" && git add . && git commit -m "强制上传" && git push -f origin master
 
-## 本地分支跟踪远程分支 
+### 本地分支跟踪远程分支 
 - git branch --set-upstream-to=origin/master master
