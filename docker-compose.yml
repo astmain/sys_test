@@ -1,0 +1,238 @@
+# 数据库   103.119.2.223      2001       back      root/123456
+# VITE_url_db_pg="postgresql://root:123456@103.119.2.223:2001/back?schema=public"
+# sudo docker-compose up -d
+# sudo docker-compose down
+services:
+  db_pg1:
+    container_name: db_pg1
+    ports:
+      - "2001:5432"
+    environment:
+      - "POSTGRES_DB=back"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=123456"
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin"
+      - "GOSU_VERSION=1.17"
+      - "LANG=en_US.utf8"
+      - "PG_MAJOR=17"
+    image: postgres:17
+    restart: always
+    command:
+      - "postgres"
+    entrypoint:
+      - "docker-entrypoint.sh"
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - "../db_data/db_pg1:/var/lib/postgresql/data"
+
+  db_pg2:
+    container_name: db_pg2
+    ports:
+      - "2002:5432"
+    environment:
+      - "POSTGRES_DB=back"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=123456"
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin"
+      - "GOSU_VERSION=1.17"
+      - "LANG=en_US.utf8"
+      - "PG_MAJOR=17"
+    image: postgres:17
+    restart: always
+    command:
+      - "postgres"
+    entrypoint:
+      - "docker-entrypoint.sh"
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - "../db_data/db_pg2:/var/lib/postgresql/data"
+
+  db_pg3:
+    container_name: db_pg3
+    ports:
+      - "2003:5432"
+    environment:
+      - "POSTGRES_DB=back"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=123456"
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin"
+      - "GOSU_VERSION=1.17"
+      - "LANG=en_US.utf8"
+      - "PG_MAJOR=17"
+    image: postgres:17
+    restart: always
+    command:
+      - "postgres"
+    entrypoint:
+      - "docker-entrypoint.sh"
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - "../db_data/db_pg3:/var/lib/postgresql/data"
+
+  db_pg4:
+    container_name: db_pg4
+    ports:
+      - "2004:5432"
+    environment:
+      - "POSTGRES_DB=back"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=123456"
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin"
+      - "GOSU_VERSION=1.17"
+      - "LANG=en_US.utf8"
+      - "PG_MAJOR=17"
+    image: postgres:17
+    restart: always
+    command:
+      - "postgres"
+    entrypoint:
+      - "docker-entrypoint.sh"
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - "../db_data/db_pg4:/var/lib/postgresql/data"
+
+  db_pg5:
+    container_name: db_pg5
+    ports:
+      - "2005:5432"
+    environment:
+      - "POSTGRES_DB=back"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=123456"
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin"
+      - "GOSU_VERSION=1.17"
+      - "LANG=en_US.utf8"
+      - "PG_MAJOR=17"
+    image: postgres:17
+    restart: always
+    command:
+      - "postgres"
+    entrypoint:
+      - "docker-entrypoint.sh"
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - "../db_data/db_pg5:/var/lib/postgresql/data"
+
+  db_pg6:
+    container_name: db_pg6
+    ports:
+      - "2006:5432"
+    environment:
+      - "POSTGRES_DB=back"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=123456"
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin"
+      - "GOSU_VERSION=1.17"
+      - "LANG=en_US.utf8"
+      - "PG_MAJOR=17"
+    image: postgres:17
+    restart: always
+    command:
+      - "postgres"
+    entrypoint:
+      - "docker-entrypoint.sh"
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - "../db_data/db_pg6:/var/lib/postgresql/data"
+
+  db_pg7:
+    container_name: db_pg7
+    ports:
+      - "2007:5432"
+    environment:
+      - "POSTGRES_DB=back"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=123456"
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin"
+      - "GOSU_VERSION=1.17"
+      - "LANG=en_US.utf8"
+      - "PG_MAJOR=17"
+    image: postgres:17
+    restart: always
+    command:
+      - "postgres"
+    entrypoint:
+      - "docker-entrypoint.sh"
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - "../db_data/db_pg7:/var/lib/postgresql/data"
+
+  db_pg8:
+    container_name: db_pg8
+    ports:
+      - "2008:5432"
+    environment:
+      - "POSTGRES_DB=back"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=123456"
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin"
+      - "GOSU_VERSION=1.17"
+      - "LANG=en_US.utf8"
+      - "PG_MAJOR=17"
+    image: postgres:17
+    restart: always
+    command:
+      - "postgres"
+    entrypoint:
+      - "docker-entrypoint.sh"
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - "../db_data/db_pg8:/var/lib/postgresql/data"
+
+  db_pg9:
+    container_name: db_pg9
+    ports:
+      - "2009:5432"
+    environment:
+      - "POSTGRES_DB=back"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=123456"
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin"
+      - "GOSU_VERSION=1.17"
+      - "LANG=en_US.utf8"
+      - "PG_MAJOR=17"
+    image: postgres:17
+    restart: always
+    command:
+      - "postgres"
+    entrypoint:
+      - "docker-entrypoint.sh"
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - "../db_data/db_pg9:/var/lib/postgresql/data"
