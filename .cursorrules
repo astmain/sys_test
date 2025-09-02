@@ -30,4 +30,5 @@
 
 
 # nestjs项目规范
-- 在写代码时,参考src/index/Module_demo/demo.ts文件的写法
+- 写代码时,参考src/index/Module_demo/demo.ts文件的写法
+- 写代码时,dto参考index/Module_demo/dto.ts
