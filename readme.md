@@ -8,7 +8,7 @@
 - Live Server
 - Prettier - Code formatter
 - Prisma
-- Path Intellisense
+- Path Intellisense 
 - eslint
 - Tailwind CSS snippets
 - Vue (Official)
