@@ -1,10 +1,12 @@
 import { PrismaClient } from '@prisma/client'
+import fs from 'fs'
 const db = new PrismaClient()
 
-let user_id = '1'
+let user_id = '2'
 main()
+
 async function main() {
-  let res= await db.menu.findMany({
+  let res = await db.menu.findMany({
     where: {
       permission: {
         role_permissions: {
@@ -32,4 +34,8 @@ async function main() {
   })
 
   console.log(JSON.stringify(res, null, 2))
+  //使用fs将res写入到文件中
+  fs.writeFileSync('data/main_find_one.json', JSON.stringify(res, null, 2))
+  // fs.writeFileSync('data/main_find_one.json', JSON.stringify(res))
+  let zzz = 1
 }

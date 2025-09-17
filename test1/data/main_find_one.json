@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1",
+    "name": "首页",
+    "code": "home",
+    "path": "/home",
+    "level": 1,
+    "sort": 1,
+    "permission_id": "p1",
+    "parent_id": null,
+    "permission": {
+      "id": "p1",
+      "name": "首页访问",
+      "code": "home:view",
+      "type": "menu",
+      "parent_id": null,
+      "level": 1,
+      "sort": 1,
+      "remark": null
+    },
+    "parent": null,
+    "children": []
+  },
+  {
+    "id": "7",
+    "name": "商城管理一订单管理",
+    "code": "order_manage",
+    "path": "/mall/order",
+    "level": 2,
+    "sort": 1,
+    "permission_id": "p7",
+    "parent_id": "6",
+    "permission": {
+      "id": "p7",
+      "name": "订单管理",
+      "code": "order:manage",
+      "type": "menu",
+      "parent_id": "p6",
+      "level": 2,
+      "sort": 1,
+      "remark": null
+    },
+    "parent": {
+      "id": "6",
+      "name": "商城管理",
+      "code": "mall",
+      "path": "/mall",
+      "level": 1,
+      "sort": 3,
+      "permission_id": "p6",
+      "parent_id": null
+    },
+    "children": []
+  }
+]

@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b79d41d-e08f-4930-89d6-899a6192f12c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test1/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/table.prisma" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/main_find_one.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test1/main_find_user_one.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +30,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.test1 > main_find_one.ts.executor": "Debug",
+    "Node.js.test1 > main_find_user_one.ts.executor": "Debug",
     "Node.js.test1 > table.ts.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -58,7 +57,10 @@
       <recent name="C:\AAA\sys_test\test1" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.test1 &gt; table.ts">
+  <component name="RunManager" selected="Node.js.test1 &gt; main_find_user_one.ts">
+    <configuration name="test1 &gt; main_find_user_one.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test1/main_find_user_one.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/test1">
+      <method v="2" />
+    </configuration>
     <configuration name="test1 &gt; table.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test1/table.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/test1">
       <method v="2" />
     </configuration>
@@ -82,16 +84,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test1 &gt; test1:make" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/test1/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test1:make" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="test1 &gt; test1:push" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/test1/package.json" />
       <command value="run" />
@@ -104,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.test1 &gt; main_find_user_one.ts" />
         <item itemvalue="Node.js.test1 &gt; table.ts" />
         <item itemvalue="npm.test1 &gt; test1:push" />
         <item itemvalue="npm.test1 &gt; package" />
         <item itemvalue="npm.test1 &gt; test1:generate" />
-        <item itemvalue="npm.test1 &gt; test1:make" />
       </list>
     </recent_temporary>
   </component>
@@ -126,11 +118,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758121747073</updated>
-      <workItem from="1758121748263" duration="1318000" />
+      <workItem from="1758121748263" duration="1900000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test1/main_find_user_one.ts</url>
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
