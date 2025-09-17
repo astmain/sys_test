@@ -1,35 +1,11 @@
 
 /*
 
-我想通过用户的id得到菜单      应该怎么写prisma的查询语句
-const getUserMenus = async (userId: string) => {
-  return await prisma.menu.findMany({
-    where: {
-      permission: {
-        role_permissions: {
-          some: {
-            role: {
-              user_roles: {
-                some: {
-                  user_id: userId
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    include: {
-      permission: true,
-      parent: true,
-      children: true
-    },
-    orderBy: [
-      { level: 'asc' },
-      { sort: 'asc' }
-    ]
-  })
-}
+我想通过用户的id得到菜单        应该怎么写prisma的查询语句
+我想通过用户的id得到菜单树      应该怎么写prisma的查询语句
+帮我查看:表结构设计table.prisma,初始化数据main.ts,查询代码main_find_menu_tree.ts,数据结果main_find_menu_tree.json
+为什么我知道的一个菜单
+
 
 
 
@@ -97,7 +73,6 @@ let menu_list = [
 
 帮我生成prisma的初始化数据
 import { PrismaClient } from '@prisma/client'
-
 const db = new PrismaClient()
 
 

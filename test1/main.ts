@@ -13,11 +13,11 @@ async function main() {
 
   // 1. 创建用户数据
   const users = await Promise.all([
-    db.user.create({ data: { id: '1', name: '许鹏', phone: '15160315110', password: 'password123' } }),
-    db.user.create({ data: { id: '2', name: '二狗', phone: '15160315002', password: 'password123' } }),
-    db.user.create({ data: { id: '3', name: '张三', phone: '15160315003', password: 'password123' } }),
-    db.user.create({ data: { id: '4', name: '李四', phone: '15160315004', password: 'password123' } }),
-    db.user.create({ data: { id: '5', name: '王五', phone: '15160315005', password: 'password123' } })
+    db.user.create({ data: { id: '1', name: '许鹏', phone: '15160315110',} }),
+    db.user.create({ data: { id: '2', name: '二狗', phone: '15160315002', } }),
+    db.user.create({ data: { id: '3', name: '张三', phone: '15160315003', } }),
+    db.user.create({ data: { id: '4', name: '李四', phone: '15160315004', } }),
+    db.user.create({ data: { id: '5', name: '王五', phone: '15160315005',} })
   ])
 
   // 2. 创建部门数据 - 先创建父级部门

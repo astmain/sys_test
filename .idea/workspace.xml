@@ -5,12 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b79d41d-e08f-4930-89d6-899a6192f12c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/test1/main_find_one.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test1/main_find_user_one.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1/data/main_find_menu_tree.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1/main_find_menu_tree.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/README.js" beforeDir="false" afterPath="$PROJECT_DIR$/test1/README.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/data/main_find_one.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test1/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/main_find_user_one.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test1/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/sqlite.db" beforeDir="false" afterPath="$PROJECT_DIR$/test1/sqlite.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1/table.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/test1/table.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +45,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.test1 > main_find_menu_tree.ts.executor": "Debug",
     "Node.js.test1 > main_find_one.ts.executor": "Debug",
     "Node.js.test1 > main_find_user_one.ts.executor": "Debug",
     "Node.js.test1 > table.ts.executor": "Run",
@@ -57,28 +73,21 @@
       <recent name="C:\AAA\sys_test\test1" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.test1 &gt; main_find_user_one.ts">
+  <component name="RunManager" selected="Node.js.test1 &gt; main_find_menu_tree.ts">
+    <configuration name="test1 &gt; main_find_menu_tree.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test1/main_find_menu_tree.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/test1">
+      <method v="2" />
+    </configuration>
     <configuration name="test1 &gt; main_find_user_one.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test1/main_find_user_one.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/test1">
       <method v="2" />
     </configuration>
     <configuration name="test1 &gt; table.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test1/table.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/test1">
       <method v="2" />
     </configuration>
-    <configuration name="test1 &gt; package" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="test1 &gt; test1:make" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/test1/package.json" />
       <command value="run" />
       <scripts>
-        <script value="package" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="test1 &gt; test1:generate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/test1/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test1:generate" />
+        <script value="test1:make" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -96,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.test1 &gt; main_find_menu_tree.ts" />
+        <item itemvalue="npm.test1 &gt; test1:make" />
         <item itemvalue="Node.js.test1 &gt; main_find_user_one.ts" />
         <item itemvalue="Node.js.test1 &gt; table.ts" />
         <item itemvalue="npm.test1 &gt; test1:push" />
-        <item itemvalue="npm.test1 &gt; package" />
-        <item itemvalue="npm.test1 &gt; test1:generate" />
       </list>
     </recent_temporary>
   </component>
@@ -118,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758121747073</updated>
-      <workItem from="1758121748263" duration="1900000" />
+      <workItem from="1758121748263" duration="2896000" />
     </task>
     <servers />
   </component>
@@ -129,10 +138,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/test1/main_find_user_one.ts</url>
-          <line>39</line>
+          <url>file://$PROJECT_DIR$/test1/main_find_menu_tree.ts</url>
+          <line>45</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

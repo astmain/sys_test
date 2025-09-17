@@ -4,9 +4,10 @@
   "scripts": {
     "package": "pnpm i",
     "test1": "==================== test1 ====================",
-    "test1:make": "     pnpm test1:generate  && pnpm test1:push",
+    "test1:make": "     pnpm test1:generate  &&  pnpm test1:push",
     "test1:generate": " prisma generate          --schema=table.prisma",
     "test1:push": "     prisma db push              --schema=table.prisma"
+
   },
   "dependencies": {
     "@prisma/client": "^6.15.0",
