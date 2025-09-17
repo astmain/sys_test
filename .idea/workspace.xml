@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b79d41d-e08f-4930-89d6-899a6192f12c" name="Changes" comment="" />
+    <list default="true" id="8b79d41d-e08f-4930-89d6-899a6192f12c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test2/markdown.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor_history.md" beforeDir="false" afterPath="$PROJECT_DIR$/.cursorrules.history.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2/README.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +46,7 @@
     "Node.js.test1 > main_find_user_one.ts.executor": "Debug",
     "Node.js.test1 > table.ts.executor": "Run",
     "Node.js.test2 > main.ts.executor": "Run",
+    "Node.js.test2 > main_find_menu_tree.ts.executor": "Debug",
     "Node.js.test2 > main_find_menu_tree2.ts.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -126,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758121747073</updated>
       <workItem from="1758121748263" duration="5157000" />
-      <workItem from="1758127383055" duration="1869000" />
+      <workItem from="1758127383055" duration="2373000" />
     </task>
     <servers />
   </component>
@@ -137,15 +142,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/test1/main_find_menu_tree.ts</url>
+          <url>file://$PROJECT_DIR$/test2/main_find_menu_tree.ts</url>
           <line>45</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/test2/main_find_menu_tree2.ts</url>
-          <line>57</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
