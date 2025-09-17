@@ -1,0 +1,106 @@
+
+/*
+
+我想通过用户的id得到菜单      应该怎么写prisma的查询语句
+const getUserMenus = async (userId: string) => {
+  return await prisma.menu.findMany({
+    where: {
+      permission: {
+        role_permissions: {
+          some: {
+            role: {
+              user_roles: {
+                some: {
+                  user_id: userId
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    include: {
+      permission: true,
+      parent: true,
+      children: true
+    },
+    orderBy: [
+      { level: 'asc' },
+      { sort: 'asc' }
+    ]
+  })
+}
+
+
+
+
+我的用户是下面的数据
+let user_list = [
+    { id: '1', name: '许鹏', phone: '15160315110' },
+    { id: '2', name: '二狗', phone: '15160315002' },
+    { id: '3', name: '张三', phone: '15160315003' },
+    { id: '4', name: '李四', phone: '15160315004' },
+    { id: '5', name: '王五', phone: '15160315005' }
+]
+
+
+我的部门是下面的数据
+let depart_list = [
+    { id: '1', name: '用户部',},
+    { id: '2', name: '技术部', },
+    { id: '3', name: '客服部', },
+    { id: '4', name: '财务部',  },    
+    { id: '1001', name: '用户部一普通', parent_id: '1' },
+    { id: '1002', name: '用户部一贵宾', parent_id: '1' },
+    { id: '2001', name: '技术部一职员', parent_id: '2' },
+    { id: '2002', name: '技术部一主管', parent_id: '2' },
+    { id: '3001', name: '客服部一职员', parent_id: '3' },
+    { id: '3002', name: '客服部一主管', parent_id: '3' },
+    { id: '4001', name: '财务部一职员', parent_id: '3' },
+    { id: '4002', name: '财务部一主管', parent_id: '3' }
+]
+
+我的菜单是下面的数据
+let menu_list = [
+    { id: '1', name: '首页', path: '/home' },
+    { id: '2', name: '系统管理', path: '/sys', },        // 系统管理
+    { id: '3', name: '系统管理一用户管理', path: '/user', parent_id: '2' },
+    { id: '4', name: '系统管理一菜单管理', path: '/menu',  parent_id: '2' },
+    { id: '5', name: '系统管理一部门管理', path: '/depart', parent_id: '2' },
+    { id: '6', name: '商城管理', path: '/mall',},      // 商城管理
+    { id: '7', name: '商城管理一订单管理', path: '/mall/order',},
+    { id: '8', name: '商城管理一商品管理', path: '/mall/product', },
+    { id: '9', name: '商城管理一财务管理', path: '/mall/finance', }   
+]
+
+
+// 部门对应的菜单
+用户部一普通  可以看到菜单   首页
+用户部一贵宾  可以看到菜单   首页
+技术部一职员  可以看到菜单   系统管理一用户管理  系统管理一菜单管理                       商城管理一订单管理  商城管理一商品管理  
+技术部一主管  可以看到菜单   系统管理一用户管理  系统管理一菜单管理  系统管理一部门管理     商城管理一订单管理  商城管理一商品管理   商城管理一财务管理
+客服部一职员  可以看到菜单                                                             商城管理一订单管理                   
+客服部一主管  可以看到菜单   系统管理一用户管理                                         商城管理一订单管理  商城管理一商品管理  
+财务部一职员  可以看到菜单                                                             商城管理一订单管理  商城管理一商品管理  商城管理一财务管理
+财务部一主管  可以看到菜单   系统管理一用户管理                                          商城管理一订单管理  商城管理一商品管理  商城管理一财务管理
+
+
+// 用户对于的部门
+用户:  许鹏 是:用户部一贵宾  技术部一主管  客服部一主管  财务部一主管
+用户:  二狗 是:用户部一贵宾  客服部一职员 
+用户:  张三 是:用户部一贵宾  客服部一主管
+用户:  李四 是:用户部一贵宾  财务部一职员
+用户:  王五 是:用户部一贵宾  财务部一主管
+
+
+
+
+帮我生成prisma的初始化数据
+import { PrismaClient } from '@prisma/client'
+
+const db = new PrismaClient()
+
+
+
+*/
+

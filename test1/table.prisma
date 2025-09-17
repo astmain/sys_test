@@ -1,0 +1,201 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./sqlite.db"
+}
+
+// 用户表
+model user {
+  id               String            @id @default(cuid())
+  phone            String            @unique
+  name             String
+  password         String
+  // 关联关系
+  user_departments user_department[] // 用户部门关联
+  user_roles       user_role[] // 用户角色关联
+}
+
+// 部门表
+model department {
+  id               String            @id @default(cuid())
+  name             String
+  code             String            @unique // 部门编码
+  level            Int               @default(1) // 部门层级
+  sort             Int               @default(0) // 排序
+  remark           String? // 部门描述
+  // 关联关系
+  parent_id        String? // 父部门ID，支持树形结构
+  parent           department?       @relation("DepartmentHierarchy", fields: [parent_id], references: [id])
+  children         department[]      @relation("DepartmentHierarchy")
+  user_departments user_department[] // 用户部门关联
+}
+
+// 角色表
+model role {
+  id               String            @id @default(cuid())
+  name             String            @unique
+  code             String            @unique // 角色编码
+  remark           String? // 角色描述
+  sort             Int               @default(0) // 排序
+  // 关联关系
+  user_roles       user_role[]
+  role_permissions role_permission[]
+}
+
+// 权限表
+model permission {
+  id               String            @id @default(cuid())
+  name             String
+  code             String            @unique // 权限编码，如：user:create, user:update
+  type             String // 权限类型：menu, button, api
+  parent_id        String? // 父权限ID，支持树形结构
+  level            Int               @default(1) // 权限层级
+  sort             Int               @default(0) // 排序
+  remark           String? // 权限描述
+  // 关联关系
+  parent           permission?       @relation("PermissionHierarchy", fields: [parent_id], references: [id])
+  children         permission[]      @relation("PermissionHierarchy")
+  role_permissions role_permission[]
+  menus            menu[] // 菜单关联
+}
+
+// 菜单表
+model menu {
+  id            String      @id @default(cuid())
+  name          String
+  code          String      @unique // 菜单编码
+  path          String? // 路由路径
+  level         Int         @default(1) // 菜单层级
+  sort          Int         @default(0) // 排序
+  permission_id String? // 关联权限ID
+  // 关联关系
+  parent_id     String? // 父菜单ID，支持树形结构
+  parent        menu?       @relation("MenuHierarchy", fields: [parent_id], references: [id])
+  children      menu[]      @relation("MenuHierarchy")
+  permission    permission? @relation(fields: [permission_id], references: [id])
+}
+
+// 用户部门关联表（支持一个用户多个部门）
+model user_department {
+  id            String     @id @default(cuid())
+  user_id       String
+  department_id String
+  is_primary    Boolean    @default(false) // 是否为主部门
+  // 关联关系
+  user          user       @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  department    department @relation(fields: [department_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, department_id])
+}
+
+// 用户角色关联表
+model user_role {
+  id      String @id @default(cuid())
+  user_id String
+  role_id String
+  // 关联关系
+  user    user   @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  role    role   @relation(fields: [role_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, role_id])
+}
+
+// 角色权限关联表
+model role_permission {
+  id            String     @id @default(cuid())
+  role_id       String
+  permission_id String
+  // 关联关系
+  role          role       @relation(fields: [role_id], references: [id], onDelete: Cascade)
+  permission    permission @relation(fields: [permission_id], references: [id], onDelete: Cascade)
+
+  @@unique([role_id, permission_id])
+}
+
+/**
+ * 我想通过用户的id得到菜单      应该怎么写prisma的查询语句
+ * const getUserMenus = async (userId: string) => {
+ * return await prisma.menu.findMany({
+ * where: {
+ * permission: {
+ * role_permissions: {
+ * some: {
+ * role: {
+ * user_roles: {
+ * some: {
+ * user_id: userId
+ * }
+ * }
+ * }
+ * }
+ * }
+ * }
+ * },
+ * include: {
+ * permission: true,
+ * parent: true,
+ * children: true
+ * },
+ * orderBy: [
+ * { level: 'asc' },
+ * { sort: 'asc' }
+ * ]
+ * })
+ * }
+ * 我的用户是下面的数据
+ * let user_list = [
+ * { id: '1', name: '许鹏', phone: '15160315110' },
+ * { id: '2', name: '二狗', phone: '15160315002' },
+ * { id: '3', name: '张三', phone: '15160315003' },
+ * { id: '4', name: '李四', phone: '15160315004' },
+ * { id: '5', name: '王五', phone: '15160315005' }
+ * ]
+ * 我的部门是下面的数据
+ * let depart_list = [
+ * { id: '1', name: '用户部',},
+ * { id: '2', name: '技术部', },
+ * { id: '3', name: '客服部', },
+ * { id: '4', name: '财务部',  },
+ * { id: '1001', name: '用户部一普通', parent_id: '1' },
+ * { id: '1002', name: '用户部一贵宾', parent_id: '1' },
+ * { id: '2001', name: '技术部一职员', parent_id: '2' },
+ * { id: '2002', name: '技术部一主管', parent_id: '2' },
+ * { id: '3001', name: '客服部一职员', parent_id: '3' },
+ * { id: '3002', name: '客服部一主管', parent_id: '3' },
+ * { id: '4001', name: '财务部一职员', parent_id: '3' },
+ * { id: '4002', name: '财务部一主管', parent_id: '3' }
+ * ]
+ * 我的菜单是下面的数据
+ * let menu_list = [
+ * { id: '1', name: '首页', path: '/home' },
+ * { id: '2', name: '系统管理', path: '/sys', },        // 系统管理
+ * { id: '3', name: '系统管理一用户管理', path: '/user', parent_id: '2' },
+ * { id: '4', name: '系统管理一菜单管理', path: '/menu',  parent_id: '2' },
+ * { id: '5', name: '系统管理一部门管理', path: '/depart', parent_id: '2' },
+ * { id: '6', name: '商城管理', path: '/mall',},      // 商城管理
+ * { id: '7', name: '商城管理一订单管理', path: '/mall/order',},
+ * { id: '8', name: '商城管理一商品管理', path: '/mall/product', },
+ * { id: '9', name: '商城管理一财务管理', path: '/mall/finance', }
+ * ]
+ * // 部门对应的菜单
+ * 用户部一普通  可以看到菜单   首页
+ * 用户部一贵宾  可以看到菜单   首页
+ * 技术部一职员  可以看到菜单   系统管理一用户管理  系统管理一菜单管理                       商城管理一订单管理  商城管理一商品管理
+ * 技术部一主管  可以看到菜单   系统管理一用户管理  系统管理一菜单管理  系统管理一部门管理     商城管理一订单管理  商城管理一商品管理   商城管理一财务管理
+ * 客服部一职员  可以看到菜单                                                             商城管理一订单管理
+ * 客服部一主管  可以看到菜单   系统管理一用户管理                                         商城管理一订单管理  商城管理一商品管理
+ * 财务部一职员  可以看到菜单                                                             商城管理一订单管理  商城管理一商品管理  商城管理一财务管理
+ * 财务部一主管  可以看到菜单   系统管理一用户管理                                          商城管理一订单管理  商城管理一商品管理  商城管理一财务管理
+ * // 用户对于的部门
+ * 用户:  许鹏 是:用户部一贵宾  技术部一主管  客服部一主管  财务部一主管
+ * 用户:  二狗 是:用户部一贵宾  客服部一职员
+ * 用户:  张三 是:用户部一贵宾  客服部一主管
+ * 用户:  李四 是:用户部一贵宾  财务部一职员
+ * 用户:  王五 是:用户部一贵宾  财务部一主管
+ * 帮我生成prisma的初始化数据
+ * import { PrismaClient } from '@prisma/client'
+ * const db = new PrismaClient()
+ */

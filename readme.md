@@ -3,6 +3,8 @@
 
 
 # vscode插件
+- TODO Highlight           代码高亮
+- SQLite Viewer            sqlite数据库可视化
 - Code Runner              单独允许ts需要全局安装    npm install -g ts-node ts-node-dev
 - Error lens               设置成中文提示  在vscode.setting中 搜索  typescript.local  选中zh
 - Live Server
@@ -14,7 +16,7 @@
 - Vue (Official)
 - VSCode Great Icons   
 - Chinese (Simplified)
-- TODO Highlight           代码高亮
+
 
 
 

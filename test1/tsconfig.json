@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext", // Node.js 的模块系统
+    "moduleResolution": "NodeNext", // Node.js 的模块系统
+    "declaration": true, // 声明文件
+    "removeComments": true, // 移除注释
+    "emitDecoratorMetadata": true, // 装饰器元数据
+    "experimentalDecorators": true, // 实验性装饰器
+    "allowSyntheticDefaultImports": true, // 允许合成默认导入
+    "target": "ES2020", // 目标 ES 版本
+    "sourceMap": true, // 源码映射
+    "outDir": "./dist", // 打包输出目录
+    "baseUrl": "./", // 基础路径
+    "incremental": true, // 增量编译(true|false)
+    "skipLibCheck": true, // 跳过库检查
+    "strictNullChecks": false, // 严格检查 null 和 undefined
+    "noImplicitAny": false, // 禁用隐式的 any 类型
+    "strictBindCallApply": false, // 严格绑定调用和应用
+    "forceConsistentCasingInFileNames": false, // 强制一致的文件名大小写
+    "noFallthroughCasesInSwitch": false, // 禁用 switch 语句的 fallthrough 检查
+    "noEmitOnError": true, // 允许编译错误时生成文件（改为false）
+    "noUncheckedIndexedAccess": true, // 在索引签名结果中包含 undefined
+    "noUnusedLocals": false, // 禁用未使用局部变量检查（改为false）
+    "noUnusedParameters": false, // 禁用未使用参数检查（改为false）
+
+    // // 建议同时开启严格模式
+    // "noUnusedLocals": true, // 本地变量未使用时报错
+    // "noUnusedParameters": true, // 函数参数未使用时报错
+    // "strict": true, // 建议同时开启严格模式
+
+    // 路径别名
+    "paths": {
+      "@src/*": ["./src/*"]
+    }
+  }
+}
