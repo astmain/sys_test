@@ -41,6 +41,48 @@
           "permission_id": "p2",
           "parent_id": null
         }
+      },
+      {
+        "id": "4",
+        "name": "系统管理一菜单管理",
+        "code": "menu_manage",
+        "path": "/menu",
+        "level": 2,
+        "sort": 2,
+        "permission_id": "p4",
+        "parent_id": "2",
+        "children": [],
+        "parent": {
+          "id": "2",
+          "name": "系统管理",
+          "code": "sys",
+          "path": "/sys",
+          "level": 1,
+          "sort": 2,
+          "permission_id": "p2",
+          "parent_id": null
+        }
+      },
+      {
+        "id": "5",
+        "name": "系统管理一部门管理",
+        "code": "depart_manage",
+        "path": "/depart",
+        "level": 2,
+        "sort": 3,
+        "permission_id": "p5",
+        "parent_id": "2",
+        "children": [],
+        "parent": {
+          "id": "2",
+          "name": "系统管理",
+          "code": "sys",
+          "path": "/sys",
+          "level": 1,
+          "sort": 2,
+          "permission_id": "p2",
+          "parent_id": null
+        }
       }
     ],
     "parent": null

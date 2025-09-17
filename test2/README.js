@@ -3,11 +3,13 @@
 
 我想通过用户的id得到菜单        应该怎么写prisma的查询语句
 我想通过用户的id得到菜单树      应该怎么写prisma的查询语句
-帮我查看:表结构设计table.prisma,初始化数据main.ts,查询代码main_find_menu_tree.ts,数据结果main_find_menu_tree.json
-为什么我知道的一个菜单
 
 
 
+帮我阅读test2的代码,将 部门表 的id 设置 "depart_"开头   例如 "depart_1"
+帮我阅读test2的代码,将 菜单表 的id 设置 "menu_"开头     例如 "menu_1"
+帮我阅读test2的代码,将 角色表 的id 设置 "role_"开头     例如 "role_1"
+帮我阅读test2的代码,将 用户表 的id 设置 "user_"开头     例如 "user_1"
 
 
 我的用户是下面的数据
