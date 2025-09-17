@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b79d41d-e08f-4930-89d6-899a6192f12c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.cursor_ai_01.md" beforeDir="false" afterPath="$PROJECT_DIR$/.cursorrules.ask.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cursor_history.md" beforeDir="false" afterPath="$PROJECT_DIR$/.cursor_history.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cursorrules" beforeDir="false" afterPath="$PROJECT_DIR$/.cursorrules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test2/README.js" beforeDir="false" afterPath="$PROJECT_DIR$/test2/README.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/data/main_find_menu_tree.json" beforeDir="false" afterPath="$PROJECT_DIR$/test2/data/main_find_menu_tree.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test2/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test2/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/main_find_menu_tree.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test2/main_find_menu_tree.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/main_find_menu_tree2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test2/main_find_menu_tree2.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/sqlite.db" beforeDir="false" afterPath="$PROJECT_DIR$/test2/sqlite.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +74,7 @@
       <recent name="C:\AAA\sys_test\test1" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.test2 &gt; main_find_menu_tree2.ts">
+  <component name="RunManager" selected="Node.js.test2 &gt; main.ts">
     <configuration name="test2 &gt; main_find_menu_tree2.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test2/main_find_menu_tree2.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/test2">
       <method v="2" />
     </configuration>
@@ -120,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.test2 &gt; main_find_menu_tree2.ts" />
         <item itemvalue="Node.js.test2 &gt; main.ts" />
+        <item itemvalue="Node.js.test2 &gt; main_find_menu_tree2.ts" />
         <item itemvalue="npm.test2 &gt; test:make" />
         <item itemvalue="npm.test2 &gt; package" />
         <item itemvalue="npm.test2 &gt; test1:make" />
@@ -143,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758121747073</updated>
       <workItem from="1758121748263" duration="5157000" />
-      <workItem from="1758127383055" duration="1533000" />
+      <workItem from="1758127383055" duration="1682000" />
     </task>
     <servers />
   </component>
