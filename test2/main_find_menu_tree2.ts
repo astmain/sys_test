@@ -3,7 +3,7 @@ import fs from 'fs'
 
 const db = new PrismaClient()
 
-let user_id = '1'
+let user_id = 'user_1'
 main()
 
 // 查询用户有权限的菜单树

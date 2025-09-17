@@ -6,21 +6,27 @@
 - 使用pnpm安装包,不要使用npm
 - 如果需要安装包就用pnpm 帮我自动安装
 
-# 命名规范:
+# 命名规范js和ts和json,jsx,tsx,vue,html,css:
 - 函数名,方法名,变量名,文件名,目录名,使用下划线命名法
+
+
+# 规范prisma:
+- prisma的表名,字段名,使用下划线命名法,表名使用小写,字段名使用小写,不要使用 @@map
+- 表不需要有下面的字段created_at,updated_at,status,last_login_at,email,is_deleted
+
 
 # 不要是用的技术:
 - 不要使用element-plus/icons-vue
 
 # 网站开发项目规范配置:
 - 每一次会话请求结束后进行会话总结,
-- 无论生成新文件还是修改已有文件都需要做总并将总结内容Append写入到.cursor_history.md文件中
-- 会话的主要目的(.cursor_history.md)
-- 完成的主要任务(.cursor_history.md)
-- 关键决策和解决方案(.cursor_history.md)
-- 使用的技术栈修改了哪些文件(.cursor_history.md)
-- 说明文件中的内容是累积增加到(.cursor_history.md)
-- 不要修改我的(ai_01.md,README.md,readme.md)文件内容
+- 无论生成新文件还是修改已有文件都需要做总并将总结内容Append写入到.cursorrules.history.md文件中
+- 会话的主要目的(.cursorrules.history.md)
+- 完成的主要任务(.cursorrules.history.md)
+- 关键决策和解决方案(.cursorrules.history.md)
+- 使用的技术栈修改了哪些文件(.cursorrules.history.md)
+- 说明文件中的内容是累积增加到(.cursorrules.history.md)
+- 不要修改我的(.cursorrules.ask.md,README.md,readme.md)文件内容
 
 
 
