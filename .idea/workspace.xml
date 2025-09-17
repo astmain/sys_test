@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b79d41d-e08f-4930-89d6-899a6192f12c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.cursorrules" beforeDir="false" afterPath="$PROJECT_DIR$/.cursorrules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test2/markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/test2/markdown.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/table.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/test2/table.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758121747073</updated>
       <workItem from="1758121748263" duration="5157000" />
-      <workItem from="1758127383055" duration="3522000" />
+      <workItem from="1758127383055" duration="4200000" />
     </task>
     <servers />
   </component>
