@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b79d41d-e08f-4930-89d6-899a6192f12c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/test2/README.js" beforeDir="false" afterPath="$PROJECT_DIR$/test2/README.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test2/main.ts" afterDir="false" />
-    </list>
+    <list default="true" id="8b79d41d-e08f-4930-89d6-899a6192f12c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,8 +71,11 @@
       <recent name="C:\AAA\sys_test\test1" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.test2 &gt; main.ts">
+  <component name="RunManager" selected="Node.js.test2 &gt; main_find_menu_tree.ts">
     <configuration name="test2 &gt; main_find_menu_tree2.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test2/main_find_menu_tree2.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/test2">
+      <method v="2" />
+    </configuration>
+    <configuration name="test2 &gt; main_find_menu_tree.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test2/main_find_menu_tree.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/test2">
       <method v="2" />
     </configuration>
     <configuration name="test2 &gt; main.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test2/main.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/test2">
@@ -86,16 +86,6 @@
       <command value="run" />
       <scripts>
         <script value="package" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="test2 &gt; test1:make" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/test2/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test1:make" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -113,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.test2 &gt; main_find_menu_tree.ts" />
         <item itemvalue="Node.js.test2 &gt; main.ts" />
         <item itemvalue="Node.js.test2 &gt; main_find_menu_tree2.ts" />
         <item itemvalue="npm.test2 &gt; test:make" />
         <item itemvalue="npm.test2 &gt; package" />
-        <item itemvalue="npm.test2 &gt; test1:make" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758121747073</updated>
       <workItem from="1758121748263" duration="5157000" />
-      <workItem from="1758127383055" duration="1682000" />
+      <workItem from="1758127383055" duration="1869000" />
     </task>
     <servers />
   </component>
