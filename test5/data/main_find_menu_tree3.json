@@ -1,0 +1,320 @@
+{
+  "all_menus": [
+    {
+      "id": "menu_1",
+      "name": "首页",
+      "path": "/home",
+      "parent_id": null,
+      "menu_type": "MENU",
+      "permission": "home",
+      "sort_order": 1,
+      "remark": "系统首页",
+      "zoom_role_menu": [
+        {
+          "id": "zoom_role_menu_role_1002_menu_1",
+          "role_id": "role_1002",
+          "menu_id": "menu_1",
+          "actions": "find",
+          "remark": "角色菜单权限"
+        }
+      ]
+    },
+    {
+      "id": "menu_2001",
+      "name": "系统管理一用户管理",
+      "path": "/system/user",
+      "parent_id": "menu_2",
+      "menu_type": "MENU",
+      "permission": "system:user",
+      "sort_order": 1,
+      "remark": "用户管理页面",
+      "zoom_role_menu": [
+        {
+          "id": "zoom_role_menu_role_2002_menu_2001",
+          "role_id": "role_2002",
+          "menu_id": "menu_2001",
+          "actions": "find,create,update,delete",
+          "remark": "角色菜单权限"
+        },
+        {
+          "id": "zoom_role_menu_role_4002_menu_2001",
+          "role_id": "role_4002",
+          "menu_id": "menu_2001",
+          "actions": "find,create,update",
+          "remark": "角色菜单权限"
+        },
+        {
+          "id": "zoom_role_menu_role_3002_menu_2001",
+          "role_id": "role_3002",
+          "menu_id": "menu_2001",
+          "actions": "find,create,update",
+          "remark": "角色菜单权限"
+        }
+      ]
+    },
+    {
+      "id": "menu_3001",
+      "name": "商城管理一订单管理",
+      "path": "/mall/order",
+      "parent_id": "menu_3",
+      "menu_type": "MENU",
+      "permission": "mall:order",
+      "sort_order": 1,
+      "remark": "订单管理页面",
+      "zoom_role_menu": [
+        {
+          "id": "zoom_role_menu_role_2002_menu_3001",
+          "role_id": "role_2002",
+          "menu_id": "menu_3001",
+          "actions": "find,create,update,delete",
+          "remark": "角色菜单权限"
+        },
+        {
+          "id": "zoom_role_menu_role_3002_menu_3001",
+          "role_id": "role_3002",
+          "menu_id": "menu_3001",
+          "actions": "find,create,update,delete",
+          "remark": "角色菜单权限"
+        },
+        {
+          "id": "zoom_role_menu_role_4002_menu_3001",
+          "role_id": "role_4002",
+          "menu_id": "menu_3001",
+          "actions": "find,create,update",
+          "remark": "角色菜单权限"
+        }
+      ]
+    },
+    {
+      "id": "menu_2",
+      "name": "系统管理",
+      "path": "/system",
+      "parent_id": null,
+      "menu_type": "DIR",
+      "permission": "system",
+      "sort_order": 2,
+      "remark": "系统管理目录",
+      "zoom_role_menu": []
+    },
+    {
+      "id": "menu_3002",
+      "name": "商城管理一商品管理",
+      "path": "/mall/product",
+      "parent_id": "menu_3",
+      "menu_type": "MENU",
+      "permission": "mall:product",
+      "sort_order": 2,
+      "remark": "商品管理页面",
+      "zoom_role_menu": [
+        {
+          "id": "zoom_role_menu_role_2002_menu_3002",
+          "role_id": "role_2002",
+          "menu_id": "menu_3002",
+          "actions": "find,create,update,delete",
+          "remark": "角色菜单权限"
+        },
+        {
+          "id": "zoom_role_menu_role_4002_menu_3002",
+          "role_id": "role_4002",
+          "menu_id": "menu_3002",
+          "actions": "find,create,update",
+          "remark": "角色菜单权限"
+        },
+        {
+          "id": "zoom_role_menu_role_3002_menu_3002",
+          "role_id": "role_3002",
+          "menu_id": "menu_3002",
+          "actions": "find,create,update",
+          "remark": "角色菜单权限"
+        }
+      ]
+    },
+    {
+      "id": "menu_2002",
+      "name": "系统管理一菜单管理",
+      "path": "/system/menu",
+      "parent_id": "menu_2",
+      "menu_type": "MENU",
+      "permission": "system:menu",
+      "sort_order": 2,
+      "remark": "菜单管理页面",
+      "zoom_role_menu": [
+        {
+          "id": "zoom_role_menu_role_2002_menu_2002",
+          "role_id": "role_2002",
+          "menu_id": "menu_2002",
+          "actions": "find,create,update,delete",
+          "remark": "角色菜单权限"
+        }
+      ]
+    },
+    {
+      "id": "menu_3",
+      "name": "商城管理",
+      "path": "/mall",
+      "parent_id": null,
+      "menu_type": "DIR",
+      "permission": "mall",
+      "sort_order": 3,
+      "remark": "商城管理目录",
+      "zoom_role_menu": []
+    },
+    {
+      "id": "menu_2003",
+      "name": "系统管理一部门管理",
+      "path": "/system/org",
+      "parent_id": "menu_2",
+      "menu_type": "MENU",
+      "permission": "system:org",
+      "sort_order": 3,
+      "remark": "部门管理页面",
+      "zoom_role_menu": [
+        {
+          "id": "zoom_role_menu_role_2002_menu_2003",
+          "role_id": "role_2002",
+          "menu_id": "menu_2003",
+          "actions": "find,create,update,delete",
+          "remark": "角色菜单权限"
+        }
+      ]
+    },
+    {
+      "id": "menu_3003",
+      "name": "商城管理一财务管理",
+      "path": "/mall/finance",
+      "parent_id": "menu_3",
+      "menu_type": "MENU",
+      "permission": "mall:finance",
+      "sort_order": 3,
+      "remark": "财务管理页面",
+      "zoom_role_menu": [
+        {
+          "id": "zoom_role_menu_role_4002_menu_3003",
+          "role_id": "role_4002",
+          "menu_id": "menu_3003",
+          "actions": "find,create,update,delete",
+          "remark": "角色菜单权限"
+        },
+        {
+          "id": "zoom_role_menu_role_2002_menu_3003",
+          "role_id": "role_2002",
+          "menu_id": "menu_3003",
+          "actions": "find,create,update,delete",
+          "remark": "角色菜单权限"
+        }
+      ]
+    }
+  ],
+  "menu_tree": [
+    {
+      "id": "menu_1",
+      "name": "首页",
+      "path": "/home",
+      "parent_id": null,
+      "menu_type": "MENU",
+      "permission": "home",
+      "sort_order": 1,
+      "remark": "系统首页",
+      "actions": "find",
+      "children": []
+    },
+    {
+      "id": "menu_2",
+      "name": "系统管理",
+      "path": "/system",
+      "parent_id": null,
+      "menu_type": "DIR",
+      "permission": "system",
+      "sort_order": 2,
+      "remark": "系统管理目录",
+      "actions": "",
+      "children": [
+        {
+          "id": "menu_2001",
+          "name": "系统管理一用户管理",
+          "path": "/system/user",
+          "parent_id": "menu_2",
+          "menu_type": "MENU",
+          "permission": "system:user",
+          "sort_order": 1,
+          "remark": "用户管理页面",
+          "actions": "find,create,update,delete,find,create,update,find,create,update",
+          "children": []
+        },
+        {
+          "id": "menu_2002",
+          "name": "系统管理一菜单管理",
+          "path": "/system/menu",
+          "parent_id": "menu_2",
+          "menu_type": "MENU",
+          "permission": "system:menu",
+          "sort_order": 2,
+          "remark": "菜单管理页面",
+          "actions": "find,create,update,delete",
+          "children": []
+        },
+        {
+          "id": "menu_2003",
+          "name": "系统管理一部门管理",
+          "path": "/system/org",
+          "parent_id": "menu_2",
+          "menu_type": "MENU",
+          "permission": "system:org",
+          "sort_order": 3,
+          "remark": "部门管理页面",
+          "actions": "find,create,update,delete",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "menu_3",
+      "name": "商城管理",
+      "path": "/mall",
+      "parent_id": null,
+      "menu_type": "DIR",
+      "permission": "mall",
+      "sort_order": 3,
+      "remark": "商城管理目录",
+      "actions": "",
+      "children": [
+        {
+          "id": "menu_3001",
+          "name": "商城管理一订单管理",
+          "path": "/mall/order",
+          "parent_id": "menu_3",
+          "menu_type": "MENU",
+          "permission": "mall:order",
+          "sort_order": 1,
+          "remark": "订单管理页面",
+          "actions": "find,create,update,delete,find,create,update,delete,find,create,update",
+          "children": []
+        },
+        {
+          "id": "menu_3002",
+          "name": "商城管理一商品管理",
+          "path": "/mall/product",
+          "parent_id": "menu_3",
+          "menu_type": "MENU",
+          "permission": "mall:product",
+          "sort_order": 2,
+          "remark": "商品管理页面",
+          "actions": "find,create,update,delete,find,create,update,find,create,update",
+          "children": []
+        },
+        {
+          "id": "menu_3003",
+          "name": "商城管理一财务管理",
+          "path": "/mall/finance",
+          "parent_id": "menu_3",
+          "menu_type": "MENU",
+          "permission": "mall:finance",
+          "sort_order": 3,
+          "remark": "财务管理页面",
+          "actions": "find,create,update,delete,find,create,update,delete",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
