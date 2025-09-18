@@ -1,5 +1,5 @@
-# 这个表结构可以支持 不同部门中的职位 看到的菜单的权限吗?新增,修改,删除,查找的权限吗
-
+<!-- 查询 -->
+我想根据  ,条件(user_id="user_1")   ,查询(菜单树 )    ,代码写在(main_find_menu_tree.ts)   ,结果用fs模块保存在(data/main_find_menu_tree.json) 
 
 
 
