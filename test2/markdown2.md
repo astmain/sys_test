@@ -1,5 +1,5 @@
-<!-- // 方案一优化版：支持用户多部门的简化权限模型 -->
-// 用户表 - 保持独立，不直接关联部门
+<!-- 完全基于部门的权限模型(最简化版)不需要有角色表 -->
+// 用户表
 model user {
   id               String            @id @default(cuid())
   phone            String            @unique
@@ -7,8 +7,6 @@ model user {
   password         String            @default("123456")
   // 支持多部门关联
   user_departments user_department[]
-  // 保留角色关联
-  user_roles       user_role[]
 }
 
 // 部门表
@@ -65,30 +63,8 @@ model department_menu {
   @@unique([department_id, menu_id])
 }
 
-// 角色表（用于特殊权限控制）
-model role {
-  id               String            @id @default(cuid())
-  name             String            @unique
-  code             String            @unique
-  remark           String?
-  sort             Int               @default(0)
-  user_roles       user_role[]
-}
-
-// 用户角色关联表
-model user_role {
-  id      String @id @default(cuid())
-  user_id String
-  role_id String
-  user    user   @relation(fields: [user_id], references: [id], onDelete: Cascade)
-  role    role   @relation(fields: [role_id], references: [id], onDelete: Cascade)
-  @@unique([user_id, role_id])
-}
-
-
-
-// 查询用户菜单的优化函数
-// 通过用户ID获取菜单树（支持多部门）
+<!-- 查询用户菜单的简化函数 -->
+// 通过用户ID获取菜单树（完全基于部门）
 async function get_user_menus(user_id: string) {
   // 查询用户有权限的菜单（通过部门）
   const menus = await db.menu.findMany({
@@ -148,16 +124,47 @@ function build_menu_tree(menus: any[]) {
   return root_menus
 }
 
+// 获取用户的所有部门
+async function get_user_departments(user_id: string) {
+  return await db.user_department.findMany({
+    where: { user_id },
+    include: {
+      department: true
+    }
+  })
+}
+
+// 为部门分配菜单权限
+async function assign_menu_to_department(department_id: string, menu_id: string) {
+  return await db.department_menu.create({
+    data: {
+      department_id,
+      menu_id
+    }
+  })
+}
+
+// 为用户分配部门
+async function assign_user_to_department(user_id: string, department_id: string, is_primary: boolean = false) {
+  return await db.user_department.create({
+    data: {
+      user_id,
+      department_id,
+      is_primary
+    }
+  })
+}
 
 
-这个方案的优势
-支持用户多部门：通过 user_department 表实现
-简化权限控制：主要通过部门来分配菜单权限
-减少关系复杂度：去掉了复杂的权限表，直接通过部门控制菜单
-保持灵活性：仍然保留角色表，用于特殊权限控制
-查询性能更好：查询路径更短，减少了JOIN层级
-权限分配逻辑
-部门权限：每个部门可以分配不同的菜单权限
+
+<!-- 这个最简化方案的优势 -->
+极简设计：只有4个核心表，关系清晰
+完全基于部门：权限完全通过部门控制，无需角色表
+支持用户多部门：一个用户可以属于多个部门
+查询简单：权限查询路径最短
+易于维护：表关系简单，便于理解和维护
+权限控制逻辑
+部门权限：每个部门分配不同的菜单权限
 用户权限：用户通过所属部门获得菜单权限
-角色权限：用于特殊场景的额外权限控制
-这样既支持了用户多部门的需求，又大大简化了表关系的复杂度。您觉得这个优化方案如何？
+多部门支持：用户可以从多个部门获得权限的并集
+这样您就有了一个完全基于部门的、最简化的权限模型，既支持用户多部门，又大大简化了表关系的复杂度。

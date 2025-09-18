@@ -1,0 +1,166 @@
+[
+  {
+    "id": "menu_1",
+    "name": "首页",
+    "code": "home",
+    "path": "/home",
+    "level": 1,
+    "sort": 1,
+    "permission_id": "permiss_1",
+    "parent_id": null,
+    "children": [],
+    "parent": null
+  },
+  {
+    "id": "menu_2",
+    "name": "系统管理",
+    "code": "sys",
+    "path": "/sys",
+    "level": 1,
+    "sort": 2,
+    "permission_id": "permiss_2",
+    "parent_id": null,
+    "children": [
+      {
+        "id": "menu_3",
+        "name": "系统管理一用户管理",
+        "code": "user_manage",
+        "path": "/user",
+        "level": 2,
+        "sort": 1,
+        "permission_id": "permiss_3",
+        "parent_id": "menu_2",
+        "children": [],
+        "parent": {
+          "id": "menu_2",
+          "name": "系统管理",
+          "code": "sys",
+          "path": "/sys",
+          "level": 1,
+          "sort": 2,
+          "permission_id": "permiss_2",
+          "parent_id": null
+        }
+      },
+      {
+        "id": "menu_4",
+        "name": "系统管理一菜单管理",
+        "code": "menu_manage",
+        "path": "/menu",
+        "level": 2,
+        "sort": 2,
+        "permission_id": "permiss_4",
+        "parent_id": "menu_2",
+        "children": [],
+        "parent": {
+          "id": "menu_2",
+          "name": "系统管理",
+          "code": "sys",
+          "path": "/sys",
+          "level": 1,
+          "sort": 2,
+          "permission_id": "permiss_2",
+          "parent_id": null
+        }
+      },
+      {
+        "id": "menu_5",
+        "name": "系统管理一部门管理",
+        "code": "depart_manage",
+        "path": "/depart",
+        "level": 2,
+        "sort": 3,
+        "permission_id": "permiss_5",
+        "parent_id": "menu_2",
+        "children": [],
+        "parent": {
+          "id": "menu_2",
+          "name": "系统管理",
+          "code": "sys",
+          "path": "/sys",
+          "level": 1,
+          "sort": 2,
+          "permission_id": "permiss_2",
+          "parent_id": null
+        }
+      }
+    ],
+    "parent": null
+  },
+  {
+    "id": "menu_6",
+    "name": "商城管理",
+    "code": "mall",
+    "path": "/mall",
+    "level": 1,
+    "sort": 3,
+    "permission_id": "permiss_6",
+    "parent_id": null,
+    "children": [
+      {
+        "id": "menu_7",
+        "name": "商城管理一订单管理",
+        "code": "order_manage",
+        "path": "/mall/order",
+        "level": 2,
+        "sort": 1,
+        "permission_id": "permiss_7",
+        "parent_id": "menu_6",
+        "children": [],
+        "parent": {
+          "id": "menu_6",
+          "name": "商城管理",
+          "code": "mall",
+          "path": "/mall",
+          "level": 1,
+          "sort": 3,
+          "permission_id": "permiss_6",
+          "parent_id": null
+        }
+      },
+      {
+        "id": "menu_8",
+        "name": "商城管理一商品管理",
+        "code": "product_manage",
+        "path": "/mall/product",
+        "level": 2,
+        "sort": 2,
+        "permission_id": "permiss_8",
+        "parent_id": "menu_6",
+        "children": [],
+        "parent": {
+          "id": "menu_6",
+          "name": "商城管理",
+          "code": "mall",
+          "path": "/mall",
+          "level": 1,
+          "sort": 3,
+          "permission_id": "permiss_6",
+          "parent_id": null
+        }
+      },
+      {
+        "id": "menu_9",
+        "name": "商城管理一财务管理",
+        "code": "finance_manage",
+        "path": "/mall/finance",
+        "level": 2,
+        "sort": 3,
+        "permission_id": "permiss_9",
+        "parent_id": "menu_6",
+        "children": [],
+        "parent": {
+          "id": "menu_6",
+          "name": "商城管理",
+          "code": "mall",
+          "path": "/mall",
+          "level": 1,
+          "sort": 3,
+          "permission_id": "permiss_6",
+          "parent_id": null
+        }
+      }
+    ],
+    "parent": null
+  }
+]
