@@ -10,13 +10,12 @@ datasource db {
 
 // 1. 用户表
 model sys_user {
-  id              String            @id @default(uuid())
-  phone           String            @unique
-  password        String            @default("123456")
-  name            String
-  remark          String?
-  // 关联关系
-  ref_user_depart ref_user_depart[]
+  id         String       @id @default(uuid())
+  phone      String       @unique
+  password   String       @default("123456")
+  name       String
+  remark     String?
+  sys_depart sys_depart[]
 }
 
 // 2. 组织表 (既表示部门又表示角色)
@@ -28,93 +27,24 @@ model sys_depart {
   is_depart Boolean      @default(true) // 是否是组织，如果为false就相当于角色
   parent    sys_depart?  @relation("self_sys_depart", fields: [parent_id], references: [id])
   children  sys_depart[] @relation("self_sys_depart")
-
-  // 关联关系
-  ref_user_depart ref_user_depart[]
-  ref_depart_menu ref_depart_menu[]
-
-  //基本数据如下
-  // 客户部 (is_depart=true)
-  //    - 客户普通 (is_depart=false)  可以看到菜单  首页
-  //    - 客户高级 (is_depart=false)  可以看到菜单  首页
-  // 技术部 (is_depart=true)
-  //    - 技术职员 (is_depart=false)  可以看到菜单                    系统设置一组织人员  商城管理一订单管理  商城管理一商品管理  商城管理一财务管理
-  //    - 技术主管 (is_depart=false)  可以看到菜单  系统设置一组织管理  系统设置一组织人员  商城管理一订单管理  商城管理一商品管理  商城管理一财务管理
-  // 财务部 (is_depart=true)
-  //    - 财务职员 (is_depart=false)  可以看到菜单                                        商城管理一订单管理                    商城管理一财务管理
-  //    - 财务主管 (is_depart=false)  可以看到菜单                    系统设置一组织人员   商城管理一订单管理  商城管理一商品管理  商城管理一财务管理
+  sys_user  sys_user[]
+  sys_menu  sys_menu[]
 }
 
 // 3. 菜单表
 model sys_menu {
-  id        String     @id @default(uuid())
-  name      String
-  path      String?
-  remark    String?
-  parent_id String? // 自关联
-  parent    sys_menu?  @relation("self_sys_menu", fields: [parent_id], references: [id])
-  children  sys_menu[] @relation("self_sys_menu")
+  id     String  @id @default(uuid())
+  name   String
+  path   String?
+  remark String?
 
-  // 关联关系
-  ref_depart_menu ref_depart_menu[]
-
-  //基本数据如下
-  // 首页
-  // 系统设置
-  //     - 组织人员
-  //     - 组织管理
-  // 商城管理
-  //     - 订单管理
-  //     - 商品管理
-  //     - 财务管理
+  is_permiss Boolean      @default(false)
+  is_view    Boolean      @default(false)
+  is_find    Boolean      @default(false)
+  is_save    Boolean      @default(false)
+  is_del     Boolean      @default(false)
+  parent_id  String? // 自关联
+  parent     sys_menu?    @relation("self_sys_menu", fields: [parent_id], references: [id])
+  children   sys_menu[]   @relation("self_sys_menu")
+  sys_depart sys_depart[]
 }
-
-// 4. 用户组织关系表 (用户属于哪些组织/角色)
-model ref_user_depart {
-  id        String  @id @default(uuid())
-  user_id   String
-  depart_id String
-  remark    String?
-
-  // 关联关系
-  sys_user   sys_user   @relation(fields: [user_id], references: [id])
-  sys_depart sys_depart @relation(fields: [depart_id], references: [id])
-
-  @@unique([user_id, depart_id])
-}
-
-// 5. 组织菜单权限关系表 (组织/角色可以访问哪些菜单)
-model ref_depart_menu {
-  id        String  @id @default(uuid())
-  depart_id String
-  menu_id   String
-  actions   String? // 操作权限: find,create,update,delete
-  remark    String?
-
-  // 关联关系
-  sys_depart sys_depart @relation(fields: [depart_id], references: [id])
-  sys_menu   sys_menu   @relation(fields: [menu_id], references: [id])
-
-  @@unique([depart_id, menu_id])
-}
-
-// 表 sys_user               的id 设置 "user_"开头     例如 "user_1"
-// 表 sys_depart             的id 设置 "depart_"开头   例如 "depart_1"
-// 表 sys_menu               的id 设置 "menu_"开头     例如 "menu_1"
-// 表 ref_user_depart        的id 设置 "ref_user_depart_"开头     例如 "ref_user_depart_1"
-// 表 ref_depart_menu        的id 设置 "ref_depart_menu_"开头     例如 "ref_depart_menu_1"
-
-// 我的用户是下面的数据
-// let user_list = [
-//     { id: 'user_1', name: '许鹏', phone: '15160315110' },
-//     { id: 'user_2', name: '二狗', phone: '15160315002' },
-//     { id: 'user_3', name: '张三', phone: '15160315003' },
-//     { id: 'user_4', name: '李四', phone: '15160315004' },
-//     { id: 'user_5', name: '王五', phone: '15160315005' }
-// ]
-
-// prisma使用db对表进行操作
-// import { PrismaClient } from '@prisma/client'
-// const db = new PrismaClient()
-
-// 基于表的结构帮我初始化代码代码写在main.ts中
