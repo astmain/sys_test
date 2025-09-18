@@ -1,0 +1,117 @@
+//表结构视图 https://prisma-editor.bahumaish.com/schema/17238
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./sqlite.db"
+}
+
+// 用户表
+model user {
+  id               String            @id @default(cuid())
+  phone            String            @unique
+  name             String
+  password         String            @default("123456")
+  // 关联关系
+  user_departments user_department[] // 用户部门关联
+  user_roles       user_role[] // 用户角色关联
+}
+
+// 部门表
+model department {
+  id               String            @id @default(cuid())
+  name             String
+  code             String            @unique // 部门编码
+  level            Int               @default(1) // 部门层级
+  sort             Int               @default(0) // 排序
+  remark           String? // 部门描述
+  // 关联关系
+  parent_id        String? // 父部门ID，支持树形结构
+  parent           department?       @relation("DepartmentHierarchy", fields: [parent_id], references: [id])
+  children         department[]      @relation("DepartmentHierarchy")
+  user_departments user_department[] // 用户部门关联
+}
+
+// 角色表
+model role {
+  id               String            @id @default(cuid())
+  name             String            @unique
+  code             String            @unique // 角色编码
+  remark           String? // 角色描述
+  sort             Int               @default(0) // 排序
+  // 关联关系
+  user_roles       user_role[]
+  role_permissions role_permission[]
+}
+
+// 权限表
+model permission {
+  id               String            @id @default(cuid())
+  name             String
+  code             String            @unique // 权限编码，如：user:create, user:update
+  type             String // 权限类型：menu, button, api
+  parent_id        String? // 父权限ID，支持树形结构
+  level            Int               @default(1) // 权限层级
+  sort             Int               @default(0) // 排序
+  remark           String? // 权限描述
+  // 关联关系
+  parent           permission?       @relation("PermissionHierarchy", fields: [parent_id], references: [id])
+  children         permission[]      @relation("PermissionHierarchy")
+  role_permissions role_permission[]
+  menus            menu[] // 菜单关联
+}
+
+// 菜单表
+model menu {
+  id            String      @id @default(cuid())
+  name          String
+  code          String      @unique // 菜单编码
+  path          String? // 路由路径
+  level         Int         @default(1) // 菜单层级
+  sort          Int         @default(0) // 排序
+  permission_id String? // 关联权限ID
+  // 关联关系
+  parent_id     String? // 父菜单ID，支持树形结构
+  parent        menu?       @relation("MenuHierarchy", fields: [parent_id], references: [id])
+  children      menu[]      @relation("MenuHierarchy")
+  permission    permission? @relation(fields: [permission_id], references: [id])
+}
+
+// 用户部门关联表（支持一个用户多个部门）
+model user_department {
+  id            String     @id @default(cuid())
+  user_id       String
+  department_id String
+  is_primary    Boolean    @default(false) // 是否为主部门
+  // 关联关系
+  user          user       @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  department    department @relation(fields: [department_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, department_id])
+}
+
+// 用户角色关联表
+model user_role {
+  id      String @id @default(cuid())
+  user_id String
+  role_id String
+  // 关联关系
+  user    user   @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  role    role   @relation(fields: [role_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, role_id])
+}
+
+// 角色权限关联表
+model role_permission {
+  id            String     @id @default(cuid())
+  role_id       String
+  permission_id String
+  // 关联关系
+  role          role       @relation(fields: [role_id], references: [id], onDelete: Cascade)
+  permission    permission @relation(fields: [permission_id], references: [id], onDelete: Cascade)
+
+  @@unique([role_id, permission_id])
+}
