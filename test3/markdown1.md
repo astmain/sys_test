@@ -1,164 +1,144 @@
-# 这个表结构可以支持 不同部门中的职位 看到的菜单的权限吗?新增,修改,删除,查找的权限吗
-<!-- // 方案一优化版：支持用户多部门的简化权限模型 -->
-// 1 用户表 - 保持独立，不直接关联部门
-model user {
-  id               String            @id @default(cuid())
-  phone            String            @unique
-  name             String
-  password         String            @default("123456")
+// 基于用户、部门和菜单的ABAC权限模型（支持多部门）
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// 操作类型 - 针对菜单的可能操作
+enum Action {
+  VIEW       // 查看菜单
+  ACCESS     // 访问菜单对应的功能
+  CONFIGURE  // 配置菜单（如排序、隐藏等）
+  MANAGE     // 管理菜单（如增删改）
+}
+
+// 用户状态
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  LOCKED
+  SUSPENDED
+}
+
+// 部门
+model Department {
+  id          String    @id @default(uuid())
+  name        String    @unique // 部门名称
+  parentId    String?   // 上级部门ID
+  level       Int       // 部门级别（如1=公司, 2=部门, 3=小组）
+  description String?   // 部门描述
   // 支持多部门关联
-  user_departments user_department[]
-  // 保留角色关联
-  user_roles       user_role[]
+  userDepartments UserDepartment[] // 用户部门关联
+  parent      Department? @relation("DepartmentHierarchy", fields: [parentId], references: [id])
+  children    Department[] @relation("DepartmentHierarchy")
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
 }
 
-// 2 部门表
-model department {
-  id               String            @id @default(cuid())
-  name             String
-  code             String            @unique
-  level            Int               @default(1)
-  sort             Int               @default(0)
-  remark           String?
-  // 树形结构
-  parent_id        String?
-  parent           department?       @relation("DepartmentHierarchy", fields: [parent_id], references: [id])
-  children         department[]      @relation("DepartmentHierarchy")
-  // 部门关联
-  user_departments user_department[]
-  department_menus department_menu[]
+// 用户（主体）
+model User {
+  id            String    @id @default(uuid())
+  username      String    @unique // 用户名
+  name          String    // 姓名
+  email         String    @unique // 邮箱
+  status        UserStatus @default(ACTIVE)
+  attributes    UserAttribute[] // 用户属性
+  // 支持多部门关联
+  userDepartments UserDepartment[] // 用户部门关联
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
 }
 
-// 3 菜单表
-model menu {
-  id            String      @id @default(cuid())
-  name          String
-  code          String      @unique
-  path          String?
-  level         Int         @default(1)
-  sort          Int         @default(0)
-  parent_id     String?
-  parent        menu?       @relation("MenuHierarchy", fields: [parent_id], references: [id])
-  children      menu[]      @relation("MenuHierarchy")
-  // 直接关联部门
-  department_menus department_menu[]
-}
-
-// 4 用户部门关联表（支持多部门）
-model user_department {
-  id            String     @id @default(cuid())
-  user_id       String
-  department_id String
-  is_primary    Boolean    @default(false) // 是否为主部门
+// 用户部门关联表（支持多部门）
+model UserDepartment {
+  id            String     @id @default(uuid())
+  userId        String
+  departmentId  String
+  isPrimary     Boolean    @default(false) // 是否为主部门
+  joinDate      DateTime   @default(now()) // 加入部门时间
+  status        String     @default("active") // 状态：active, inactive
   // 关联关系
-  user          user       @relation(fields: [user_id], references: [id], onDelete: Cascade)
-  department    department @relation(fields: [department_id], references: [id], onDelete: Cascade)
-  @@unique([user_id, department_id])
+  user          User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  department    Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@unique([userId, departmentId])
 }
 
-// 5 部门菜单关联表
-model department_menu {
-  id            String     @id @default(cuid())
-  department_id String
-  menu_id       String
-  department    department @relation(fields: [department_id], references: [id], onDelete: Cascade)
-  menu          menu       @relation(fields: [menu_id], references: [id], onDelete: Cascade)
-  @@unique([department_id, menu_id])
+// 用户属性
+model UserAttribute {
+  id          String    @id @default(uuid())
+  userId      String
+  key         String    // 属性键（如"role", "grade", "isManager"）
+  value       String    // 属性值（如"admin", "P3", "true"）
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([userId, key])
 }
 
-// 6 角色表（用于特殊权限控制）
-model role {
-  id               String            @id @default(cuid())
-  name             String            @unique
-  code             String            @unique
-  remark           String?
-  sort             Int               @default(0)
-  user_roles       user_role[]
+// 菜单（客体）
+model Menu {
+  id          String    @id @default(uuid())
+  name        String    // 菜单名称
+  code        String    @unique // 菜单编码
+  path        String    // 菜单路径
+  parentId    String?   // 父菜单ID
+  icon        String?   // 菜单图标
+  sortOrder   Int       // 排序序号
+  isEnabled   Boolean   @default(true) // 是否启用
+  attributes  MenuAttribute[] // 菜单属性
+  parent      Menu?     @relation("MenuHierarchy", fields: [parentId], references: [id])
+  children    Menu[]    @relation("MenuHierarchy")
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
 }
 
-// 7 用户角色关联表
-model user_role {
-  id      String @id @default(cuid())
-  user_id String
-  role_id String
-  user    user   @relation(fields: [user_id], references: [id], onDelete: Cascade)
-  role    role   @relation(fields: [role_id], references: [id], onDelete: Cascade)
-  @@unique([user_id, role_id])
+// 菜单属性
+model MenuAttribute {
+  id          String    @id @default(uuid())
+  menuId      String
+  key         String    // 属性键（如"sensitivity", "businessDomain", "requiresApproval"）
+  value       String    // 属性值（如"high", "finance", "true"）
+  menu        Menu      @relation(fields: [menuId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([menuId, key])
 }
 
-
-
-// 查询用户菜单的优化函数
-// 通过用户ID获取菜单树（支持多部门）
-async function get_user_menus(user_id: string) {
-  // 查询用户有权限的菜单（通过部门）
-  const menus = await db.menu.findMany({
-    where: {
-      department_menus: {
-        some: {
-          department: {
-            user_departments: {
-              some: {
-                user_id: user_id
-              }
-            }
-          }
-        }
-      }
-    },
-    include: {
-      children: {
-        include: {
-          children: true // 支持多级菜单
-        }
-      },
-      parent: true
-    },
-    orderBy: [
-      { level: 'asc' },
-      { sort: 'asc' }
-    ]
-  })
-
-  // 构建菜单树
-  return build_menu_tree(menus)
+// 访问控制策略
+model Policy {
+  id                  String    @id @default(uuid())
+  name                String    @unique // 策略名称
+  description         String?   // 策略描述
+  effect              Boolean   // 策略效果：true=允许，false=拒绝
+  actions             Action[]  // 适用的操作列表
+  userRules           String?   // 用户规则表达式（如"role = 'admin' OR grade >= 'P5'"）
+  departmentRules     String?   // 部门规则表达式（如"name = '财务部' AND level <= 2"）
+  menuRules           String?   // 菜单规则表达式（如"sensitivity = 'low' OR businessDomain = 'common'"）
+  priority            Int       // 策略优先级（数字越大优先级越高）
+  isEnabled           Boolean   @default(true) // 策略是否启用
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
 }
 
-// 构建菜单树的辅助函数
-function build_menu_tree(menus: any[]) {
-  const menu_map = new Map()
-  const root_menus = []
-
-  // 创建菜单映射
-  menus.forEach(menu => {
-    menu_map.set(menu.id, { ...menu, children: [] })
-  })
-
-  // 构建树形结构
-  menus.forEach(menu => {
-    if (menu.parent_id) {
-      const parent = menu_map.get(menu.parent_id)
-      if (parent) {
-        parent.children.push(menu_map.get(menu.id))
-      }
-    } else {
-      root_menus.push(menu_map.get(menu.id))
-    }
-  })
-
-  return root_menus
+// 访问日志
+model AccessLog {
+  id                  String    @id @default(uuid())
+  userId              String
+  menuId              String
+  action              Action    // 尝试执行的操作
+  decision            Boolean?  // 决策结果：true=允许，false=拒绝
+  policyId            String?   // 匹配的策略ID
+  timestamp           DateTime  @default(now())
+  user                User      @relation(fields: [userId], references: [id])
+  menu                Menu      @relation(fields: [menuId], references: [id])
+  policy              Policy?   @relation(fields: [policyId], references: [id])
 }
-
-
-
-这个方案的优势
-支持用户多部门：通过 user_department 表实现
-简化权限控制：主要通过部门来分配菜单权限
-减少关系复杂度：去掉了复杂的权限表，直接通过部门控制菜单
-保持灵活性：仍然保留角色表，用于特殊权限控制
-查询性能更好：查询路径更短，减少了JOIN层级
-权限分配逻辑
-部门权限：每个部门可以分配不同的菜单权限
-用户权限：用户通过所属部门获得菜单权限
-角色权限：用于特殊场景的额外权限控制
-这样既支持了用户多部门的需求，又大大简化了表关系的复杂度。您觉得这个优化方案如何？
