@@ -1,5 +1,5 @@
 {
-  "name": "test2",
+  "name": "test1",
   "version": "1.0.0",
   "scripts": {
     "package": "pnpm i",
