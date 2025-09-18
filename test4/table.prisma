@@ -1,0 +1,225 @@
+//表结构视图 https://prisma-editor.bahumaish.com/schema/17244
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./sqlite.db"
+}
+
+// 1. 系统用户表 - 系统用户基础信息
+model sys_user {
+  id                 String               @id @default(uuid()) // 用户唯一标识
+  phone              String               @unique // 用户手机号，用于登录
+  password           String               @default("123456") // 密码
+  name               String // 用户真实姓名
+  remark             String? // 用户备注信息
+  zoom_org_role_user zoom_org_role_user[] // 用户组织角色关联（一对多关系）
+}
+
+// 2. 系统组织表 - 组织架构信息
+model sys_org {
+  id                 String               @id @default(uuid()) // 组织唯一标识
+  name               String // 组织名称
+  parent_id          String? // 上级组织ID，用于构建组织层级
+  remark             String? // 组织备注信息
+  parent             sys_org?             @relation("org_hierarchy", fields: [parent_id], references: [id]) // 上级组织（自关联）
+  children           sys_org[]            @relation("org_hierarchy") // 下级组织列表（自关联）
+  sys_role           sys_role[] // 组织下的角色（一对多关系）
+  zoom_org_role_user zoom_org_role_user[] // 组织下的用户角色关联（一对多关系）
+}
+
+// 3. 系统角色表 - 职位角色信息
+model sys_role {
+  id                 String               @id @default(uuid()) // 角色唯一标识
+  name               String // 角色名称，如"财务专员"、"部门主管"
+  code               String               @unique // 角色编码，如"FIN_CLERK"、"DEPT_MANAGER"
+  org_id             String // 所属组织ID
+  remark             String? // 角色备注信息
+  sys_org            sys_org              @relation(fields: [org_id], references: [id]) // 关联组织（多对一）
+  zoom_role_menu     zoom_role_menu[] // 角色菜单权限（一对多关系）
+  zoom_org_role_user zoom_org_role_user[] // 角色的用户关联（一对多关系）
+}
+
+// 4. 系统菜单表 - 系统菜单结构
+model sys_menu {
+  id             String           @id @default(uuid()) // 菜单唯一标识
+  name           String // 菜单显示名称
+  path           String? // 菜单对应的路由路径
+  parent_id      String? // 父菜单ID，用于构建菜单树
+  menu_type      String           @default("DIR") // 菜单类型：DIR=目录，MENU=菜单，BUTTON=按钮
+  permission     String? // 权限码前缀，如"user"
+  sort_order     Int? // 菜单排序序号
+  remark         String? // 菜单备注信息
+  parent         sys_menu?        @relation("menu_hierarchy", fields: [parent_id], references: [id]) // 父菜单（自关联）
+  children       sys_menu[]       @relation("menu_hierarchy") // 子菜单列表（自关联）
+  zoom_role_menu zoom_role_menu[] // 菜单的角色权限（一对多关系）
+}
+
+// 关系一. 角色菜单权限表 - 角色与菜单的权限关系
+model zoom_role_menu {
+  id       String   @id @default(uuid()) // 权限记录唯一标识
+  role_id  String // 角色ID
+  menu_id  String // 菜单ID
+  actions  String // 操作权限，用逗号分隔，如"find,create,update"
+  remark   String? // 权限备注信息
+  sys_role sys_role @relation(fields: [role_id], references: [id], onDelete: Cascade) // 关联角色（多对一）
+  sys_menu sys_menu @relation(fields: [menu_id], references: [id], onDelete: Cascade) // 关联菜单（多对一）
+
+  @@unique([role_id, menu_id]) // 确保角色在同一菜单只能有一条权限记录
+}
+
+// 关系二. 组织角色用户表 - 用户在组织中的角色关系
+model zoom_org_role_user {
+  id       String   @id @default(uuid()) // 关联记录唯一标识
+  user_id  String // 用户ID
+  org_id   String // 组织ID
+  role_id  String // 角色ID
+  remark   String? // 关联备注信息
+  sys_user sys_user @relation(fields: [user_id], references: [id], onDelete: Cascade) // 关联用户（多对一）
+  sys_org  sys_org  @relation(fields: [org_id], references: [id], onDelete: Cascade) // 关联组织（多对一）
+  sys_role sys_role @relation(fields: [role_id], references: [id], onDelete: Cascade) // 关联角色（多对一）
+
+  @@unique([user_id, org_id, role_id]) // 确保用户在同一组织的同一角色只能有一条记录
+}
+
+// -- 创建用户菜单权限视图
+// CREATE VIEW user_menu_permissions AS
+// SELECT DISTINCT 
+//   oru.user_id,
+//   rm.menu_id,
+//   rm.actions
+// FROM zoom_org_role_user oru
+// INNER JOIN zoom_role_menu rm ON oru.role_id = rm.role_id;
+
+// // 用户菜单权限视图
+// model user_menu_permissions {
+//   user_id  String
+//   menu_id  String
+//   actions  String
+//   @@id([user_id, menu_id])
+// }
+
+
+// 表关系说明：
+// 1. 用户与组织角色关系（多对多）
+// sys_user ↔ zoom_org_role_user ↔ sys_org ↔ sys_role
+// 一个用户可以在多个组织中担任不同角色
+// 一个组织可以有多个用户担任不同角色
+// 通过 zoom_org_role_user 中间表维护关系
+// 2. 组织与角色关系（一对多）
+// sys_org → sys_role
+// 一个组织可以有多个角色
+// 每个角色属于一个组织
+// 3. 角色与菜单权限关系（多对多）
+// sys_role ↔ zoom_role_menu ↔ sys_menu
+// 一个角色可以有多个菜单权限
+// 一个菜单可以被多个角色访问
+// 通过 zoom_role_menu 中间表维护权限关系
+// 4. 组织自关联（一对多）
+// sys_org → sys_org（父子关系）
+// 一个组织可以有多个子组织
+// 一个组织只能有一个父组织
+// 5. 菜单自关联（一对多）
+// sys_menu → sys_menu（父子关系）
+// 一个菜单可以有多个子菜单
+// 一个菜单只能有一个父菜单
+
+// 我的用户(只是基本的数据,还有关联其他表)
+// let user_list = [
+//     { id: 'user_1', name: '许鹏', phone: '15160315110' },
+//     { id: 'user_2', name: '二狗', phone: '15160315002' },
+//     { id: 'user_3', name: '张三', phone: '15160315003' },
+//     { id: 'user_4', name: '李四', phone: '15160315004' },
+//     { id: 'user_5', name: '王五', phone: '15160315005' }
+// ]
+
+// 我的组织(只是基本的数据,还有关联其他表)
+// let org_list = [
+//     { id: 'org_1', name: '用户部',},
+//     { id: 'org_2', name: '技术部', },
+//     { id: 'org_3', name: '客服部', },
+//     { id: 'org_4', name: '财务部', },
+// ]
+
+// 我的角色(只是基本的数据,还有关联其他表)
+// let role_list = [
+//     { id: 'role_1001', name: '用户部一普通', parent_id: 'org_1' },
+//     { id: 'role_1002', name: '用户部一贵宾', parent_id: 'org_1' },
+//     { id: 'role_2001', name: '技术部一职员', parent_id: 'org_2' },
+//     { id: 'role_2002', name: '技术部一主管', parent_id: 'org_2' },
+//     { id: 'role_3001', name: '客服部一职员', parent_id: 'org_3' },
+//     { id: 'role_3002', name: '客服部一主管', parent_id: 'org_3' },
+//     { id: 'role_4001', name: '财务部一职员', parent_id: 'org_4' },
+//     { id: 'role_4002', name: '财务部一主管', parent_id: 'org_4' }
+// ]
+
+// 我的菜单(只是基本的数据,还有关联其他表)
+// let menu_list = [
+//     { id: 'menu_1', name: '首页'},
+//     { id: 'menu_2', name: '系统管理' },
+//     { id: 'menu_2001', name: '系统管理一用户管理'},
+//     { id: 'menu_2002', name: '系统管理一菜单管理' },
+//     { id: 'menu_2003', name: '系统管理一部门管理' },
+//     { id: 'menu_3', name: '商城管理' },
+//     { id: 'menu_3001', name: '商城管理一订单管理' },
+//     { id: 'menu_3002', name: '商城管理一商品管理' },
+//     { id: 'menu_3003', name: '商城管理一财务管理' },
+// ]
+
+// 角色对应的菜单
+// 用户部一普通  可以看到菜单   首页
+// 用户部一贵宾  可以看到菜单   首页
+// 技术部一职员  可以看到菜单   系统管理一用户管理  系统管理一菜单管理                       商城管理一订单管理  商城管理一商品管理
+// 技术部一主管  可以看到菜单   系统管理一用户管理  系统管理一菜单管理  系统管理一部门管理     商城管理一订单管理  商城管理一商品管理   商城管理一财务管理
+// 客服部一职员  可以看到菜单                                                             商城管理一订单管理
+// 客服部一主管  可以看到菜单   系统管理一用户管理                                         商城管理一订单管理  商城管理一商品管理
+// 财务部一职员  可以看到菜单                                                             商城管理一订单管理  商城管理一商品管理  商城管理一财务管理
+// 财务部一主管  可以看到菜单   系统管理一用户管理                                          商城管理一订单管理  商城管理一商品管理  商城管理一财务管理
+
+// 用户对于的角色
+// 用户:  许鹏 是:用户部一贵宾  技术部一主管  客服部一主管  财务部一主管
+// 用户:  二狗 是:用户部一贵宾  客服部一职员
+// 用户:  张三 是:用户部一贵宾  客服部一主管
+// 用户:  李四 是:用户部一贵宾  财务部一职员
+// 用户:  王五 是:用户部一贵宾  财务部一主管
+
+// prisma使用db对表进行操作
+// import { PrismaClient } from '@prisma/client'
+// const db = new PrismaClient()
+
+
+// 表 sys_user               的id 设置 "user_"开头     例如 "user_1"
+// 表 sys_org                的id 设置 "org_"开头     例如 "org_1"
+// 表 sys_role               的id 设置 "role_"开头     例如 "role_1"
+// 表 sys_menu               的id 设置 "menu_"开头     例如 "menu_1"
+// 表 zoom_role_menu         的id 设置 "zoom_role_menu_"开头     例如 "zoom_role_menu_1"
+// 表 zoom_org_role_user     的id 设置 "zoom_org_role_user_"开头     例如 "zoom_org_role_user_1"
+
+
+
+// 类似这个代码
+// db.sys_user.create({
+//   data: {
+//     id: 'user_1',
+//     name: '许鹏',
+//     phone: '15160315110',
+//     password: '123456',
+//     remark: '系统管理员',
+//   },
+// }),
+//帮格式化成一行代码
+// db.sys_user.create({ data: {id: 'user_1', name: '许鹏', phone: '15160315110', password: '123456', remark: '系统管理员',},}),
+
+
+
+
+
+
+
+
+
+
+
+// 帮我生产初始化数据,代码写在main.ts中
