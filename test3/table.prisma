@@ -84,6 +84,24 @@ model zoom_org_role_user {
   @@unique([user_id, org_id, role_id]) // 确保用户在同一组织的同一角色只能有一条记录
 }
 
+// -- 创建用户菜单权限视图
+// CREATE VIEW user_menu_permissions AS
+// SELECT DISTINCT 
+//   oru.user_id,
+//   rm.menu_id,
+//   rm.actions
+// FROM zoom_org_role_user oru
+// INNER JOIN zoom_role_menu rm ON oru.role_id = rm.role_id;
+
+// // 用户菜单权限视图
+// model user_menu_permissions {
+//   user_id  String
+//   menu_id  String
+//   actions  String
+//   @@id([user_id, menu_id])
+// }
+
+
 // 表关系说明：
 // 1. 用户与组织角色关系（多对多）
 // sys_user ↔ zoom_org_role_user ↔ sys_org ↔ sys_role

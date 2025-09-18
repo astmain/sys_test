@@ -138,6 +138,24 @@ async function init_data() {
 
     await Promise.all(user_org_role_relations.map((relation) => db.zoom_org_role_user.create({ data: { id: `zoom_org_role_user_${relation.user_id}_${relation.org_id}_${relation.role_id}`, user_id: relation.user_id, org_id: relation.org_id, role_id: relation.role_id, remark: `用户组织角色关系` } })))
 
+
+    // 删除用户菜单权限视图 `DROP VIEW IF EXISTS user_menu_permissions`
+    await db.$executeRawUnsafe(`DROP VIEW IF EXISTS user_menu_permissions`)
+
+
+    let aaa = `
+    CREATE VIEW user_menu_permissions AS
+    SELECT DISTINCT 
+      oru.user_id,
+      rm.menu_id,
+      rm.actions
+    FROM zoom_org_role_user oru
+    INNER JOIN zoom_role_menu rm ON oru.role_id = rm.role_id;
+`
+
+
+    await db.$executeRawUnsafe(aaa)
+
     console.log('数据初始化完成！')
     console.log(`创建了 ${users.length} 个用户`)
     console.log(`创建了 ${orgs.length} 个组织`)

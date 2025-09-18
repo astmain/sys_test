@@ -2,53 +2,23 @@ import { PrismaClient } from '@prisma/client'
 import fs from 'fs'
 
 const db = new PrismaClient()
-const user_id = 'user_1'
+const user_id = 'user_2'
 
 main()
 
 async function main() {
   try {
-    // 最简单的方案：分两步查询
-    // 第一步：获取用户有权限的菜单ID
-    const user_menu_ids = (await db.$queryRaw`
-      SELECT DISTINCT m.id
-      FROM sys_menu m
-      INNER JOIN zoom_role_menu rm ON m.id = rm.menu_id
-      INNER JOIN zoom_org_role_user oru ON rm.role_id = oru.role_id
-      WHERE oru.user_id = ${user_id}
-    `) as { id: string }[]
-
-    const menu_ids = user_menu_ids.map((m) => m.id)
-    console.log('用户权限菜单数量:', menu_ids.length)
-
-    // 第二步：获取这些菜单及其所有父级菜单
+    let aaa = await db.$queryRaw`SELECT * FROM user_menu_permissions WHERE user_id = ${user_id}` as any;
+    const all_menu_ids = aaa.map((item: any) => item.menu_id)
+    console.log(`111---222:`, all_menu_ids)
     const all_menus = await db.sys_menu.findMany({
-      where: {
-        OR: [{ id: { in: menu_ids } }, { children: { some: { id: { in: menu_ids } } } }],
-      },
-      include: {
-        zoom_role_menu: {
-          where: {
-            sys_role: {
-              zoom_org_role_user: {
-                some: { user_id },
-              },
-            },
-          },
-        },
-      },
+      where: { id: { in: [...all_menu_ids] } },
+
       orderBy: { sort_order: 'asc' },
     })
 
-    console.log('最终菜单数量:', all_menus.length)
+    console.log('最终查询到的菜单数量:', all_menus)
 
-    // 构建菜单树
-    const menu_tree = build_menu_tree(all_menus)
-
-    // 保存菜单树
-    const json_data = { all_menus: all_menus, menu_tree: menu_tree }
-    fs.writeFileSync(__dirname + '/data/main_find_menu_tree3.json', JSON.stringify(json_data, null, 2))
-    console.log('菜单树已保存到 data/main_find_menu_tree3.json')
   } catch (error) {
     console.error('查询菜单树时出现错误:', error)
   } finally {
