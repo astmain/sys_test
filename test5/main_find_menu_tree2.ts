@@ -38,7 +38,6 @@ async function get_all_ids({table_name, ids}: {table_name: string, ids: string[]
     // 测试递归SQL语句
     const recursive_sql = `
       WITH RECURSIVE menu_hierarchy AS (
-          -- 基础查询：获取所有menu_ids对应的菜单
           SELECT 
               id,
               parent_id,
@@ -48,14 +47,14 @@ async function get_all_ids({table_name, ids}: {table_name: string, ids: string[]
           
           UNION ALL
           
-          -- 递归查询：向上查找父级菜单
+
           SELECT 
               m.id,
               m.parent_id,
               mh.level + 1
           FROM ${table_name} m
           INNER JOIN menu_hierarchy mh ON m.id = mh.parent_id
-          WHERE mh.level < 10  -- 防止无限递归
+          WHERE mh.level < 10  
       )
       SELECT DISTINCT id
       FROM menu_hierarchy
