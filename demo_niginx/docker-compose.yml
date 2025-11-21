@@ -1,0 +1,19 @@
+services:
+  docker01_react:
+    container_name: docker01_react
+    image: nginx
+    restart: always
+    ports:
+      - "8001:80"
+    command: [ "nginx", "-g", "daemon off;" ]
+    volumes:
+      - ./react-3d/nginx/html/dist:/usr/share/nginx/html
+      - ./react-3d/nginx/logs:/var/log/nginx
+      # 可能需要手动复制
+      - ./react-3d/nginx/config:/etc/nginx/conf.d
+
+
+
+
+
+# sudo  docker compose  up -d

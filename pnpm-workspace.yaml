@@ -9,7 +9,7 @@ packages:
   - "test7"
   - "test8"
   - "test9"
-
+  - "demo_expressjs"
   # 工具 =====================================================
   - "Tools"
 #首次gitbash设置邮箱和用户名0

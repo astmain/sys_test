@@ -1,0 +1,1999 @@
+2025/07/22 03:01:24 [notice] 1#1: using the "epoll" event method
+2025/07/22 03:01:24 [notice] 1#1: nginx/1.27.1
+2025/07/22 03:01:24 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 03:01:24 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 03:01:24 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 03:01:24 [notice] 1#1: start worker processes
+2025/07/22 03:01:24 [notice] 1#1: start worker process 22
+2025/07/22 03:01:24 [notice] 1#1: start worker process 23
+2025/07/22 03:01:24 [notice] 1#1: start worker process 24
+2025/07/22 03:01:24 [notice] 1#1: start worker process 25
+2025/07/22 03:01:24 [notice] 1#1: start worker process 26
+2025/07/22 03:01:24 [notice] 1#1: start worker process 27
+2025/07/22 03:01:24 [notice] 1#1: start worker process 28
+2025/07/22 03:01:24 [notice] 1#1: start worker process 29
+2025/07/22 03:01:24 [notice] 1#1: start worker process 30
+2025/07/22 03:01:24 [notice] 1#1: start worker process 31
+2025/07/22 03:01:24 [notice] 1#1: start worker process 32
+2025/07/22 03:01:24 [notice] 1#1: start worker process 33
+2025/07/22 03:01:24 [notice] 1#1: start worker process 34
+2025/07/22 03:01:24 [notice] 1#1: start worker process 35
+2025/07/22 03:01:24 [notice] 1#1: start worker process 36
+2025/07/22 03:01:24 [notice] 1#1: start worker process 37
+2025/07/22 03:01:24 [notice] 1#1: start worker process 38
+2025/07/22 03:01:24 [notice] 1#1: start worker process 39
+2025/07/22 03:01:24 [notice] 1#1: start worker process 40
+2025/07/22 03:01:24 [notice] 1#1: start worker process 41
+2025/07/22 03:01:24 [notice] 1#1: start worker process 42
+2025/07/22 03:01:24 [notice] 1#1: start worker process 43
+2025/07/22 03:01:24 [notice] 1#1: start worker process 44
+2025/07/22 03:01:24 [notice] 1#1: start worker process 45
+2025/07/22 03:12:20 [notice] 1#1: using the "epoll" event method
+2025/07/22 03:12:20 [notice] 1#1: nginx/1.27.1
+2025/07/22 03:12:20 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 03:12:20 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 03:12:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 03:12:20 [notice] 1#1: start worker processes
+2025/07/22 03:12:20 [notice] 1#1: start worker process 21
+2025/07/22 03:12:20 [notice] 1#1: start worker process 22
+2025/07/22 03:12:20 [notice] 1#1: start worker process 23
+2025/07/22 03:12:20 [notice] 1#1: start worker process 24
+2025/07/22 03:12:20 [notice] 1#1: start worker process 25
+2025/07/22 03:12:20 [notice] 1#1: start worker process 26
+2025/07/22 03:12:20 [notice] 1#1: start worker process 27
+2025/07/22 03:12:20 [notice] 1#1: start worker process 28
+2025/07/22 03:12:20 [notice] 1#1: start worker process 29
+2025/07/22 03:12:20 [notice] 1#1: start worker process 30
+2025/07/22 03:12:20 [notice] 1#1: start worker process 31
+2025/07/22 03:12:20 [notice] 1#1: start worker process 32
+2025/07/22 03:12:20 [notice] 1#1: start worker process 33
+2025/07/22 03:12:20 [notice] 1#1: start worker process 34
+2025/07/22 03:12:20 [notice] 1#1: start worker process 35
+2025/07/22 03:12:20 [notice] 1#1: start worker process 36
+2025/07/22 03:12:20 [notice] 1#1: start worker process 37
+2025/07/22 03:12:20 [notice] 1#1: start worker process 38
+2025/07/22 03:12:20 [notice] 1#1: start worker process 39
+2025/07/22 03:12:20 [notice] 1#1: start worker process 40
+2025/07/22 03:12:20 [notice] 1#1: start worker process 41
+2025/07/22 03:12:20 [notice] 1#1: start worker process 42
+2025/07/22 03:12:20 [notice] 1#1: start worker process 43
+2025/07/22 03:12:20 [notice] 1#1: start worker process 44
+2025/07/22 03:14:25 [error] 28#28: *168 client intended to send too large body: 2097801 bytes, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 03:14:48 [error] 22#22: *416 client intended to send too large body: 2097801 bytes, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 03:21:40 [error] 30#30: *574 client intended to send too large body: 2097801 bytes, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 03:52:10 [notice] 1#1: using the "epoll" event method
+2025/07/22 03:52:10 [notice] 1#1: nginx/1.27.1
+2025/07/22 03:52:10 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 03:52:10 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 03:52:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 03:52:10 [notice] 1#1: start worker processes
+2025/07/22 03:52:10 [notice] 1#1: start worker process 22
+2025/07/22 03:52:10 [notice] 1#1: start worker process 23
+2025/07/22 03:52:10 [notice] 1#1: start worker process 24
+2025/07/22 03:52:10 [notice] 1#1: start worker process 25
+2025/07/22 03:52:10 [notice] 1#1: start worker process 26
+2025/07/22 03:52:10 [notice] 1#1: start worker process 27
+2025/07/22 03:52:10 [notice] 1#1: start worker process 28
+2025/07/22 03:52:10 [notice] 1#1: start worker process 29
+2025/07/22 03:52:10 [notice] 1#1: start worker process 30
+2025/07/22 03:52:10 [notice] 1#1: start worker process 31
+2025/07/22 03:52:10 [notice] 1#1: start worker process 32
+2025/07/22 03:52:10 [notice] 1#1: start worker process 33
+2025/07/22 03:52:10 [notice] 1#1: start worker process 34
+2025/07/22 03:52:10 [notice] 1#1: start worker process 35
+2025/07/22 03:52:10 [notice] 1#1: start worker process 36
+2025/07/22 03:52:10 [notice] 1#1: start worker process 37
+2025/07/22 03:52:10 [notice] 1#1: start worker process 38
+2025/07/22 03:52:10 [notice] 1#1: start worker process 39
+2025/07/22 03:52:10 [notice] 1#1: start worker process 40
+2025/07/22 03:52:10 [notice] 1#1: start worker process 41
+2025/07/22 03:52:10 [notice] 1#1: start worker process 42
+2025/07/22 03:52:10 [notice] 1#1: start worker process 43
+2025/07/22 03:52:10 [notice] 1#1: start worker process 44
+2025/07/22 03:52:10 [notice] 1#1: start worker process 45
+2025/07/22 03:52:59 [error] 34#34: *238 client intended to send too large body: 2097801 bytes, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 04:03:26 [error] 44#44: *396 client intended to send too large body: 2097801 bytes, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 04:06:41 [error] 30#30: *554 client intended to send too large body: 2097801 bytes, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 04:07:20 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/07/22 04:07:20 [notice] 22#22: gracefully shutting down
+2025/07/22 04:07:20 [notice] 25#25: gracefully shutting down
+2025/07/22 04:07:20 [notice] 23#23: gracefully shutting down
+2025/07/22 04:07:20 [notice] 27#27: gracefully shutting down
+2025/07/22 04:07:20 [notice] 26#26: gracefully shutting down
+2025/07/22 04:07:20 [notice] 28#28: gracefully shutting down
+2025/07/22 04:07:20 [notice] 30#30: gracefully shutting down
+2025/07/22 04:07:20 [notice] 22#22: exiting
+2025/07/22 04:07:20 [notice] 32#32: gracefully shutting down
+2025/07/22 04:07:20 [notice] 31#31: gracefully shutting down
+2025/07/22 04:07:20 [notice] 25#25: exiting
+2025/07/22 04:07:20 [notice] 24#24: gracefully shutting down
+2025/07/22 04:07:20 [notice] 33#33: gracefully shutting down
+2025/07/22 04:07:20 [notice] 23#23: exiting
+2025/07/22 04:07:20 [notice] 35#35: gracefully shutting down
+2025/07/22 04:07:20 [notice] 36#36: gracefully shutting down
+2025/07/22 04:07:20 [notice] 27#27: exiting
+2025/07/22 04:07:20 [notice] 29#29: gracefully shutting down
+2025/07/22 04:07:20 [notice] 39#39: gracefully shutting down
+2025/07/22 04:07:20 [notice] 34#34: gracefully shutting down
+2025/07/22 04:07:20 [notice] 26#26: exiting
+2025/07/22 04:07:20 [notice] 38#38: gracefully shutting down
+2025/07/22 04:07:20 [notice] 28#28: exiting
+2025/07/22 04:07:20 [notice] 30#30: exiting
+2025/07/22 04:07:20 [notice] 42#42: gracefully shutting down
+2025/07/22 04:07:20 [notice] 32#32: exiting
+2025/07/22 04:07:20 [notice] 37#37: gracefully shutting down
+2025/07/22 04:07:20 [notice] 31#31: exiting
+2025/07/22 04:07:20 [notice] 22#22: exit
+2025/07/22 04:07:20 [notice] 24#24: exiting
+2025/07/22 04:07:20 [notice] 33#33: exiting
+2025/07/22 04:07:20 [notice] 25#25: exit
+2025/07/22 04:07:20 [notice] 35#35: exiting
+2025/07/22 04:07:20 [notice] 36#36: exiting
+2025/07/22 04:07:20 [notice] 29#29: exiting
+2025/07/22 04:07:20 [notice] 23#23: exit
+2025/07/22 04:07:20 [notice] 39#39: exiting
+2025/07/22 04:07:20 [notice] 27#27: exit
+2025/07/22 04:07:20 [notice] 34#34: exiting
+2025/07/22 04:07:20 [notice] 38#38: exiting
+2025/07/22 04:07:20 [notice] 26#26: exit
+2025/07/22 04:07:20 [notice] 28#28: exit
+2025/07/22 04:07:20 [notice] 42#42: exiting
+2025/07/22 04:07:20 [notice] 30#30: exit
+2025/07/22 04:07:20 [notice] 37#37: exiting
+2025/07/22 04:07:20 [notice] 32#32: exit
+2025/07/22 04:07:20 [notice] 33#33: exit
+2025/07/22 04:07:20 [notice] 35#35: exit
+2025/07/22 04:07:20 [notice] 24#24: exit
+2025/07/22 04:07:20 [notice] 36#36: exit
+2025/07/22 04:07:20 [notice] 29#29: exit
+2025/07/22 04:07:20 [notice] 31#31: exit
+2025/07/22 04:07:20 [notice] 39#39: exit
+2025/07/22 04:07:20 [notice] 34#34: exit
+2025/07/22 04:07:20 [notice] 38#38: exit
+2025/07/22 04:07:20 [notice] 37#37: exit
+2025/07/22 04:07:20 [notice] 42#42: exit
+2025/07/22 04:07:20 [notice] 40#40: gracefully shutting down
+2025/07/22 04:07:20 [notice] 41#41: gracefully shutting down
+2025/07/22 04:07:20 [notice] 43#43: gracefully shutting down
+2025/07/22 04:07:20 [notice] 44#44: gracefully shutting down
+2025/07/22 04:07:20 [notice] 45#45: gracefully shutting down
+2025/07/22 04:07:20 [notice] 40#40: exiting
+2025/07/22 04:07:20 [notice] 41#41: exiting
+2025/07/22 04:07:20 [notice] 43#43: exiting
+2025/07/22 04:07:20 [notice] 44#44: exiting
+2025/07/22 04:07:20 [notice] 41#41: exit
+2025/07/22 04:07:20 [notice] 43#43: exit
+2025/07/22 04:07:20 [notice] 40#40: exit
+2025/07/22 04:07:20 [notice] 45#45: exiting
+2025/07/22 04:07:20 [notice] 44#44: exit
+2025/07/22 04:07:20 [notice] 45#45: exit
+2025/07/22 04:07:20 [notice] 1#1: signal 17 (SIGCHLD) received from 39
+2025/07/22 04:07:20 [notice] 1#1: worker process 35 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 39 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 23 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 04:07:20 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2025/07/22 04:07:20 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2025/07/22 04:07:20 [notice] 1#1: worker process 25 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 22 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 24 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 29 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 34 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 04:07:20 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2025/07/22 04:07:20 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2025/07/22 04:07:20 [notice] 1#1: worker process 26 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 27 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 28 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 30 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 32 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 37 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 38 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 33 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 40 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 43 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 31 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 42 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 36 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 41 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: worker process 44 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 04:07:20 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2025/07/22 04:07:20 [notice] 1#1: signal 17 (SIGCHLD) received from 45
+2025/07/22 04:07:20 [notice] 1#1: worker process 45 exited with code 0
+2025/07/22 04:07:20 [notice] 1#1: exit
+2025/07/22 04:07:21 [notice] 1#1: using the "epoll" event method
+2025/07/22 04:07:21 [notice] 1#1: nginx/1.27.1
+2025/07/22 04:07:21 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 04:07:21 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 04:07:21 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 04:07:21 [notice] 1#1: start worker processes
+2025/07/22 04:07:21 [notice] 1#1: start worker process 22
+2025/07/22 04:07:21 [notice] 1#1: start worker process 23
+2025/07/22 04:07:21 [notice] 1#1: start worker process 24
+2025/07/22 04:07:21 [notice] 1#1: start worker process 25
+2025/07/22 04:07:21 [notice] 1#1: start worker process 26
+2025/07/22 04:07:21 [notice] 1#1: start worker process 27
+2025/07/22 04:07:21 [notice] 1#1: start worker process 28
+2025/07/22 04:07:21 [notice] 1#1: start worker process 29
+2025/07/22 04:07:21 [notice] 1#1: start worker process 30
+2025/07/22 04:07:21 [notice] 1#1: start worker process 31
+2025/07/22 04:07:21 [notice] 1#1: start worker process 32
+2025/07/22 04:07:21 [notice] 1#1: start worker process 33
+2025/07/22 04:07:21 [notice] 1#1: start worker process 34
+2025/07/22 04:07:21 [notice] 1#1: start worker process 35
+2025/07/22 04:07:21 [notice] 1#1: start worker process 36
+2025/07/22 04:07:21 [notice] 1#1: start worker process 37
+2025/07/22 04:07:21 [notice] 1#1: start worker process 38
+2025/07/22 04:07:21 [notice] 1#1: start worker process 39
+2025/07/22 04:07:21 [notice] 1#1: start worker process 40
+2025/07/22 04:07:21 [notice] 1#1: start worker process 41
+2025/07/22 04:07:21 [notice] 1#1: start worker process 42
+2025/07/22 04:07:21 [notice] 1#1: start worker process 43
+2025/07/22 04:07:21 [notice] 1#1: start worker process 44
+2025/07/22 04:07:21 [notice] 1#1: start worker process 45
+2025/07/22 04:09:05 [notice] 1#1: using the "epoll" event method
+2025/07/22 04:09:05 [notice] 1#1: nginx/1.27.1
+2025/07/22 04:09:05 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 04:09:05 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 04:09:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 04:09:05 [notice] 1#1: start worker processes
+2025/07/22 04:09:05 [notice] 1#1: start worker process 22
+2025/07/22 04:09:05 [notice] 1#1: start worker process 23
+2025/07/22 04:09:05 [notice] 1#1: start worker process 24
+2025/07/22 04:09:05 [notice] 1#1: start worker process 25
+2025/07/22 04:09:05 [notice] 1#1: start worker process 26
+2025/07/22 04:09:05 [notice] 1#1: start worker process 27
+2025/07/22 04:09:05 [notice] 1#1: start worker process 28
+2025/07/22 04:09:05 [notice] 1#1: start worker process 29
+2025/07/22 04:09:05 [notice] 1#1: start worker process 30
+2025/07/22 04:09:05 [notice] 1#1: start worker process 31
+2025/07/22 04:09:05 [notice] 1#1: start worker process 32
+2025/07/22 04:09:05 [notice] 1#1: start worker process 33
+2025/07/22 04:09:05 [notice] 1#1: start worker process 34
+2025/07/22 04:09:05 [notice] 1#1: start worker process 35
+2025/07/22 04:09:05 [notice] 1#1: start worker process 36
+2025/07/22 04:09:05 [notice] 1#1: start worker process 37
+2025/07/22 04:09:05 [notice] 1#1: start worker process 38
+2025/07/22 04:09:05 [notice] 1#1: start worker process 39
+2025/07/22 04:09:05 [notice] 1#1: start worker process 40
+2025/07/22 04:09:05 [notice] 1#1: start worker process 41
+2025/07/22 04:09:05 [notice] 1#1: start worker process 42
+2025/07/22 04:09:05 [notice] 1#1: start worker process 43
+2025/07/22 04:09:05 [notice] 1#1: start worker process 44
+2025/07/22 04:09:05 [notice] 1#1: start worker process 45
+2025/07/22 04:09:35 [error] 37#37: *3730 client intended to send too large body: 2097801 bytes, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 04:11:31 [notice] 1#1: using the "epoll" event method
+2025/07/22 04:11:31 [notice] 1#1: nginx/1.27.1
+2025/07/22 04:11:31 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 04:11:31 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 04:11:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 04:11:31 [notice] 1#1: start worker processes
+2025/07/22 04:11:31 [notice] 1#1: start worker process 22
+2025/07/22 04:11:31 [notice] 1#1: start worker process 23
+2025/07/22 04:11:31 [notice] 1#1: start worker process 24
+2025/07/22 04:11:31 [notice] 1#1: start worker process 25
+2025/07/22 04:11:31 [notice] 1#1: start worker process 26
+2025/07/22 04:11:31 [notice] 1#1: start worker process 27
+2025/07/22 04:11:31 [notice] 1#1: start worker process 28
+2025/07/22 04:11:31 [notice] 1#1: start worker process 29
+2025/07/22 04:11:31 [notice] 1#1: start worker process 30
+2025/07/22 04:11:31 [notice] 1#1: start worker process 31
+2025/07/22 04:11:31 [notice] 1#1: start worker process 32
+2025/07/22 04:11:31 [notice] 1#1: start worker process 33
+2025/07/22 04:11:31 [notice] 1#1: start worker process 34
+2025/07/22 04:11:31 [notice] 1#1: start worker process 35
+2025/07/22 04:11:31 [notice] 1#1: start worker process 36
+2025/07/22 04:11:31 [notice] 1#1: start worker process 37
+2025/07/22 04:11:31 [notice] 1#1: start worker process 38
+2025/07/22 04:11:31 [notice] 1#1: start worker process 39
+2025/07/22 04:11:31 [notice] 1#1: start worker process 40
+2025/07/22 04:11:31 [notice] 1#1: start worker process 41
+2025/07/22 04:11:31 [notice] 1#1: start worker process 42
+2025/07/22 04:11:31 [notice] 1#1: start worker process 43
+2025/07/22 04:11:31 [notice] 1#1: start worker process 44
+2025/07/22 04:11:31 [notice] 1#1: start worker process 45
+2025/07/22 06:14:28 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:14:28 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:14:28 [notice] 1#1: using the "epoll" event method
+2025/07/22 06:14:28 [notice] 1#1: nginx/1.27.1
+2025/07/22 06:14:28 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 06:14:28 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 06:14:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 06:14:28 [notice] 1#1: start worker processes
+2025/07/22 06:14:28 [notice] 1#1: start worker process 22
+2025/07/22 06:14:28 [notice] 1#1: start worker process 23
+2025/07/22 06:14:28 [notice] 1#1: start worker process 24
+2025/07/22 06:14:28 [notice] 1#1: start worker process 25
+2025/07/22 06:14:28 [notice] 1#1: start worker process 26
+2025/07/22 06:14:28 [notice] 1#1: start worker process 27
+2025/07/22 06:14:28 [notice] 1#1: start worker process 28
+2025/07/22 06:14:28 [notice] 1#1: start worker process 29
+2025/07/22 06:14:28 [notice] 1#1: start worker process 30
+2025/07/22 06:14:28 [notice] 1#1: start worker process 31
+2025/07/22 06:14:28 [notice] 1#1: start worker process 32
+2025/07/22 06:14:28 [notice] 1#1: start worker process 33
+2025/07/22 06:14:28 [notice] 1#1: start worker process 34
+2025/07/22 06:14:28 [notice] 1#1: start worker process 35
+2025/07/22 06:14:28 [notice] 1#1: start worker process 36
+2025/07/22 06:14:28 [notice] 1#1: start worker process 37
+2025/07/22 06:14:28 [notice] 1#1: start worker process 38
+2025/07/22 06:14:28 [notice] 1#1: start worker process 39
+2025/07/22 06:14:28 [notice] 1#1: start worker process 40
+2025/07/22 06:14:28 [notice] 1#1: start worker process 41
+2025/07/22 06:14:28 [notice] 1#1: start worker process 42
+2025/07/22 06:14:28 [notice] 1#1: start worker process 43
+2025/07/22 06:14:28 [notice] 1#1: start worker process 44
+2025/07/22 06:14:28 [notice] 1#1: start worker process 45
+2025/07/22 06:15:43 [warn] 29#29: *158 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000001, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 06:16:43 [error] 29#29: *158 upstream timed out (110: Connection timed out) while connecting to upstream, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", upstream: "http://192.168.0.250:7001/file/3dUpload", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 06:16:43 [error] 29#29: *158 open() "/usr/share/nginx/html/50x.html" failed (2: No such file or directory), client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", upstream: "http://192.168.0.250:7001/file/3dUpload", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 06:17:06 [warn] 40#40: *317 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000002, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 06:18:07 [error] 40#40: *317 upstream timed out (110: Connection timed out) while connecting to upstream, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", upstream: "http://192.168.0.250:7001/file/3dUpload", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 06:18:07 [error] 40#40: *317 open() "/usr/share/nginx/html/50x.html" failed (2: No such file or directory), client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", upstream: "http://192.168.0.250:7001/file/3dUpload", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 06:20:17 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:20:17 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:20:17 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:20:17 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:20:17 [notice] 1#1: using the "epoll" event method
+2025/07/22 06:20:17 [notice] 1#1: nginx/1.27.1
+2025/07/22 06:20:17 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 06:20:17 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 06:20:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 06:20:17 [notice] 1#1: start worker processes
+2025/07/22 06:20:17 [notice] 1#1: start worker process 22
+2025/07/22 06:20:17 [notice] 1#1: start worker process 23
+2025/07/22 06:20:17 [notice] 1#1: start worker process 24
+2025/07/22 06:20:17 [notice] 1#1: start worker process 25
+2025/07/22 06:20:17 [notice] 1#1: start worker process 26
+2025/07/22 06:20:17 [notice] 1#1: start worker process 27
+2025/07/22 06:20:17 [notice] 1#1: start worker process 28
+2025/07/22 06:20:17 [notice] 1#1: start worker process 29
+2025/07/22 06:20:17 [notice] 1#1: start worker process 30
+2025/07/22 06:20:17 [notice] 1#1: start worker process 31
+2025/07/22 06:20:17 [notice] 1#1: start worker process 32
+2025/07/22 06:20:17 [notice] 1#1: start worker process 33
+2025/07/22 06:20:17 [notice] 1#1: start worker process 34
+2025/07/22 06:20:17 [notice] 1#1: start worker process 35
+2025/07/22 06:20:17 [notice] 1#1: start worker process 36
+2025/07/22 06:20:17 [notice] 1#1: start worker process 37
+2025/07/22 06:20:17 [notice] 1#1: start worker process 38
+2025/07/22 06:20:17 [notice] 1#1: start worker process 39
+2025/07/22 06:20:17 [notice] 1#1: start worker process 40
+2025/07/22 06:20:17 [notice] 1#1: start worker process 41
+2025/07/22 06:20:17 [notice] 1#1: start worker process 42
+2025/07/22 06:20:17 [notice] 1#1: start worker process 43
+2025/07/22 06:20:17 [notice] 1#1: start worker process 44
+2025/07/22 06:20:17 [notice] 1#1: start worker process 45
+2025/07/22 06:25:59 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/07/22 06:25:59 [notice] 22#22: gracefully shutting down
+2025/07/22 06:25:59 [notice] 23#23: gracefully shutting down
+2025/07/22 06:25:59 [notice] 26#26: gracefully shutting down
+2025/07/22 06:25:59 [notice] 24#24: gracefully shutting down
+2025/07/22 06:25:59 [notice] 25#25: gracefully shutting down
+2025/07/22 06:25:59 [notice] 27#27: gracefully shutting down
+2025/07/22 06:25:59 [notice] 28#28: gracefully shutting down
+2025/07/22 06:25:59 [notice] 29#29: gracefully shutting down
+2025/07/22 06:25:59 [notice] 22#22: exiting
+2025/07/22 06:25:59 [notice] 23#23: exiting
+2025/07/22 06:25:59 [notice] 33#33: gracefully shutting down
+2025/07/22 06:25:59 [notice] 32#32: gracefully shutting down
+2025/07/22 06:25:59 [notice] 34#34: gracefully shutting down
+2025/07/22 06:25:59 [notice] 26#26: exiting
+2025/07/22 06:25:59 [notice] 35#35: gracefully shutting down
+2025/07/22 06:25:59 [notice] 37#37: gracefully shutting down
+2025/07/22 06:25:59 [notice] 24#24: exiting
+2025/07/22 06:25:59 [notice] 25#25: exiting
+2025/07/22 06:25:59 [notice] 31#31: gracefully shutting down
+2025/07/22 06:25:59 [notice] 30#30: gracefully shutting down
+2025/07/22 06:25:59 [notice] 38#38: gracefully shutting down
+2025/07/22 06:25:59 [notice] 27#27: exiting
+2025/07/22 06:25:59 [notice] 39#39: gracefully shutting down
+2025/07/22 06:25:59 [notice] 28#28: exiting
+2025/07/22 06:25:59 [notice] 29#29: exiting
+2025/07/22 06:25:59 [notice] 33#33: exiting
+2025/07/22 06:25:59 [notice] 32#32: exiting
+2025/07/22 06:25:59 [notice] 34#34: exiting
+2025/07/22 06:25:59 [notice] 23#23: exit
+2025/07/22 06:25:59 [notice] 22#22: exit
+2025/07/22 06:25:59 [notice] 35#35: exiting
+2025/07/22 06:25:59 [notice] 26#26: exit
+2025/07/22 06:25:59 [notice] 37#37: exiting
+2025/07/22 06:25:59 [notice] 45#45: gracefully shutting down
+2025/07/22 06:25:59 [notice] 31#31: exiting
+2025/07/22 06:25:59 [notice] 30#30: exiting
+2025/07/22 06:25:59 [notice] 38#38: exiting
+2025/07/22 06:25:59 [notice] 25#25: exit
+2025/07/22 06:25:59 [notice] 39#39: exiting
+2025/07/22 06:25:59 [notice] 24#24: exit
+2025/07/22 06:25:59 [notice] 27#27: exit
+2025/07/22 06:25:59 [notice] 45#45: exiting
+2025/07/22 06:25:59 [notice] 28#28: exit
+2025/07/22 06:25:59 [notice] 29#29: exit
+2025/07/22 06:25:59 [notice] 32#32: exit
+2025/07/22 06:25:59 [notice] 34#34: exit
+2025/07/22 06:25:59 [notice] 33#33: exit
+2025/07/22 06:25:59 [notice] 37#37: exit
+2025/07/22 06:25:59 [notice] 35#35: exit
+2025/07/22 06:25:59 [notice] 38#38: exit
+2025/07/22 06:25:59 [notice] 30#30: exit
+2025/07/22 06:25:59 [notice] 31#31: exit
+2025/07/22 06:25:59 [notice] 39#39: exit
+2025/07/22 06:25:59 [notice] 45#45: exit
+2025/07/22 06:25:59 [notice] 40#40: gracefully shutting down
+2025/07/22 06:25:59 [notice] 43#43: gracefully shutting down
+2025/07/22 06:25:59 [notice] 40#40: exiting
+2025/07/22 06:25:59 [notice] 43#43: exiting
+2025/07/22 06:25:59 [notice] 43#43: exit
+2025/07/22 06:25:59 [notice] 40#40: exit
+2025/07/22 06:25:59 [notice] 36#36: gracefully shutting down
+2025/07/22 06:25:59 [notice] 41#41: gracefully shutting down
+2025/07/22 06:25:59 [notice] 36#36: exiting
+2025/07/22 06:25:59 [notice] 41#41: exiting
+2025/07/22 06:25:59 [notice] 36#36: exit
+2025/07/22 06:25:59 [notice] 41#41: exit
+2025/07/22 06:25:59 [notice] 44#44: gracefully shutting down
+2025/07/22 06:25:59 [notice] 42#42: gracefully shutting down
+2025/07/22 06:25:59 [notice] 44#44: exiting
+2025/07/22 06:25:59 [notice] 42#42: exiting
+2025/07/22 06:25:59 [notice] 44#44: exit
+2025/07/22 06:25:59 [notice] 42#42: exit
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2025/07/22 06:25:59 [notice] 1#1: worker process 23 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 27 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 28 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 34 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2025/07/22 06:25:59 [notice] 1#1: worker process 35 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 30 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 31 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2025/07/22 06:25:59 [notice] 1#1: worker process 29 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 37 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 39 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 40 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 43 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 43
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2025/07/22 06:25:59 [notice] 1#1: worker process 32 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 22 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 36 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 33 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 41
+2025/07/22 06:25:59 [notice] 1#1: worker process 41 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 25 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 38 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 42 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 24 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 42
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2025/07/22 06:25:59 [notice] 1#1: worker process 26 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: worker process 44 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 44
+2025/07/22 06:25:59 [notice] 1#1: signal 17 (SIGCHLD) received from 45
+2025/07/22 06:25:59 [notice] 1#1: worker process 45 exited with code 0
+2025/07/22 06:25:59 [notice] 1#1: exit
+2025/07/22 06:26:00 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:26:00 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:26:00 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:26:00 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:26:00 [notice] 1#1: using the "epoll" event method
+2025/07/22 06:26:00 [notice] 1#1: nginx/1.27.1
+2025/07/22 06:26:00 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 06:26:00 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 06:26:00 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 06:26:00 [notice] 1#1: start worker processes
+2025/07/22 06:26:00 [notice] 1#1: start worker process 22
+2025/07/22 06:26:00 [notice] 1#1: start worker process 23
+2025/07/22 06:26:00 [notice] 1#1: start worker process 24
+2025/07/22 06:26:00 [notice] 1#1: start worker process 25
+2025/07/22 06:26:00 [notice] 1#1: start worker process 26
+2025/07/22 06:26:00 [notice] 1#1: start worker process 27
+2025/07/22 06:26:00 [notice] 1#1: start worker process 28
+2025/07/22 06:26:00 [notice] 1#1: start worker process 29
+2025/07/22 06:26:00 [notice] 1#1: start worker process 30
+2025/07/22 06:26:00 [notice] 1#1: start worker process 31
+2025/07/22 06:26:00 [notice] 1#1: start worker process 32
+2025/07/22 06:26:00 [notice] 1#1: start worker process 33
+2025/07/22 06:26:00 [notice] 1#1: start worker process 34
+2025/07/22 06:26:00 [notice] 1#1: start worker process 35
+2025/07/22 06:26:00 [notice] 1#1: start worker process 36
+2025/07/22 06:26:00 [notice] 1#1: start worker process 37
+2025/07/22 06:26:00 [notice] 1#1: start worker process 38
+2025/07/22 06:26:00 [notice] 1#1: start worker process 39
+2025/07/22 06:26:00 [notice] 1#1: start worker process 40
+2025/07/22 06:26:00 [notice] 1#1: start worker process 41
+2025/07/22 06:26:00 [notice] 1#1: start worker process 42
+2025/07/22 06:26:00 [notice] 1#1: start worker process 43
+2025/07/22 06:26:00 [notice] 1#1: start worker process 44
+2025/07/22 06:26:00 [notice] 1#1: start worker process 45
+2025/07/22 06:26:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/07/22 06:26:02 [notice] 26#26: gracefully shutting down
+2025/07/22 06:26:02 [notice] 23#23: gracefully shutting down
+2025/07/22 06:26:02 [notice] 22#22: gracefully shutting down
+2025/07/22 06:26:02 [notice] 24#24: gracefully shutting down
+2025/07/22 06:26:02 [notice] 25#25: gracefully shutting down
+2025/07/22 06:26:02 [notice] 29#29: gracefully shutting down
+2025/07/22 06:26:02 [notice] 27#27: gracefully shutting down
+2025/07/22 06:26:02 [notice] 28#28: gracefully shutting down
+2025/07/22 06:26:02 [notice] 30#30: gracefully shutting down
+2025/07/22 06:26:02 [notice] 33#33: gracefully shutting down
+2025/07/22 06:26:02 [notice] 32#32: gracefully shutting down
+2025/07/22 06:26:02 [notice] 26#26: exiting
+2025/07/22 06:26:02 [notice] 34#34: gracefully shutting down
+2025/07/22 06:26:02 [notice] 31#31: gracefully shutting down
+2025/07/22 06:26:02 [notice] 23#23: exiting
+2025/07/22 06:26:02 [notice] 35#35: gracefully shutting down
+2025/07/22 06:26:02 [notice] 22#22: exiting
+2025/07/22 06:26:02 [notice] 38#38: gracefully shutting down
+2025/07/22 06:26:02 [notice] 24#24: exiting
+2025/07/22 06:26:02 [notice] 25#25: exiting
+2025/07/22 06:26:02 [notice] 29#29: exiting
+2025/07/22 06:26:02 [notice] 27#27: exiting
+2025/07/22 06:26:02 [notice] 28#28: exiting
+2025/07/22 06:26:02 [notice] 30#30: exiting
+2025/07/22 06:26:02 [notice] 33#33: exiting
+2025/07/22 06:26:02 [notice] 32#32: exiting
+2025/07/22 06:26:02 [notice] 34#34: exiting
+2025/07/22 06:26:02 [notice] 31#31: exiting
+2025/07/22 06:26:02 [notice] 35#35: exiting
+2025/07/22 06:26:02 [notice] 38#38: exiting
+2025/07/22 06:26:02 [notice] 29#29: exit
+2025/07/22 06:26:02 [notice] 22#22: exit
+2025/07/22 06:26:02 [notice] 27#27: exit
+2025/07/22 06:26:02 [notice] 33#33: exit
+2025/07/22 06:26:02 [notice] 30#30: exit
+2025/07/22 06:26:02 [notice] 25#25: exit
+2025/07/22 06:26:02 [notice] 32#32: exit
+2025/07/22 06:26:02 [notice] 28#28: exit
+2025/07/22 06:26:02 [notice] 35#35: exit
+2025/07/22 06:26:02 [notice] 38#38: exit
+2025/07/22 06:26:02 [notice] 31#31: exit
+2025/07/22 06:26:02 [notice] 23#23: exit
+2025/07/22 06:26:02 [notice] 34#34: exit
+2025/07/22 06:26:02 [notice] 45#45: gracefully shutting down
+2025/07/22 06:26:02 [notice] 45#45: exiting
+2025/07/22 06:26:02 [notice] 42#42: gracefully shutting down
+2025/07/22 06:26:02 [notice] 42#42: exiting
+2025/07/22 06:26:02 [notice] 41#41: gracefully shutting down
+2025/07/22 06:26:02 [notice] 45#45: exit
+2025/07/22 06:26:02 [notice] 41#41: exiting
+2025/07/22 06:26:02 [notice] 42#42: exit
+2025/07/22 06:26:02 [notice] 41#41: exit
+2025/07/22 06:26:02 [notice] 44#44: gracefully shutting down
+2025/07/22 06:26:02 [notice] 44#44: exiting
+2025/07/22 06:26:02 [notice] 44#44: exit
+2025/07/22 06:26:02 [notice] 39#39: gracefully shutting down
+2025/07/22 06:26:02 [notice] 39#39: exiting
+2025/07/22 06:26:02 [notice] 39#39: exit
+2025/07/22 06:26:02 [notice] 37#37: gracefully shutting down
+2025/07/22 06:26:02 [notice] 24#24: exit
+2025/07/22 06:26:02 [notice] 43#43: gracefully shutting down
+2025/07/22 06:26:02 [notice] 37#37: exiting
+2025/07/22 06:26:02 [notice] 43#43: exiting
+2025/07/22 06:26:02 [notice] 37#37: exit
+2025/07/22 06:26:02 [notice] 43#43: exit
+2025/07/22 06:26:02 [notice] 26#26: exit
+2025/07/22 06:26:02 [notice] 40#40: gracefully shutting down
+2025/07/22 06:26:02 [notice] 40#40: exiting
+2025/07/22 06:26:02 [notice] 36#36: gracefully shutting down
+2025/07/22 06:26:02 [notice] 40#40: exit
+2025/07/22 06:26:02 [notice] 36#36: exiting
+2025/07/22 06:26:02 [notice] 36#36: exit
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2025/07/22 06:26:02 [notice] 1#1: worker process 28 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 29 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 34 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 38 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2025/07/22 06:26:02 [notice] 1#1: worker process 33 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 39
+2025/07/22 06:26:02 [notice] 1#1: worker process 39 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2025/07/22 06:26:02 [notice] 1#1: worker process 22 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 23 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 24 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 31 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 25 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 40 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 45 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/07/22 06:26:02 [notice] 1#1: worker process 35 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 36 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2025/07/22 06:26:02 [notice] 1#1: worker process 32 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2025/07/22 06:26:02 [notice] 1#1: worker process 37 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 27 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 41 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 41
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 42
+2025/07/22 06:26:02 [notice] 1#1: worker process 42 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2025/07/22 06:26:02 [notice] 1#1: worker process 30 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 44
+2025/07/22 06:26:02 [notice] 1#1: worker process 26 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: worker process 44 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2025/07/22 06:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 43
+2025/07/22 06:26:02 [notice] 1#1: worker process 43 exited with code 0
+2025/07/22 06:26:02 [notice] 1#1: exit
+2025/07/22 06:26:02 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:26:02 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:26:02 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:26:02 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:26:02 [notice] 1#1: using the "epoll" event method
+2025/07/22 06:26:02 [notice] 1#1: nginx/1.27.1
+2025/07/22 06:26:02 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 06:26:02 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 06:26:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 06:26:02 [notice] 1#1: start worker processes
+2025/07/22 06:26:02 [notice] 1#1: start worker process 22
+2025/07/22 06:26:02 [notice] 1#1: start worker process 23
+2025/07/22 06:26:02 [notice] 1#1: start worker process 24
+2025/07/22 06:26:02 [notice] 1#1: start worker process 25
+2025/07/22 06:26:02 [notice] 1#1: start worker process 26
+2025/07/22 06:26:02 [notice] 1#1: start worker process 27
+2025/07/22 06:26:02 [notice] 1#1: start worker process 28
+2025/07/22 06:26:02 [notice] 1#1: start worker process 29
+2025/07/22 06:26:02 [notice] 1#1: start worker process 30
+2025/07/22 06:26:02 [notice] 1#1: start worker process 31
+2025/07/22 06:26:02 [notice] 1#1: start worker process 32
+2025/07/22 06:26:02 [notice] 1#1: start worker process 33
+2025/07/22 06:26:02 [notice] 1#1: start worker process 34
+2025/07/22 06:26:02 [notice] 1#1: start worker process 35
+2025/07/22 06:26:02 [notice] 1#1: start worker process 36
+2025/07/22 06:26:02 [notice] 1#1: start worker process 37
+2025/07/22 06:26:02 [notice] 1#1: start worker process 38
+2025/07/22 06:26:02 [notice] 1#1: start worker process 39
+2025/07/22 06:26:02 [notice] 1#1: start worker process 40
+2025/07/22 06:26:02 [notice] 1#1: start worker process 41
+2025/07/22 06:26:02 [notice] 1#1: start worker process 42
+2025/07/22 06:26:02 [notice] 1#1: start worker process 43
+2025/07/22 06:26:02 [notice] 1#1: start worker process 44
+2025/07/22 06:26:02 [notice] 1#1: start worker process 45
+2025/07/22 06:26:04 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/07/22 06:26:04 [notice] 22#22: gracefully shutting down
+2025/07/22 06:26:04 [notice] 22#22: exiting
+2025/07/22 06:26:04 [notice] 38#38: gracefully shutting down
+2025/07/22 06:26:04 [notice] 43#43: gracefully shutting down
+2025/07/22 06:26:04 [notice] 23#23: gracefully shutting down
+2025/07/22 06:26:04 [notice] 38#38: exiting
+2025/07/22 06:26:04 [notice] 43#43: exiting
+2025/07/22 06:26:04 [notice] 23#23: exiting
+2025/07/22 06:26:04 [notice] 22#22: exit
+2025/07/22 06:26:04 [notice] 24#24: gracefully shutting down
+2025/07/22 06:26:04 [notice] 27#27: gracefully shutting down
+2025/07/22 06:26:04 [notice] 28#28: gracefully shutting down
+2025/07/22 06:26:04 [notice] 35#35: gracefully shutting down
+2025/07/22 06:26:04 [notice] 25#25: gracefully shutting down
+2025/07/22 06:26:04 [notice] 29#29: gracefully shutting down
+2025/07/22 06:26:04 [notice] 43#43: exit
+2025/07/22 06:26:04 [notice] 24#24: exiting
+2025/07/22 06:26:04 [notice] 27#27: exiting
+2025/07/22 06:26:04 [notice] 23#23: exit
+2025/07/22 06:26:04 [notice] 28#28: exiting
+2025/07/22 06:26:04 [notice] 35#35: exiting
+2025/07/22 06:26:04 [notice] 25#25: exiting
+2025/07/22 06:26:04 [notice] 29#29: exiting
+2025/07/22 06:26:04 [notice] 24#24: exit
+2025/07/22 06:26:04 [notice] 38#38: exit
+2025/07/22 06:26:04 [notice] 27#27: exit
+2025/07/22 06:26:04 [notice] 25#25: exit
+2025/07/22 06:26:04 [notice] 35#35: exit
+2025/07/22 06:26:04 [notice] 28#28: exit
+2025/07/22 06:26:04 [notice] 29#29: exit
+2025/07/22 06:26:04 [notice] 26#26: gracefully shutting down
+2025/07/22 06:26:04 [notice] 45#45: gracefully shutting down
+2025/07/22 06:26:04 [notice] 26#26: exiting
+2025/07/22 06:26:04 [notice] 45#45: exiting
+2025/07/22 06:26:04 [notice] 26#26: exit
+2025/07/22 06:26:04 [notice] 45#45: exit
+2025/07/22 06:26:04 [notice] 30#30: gracefully shutting down
+2025/07/22 06:26:04 [notice] 30#30: exiting
+2025/07/22 06:26:04 [notice] 30#30: exit
+2025/07/22 06:26:04 [notice] 33#33: gracefully shutting down
+2025/07/22 06:26:04 [notice] 34#34: gracefully shutting down
+2025/07/22 06:26:04 [notice] 32#32: gracefully shutting down
+2025/07/22 06:26:04 [notice] 33#33: exiting
+2025/07/22 06:26:04 [notice] 34#34: exiting
+2025/07/22 06:26:04 [notice] 32#32: exiting
+2025/07/22 06:26:04 [notice] 36#36: gracefully shutting down
+2025/07/22 06:26:04 [notice] 37#37: gracefully shutting down
+2025/07/22 06:26:04 [notice] 33#33: exit
+2025/07/22 06:26:04 [notice] 36#36: exiting
+2025/07/22 06:26:04 [notice] 34#34: exit
+2025/07/22 06:26:04 [notice] 37#37: exiting
+2025/07/22 06:26:04 [notice] 39#39: gracefully shutting down
+2025/07/22 06:26:04 [notice] 32#32: exit
+2025/07/22 06:26:04 [notice] 39#39: exiting
+2025/07/22 06:26:04 [notice] 36#36: exit
+2025/07/22 06:26:04 [notice] 39#39: exit
+2025/07/22 06:26:04 [notice] 37#37: exit
+2025/07/22 06:26:04 [notice] 31#31: gracefully shutting down
+2025/07/22 06:26:04 [notice] 31#31: exiting
+2025/07/22 06:26:04 [notice] 31#31: exit
+2025/07/22 06:26:04 [notice] 40#40: gracefully shutting down
+2025/07/22 06:26:04 [notice] 40#40: exiting
+2025/07/22 06:26:04 [notice] 40#40: exit
+2025/07/22 06:26:04 [notice] 41#41: gracefully shutting down
+2025/07/22 06:26:04 [notice] 41#41: exiting
+2025/07/22 06:26:04 [notice] 41#41: exit
+2025/07/22 06:26:04 [notice] 44#44: gracefully shutting down
+2025/07/22 06:26:04 [notice] 42#42: gracefully shutting down
+2025/07/22 06:26:04 [notice] 44#44: exiting
+2025/07/22 06:26:04 [notice] 42#42: exiting
+2025/07/22 06:26:04 [notice] 44#44: exit
+2025/07/22 06:26:04 [notice] 42#42: exit
+2025/07/22 06:26:04 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2025/07/22 06:26:04 [notice] 1#1: worker process 29 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:04 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2025/07/22 06:26:04 [notice] 1#1: worker process 24 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 25 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:04 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2025/07/22 06:26:04 [notice] 1#1: worker process 28 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 30 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 37 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 38 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 39 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 43 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:04 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2025/07/22 06:26:04 [notice] 1#1: worker process 26 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 44 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:04 [notice] 1#1: signal 17 (SIGCHLD) received from 40
+2025/07/22 06:26:04 [notice] 1#1: worker process 40 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:04 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2025/07/22 06:26:04 [notice] 1#1: worker process 36 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 22 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 45 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:04 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/07/22 06:26:04 [notice] 1#1: worker process 32 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 33 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:04 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/07/22 06:26:04 [notice] 1#1: worker process 23 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/22 06:26:04 [notice] 1#1: signal 17 (SIGCHLD) received from 42
+2025/07/22 06:26:04 [notice] 1#1: worker process 27 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 34 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 35 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 41 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: worker process 42 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2025/07/22 06:26:04 [notice] 1#1: worker process 31 exited with code 0
+2025/07/22 06:26:04 [notice] 1#1: exit
+2025/07/22 06:26:04 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:26:04 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:26:04 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:26:04 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:26:04 [notice] 1#1: using the "epoll" event method
+2025/07/22 06:26:04 [notice] 1#1: nginx/1.27.1
+2025/07/22 06:26:04 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 06:26:04 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 06:26:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 06:26:04 [notice] 1#1: start worker processes
+2025/07/22 06:26:04 [notice] 1#1: start worker process 22
+2025/07/22 06:26:04 [notice] 1#1: start worker process 23
+2025/07/22 06:26:04 [notice] 1#1: start worker process 24
+2025/07/22 06:26:04 [notice] 1#1: start worker process 25
+2025/07/22 06:26:04 [notice] 1#1: start worker process 26
+2025/07/22 06:26:04 [notice] 1#1: start worker process 27
+2025/07/22 06:26:04 [notice] 1#1: start worker process 28
+2025/07/22 06:26:04 [notice] 1#1: start worker process 29
+2025/07/22 06:26:04 [notice] 1#1: start worker process 30
+2025/07/22 06:26:04 [notice] 1#1: start worker process 31
+2025/07/22 06:26:04 [notice] 1#1: start worker process 32
+2025/07/22 06:26:04 [notice] 1#1: start worker process 33
+2025/07/22 06:26:04 [notice] 1#1: start worker process 34
+2025/07/22 06:26:04 [notice] 1#1: start worker process 35
+2025/07/22 06:26:04 [notice] 1#1: start worker process 36
+2025/07/22 06:26:04 [notice] 1#1: start worker process 37
+2025/07/22 06:26:04 [notice] 1#1: start worker process 38
+2025/07/22 06:26:04 [notice] 1#1: start worker process 39
+2025/07/22 06:26:04 [notice] 1#1: start worker process 40
+2025/07/22 06:26:04 [notice] 1#1: start worker process 41
+2025/07/22 06:26:04 [notice] 1#1: start worker process 42
+2025/07/22 06:26:04 [notice] 1#1: start worker process 43
+2025/07/22 06:26:04 [notice] 1#1: start worker process 44
+2025/07/22 06:26:04 [notice] 1#1: start worker process 45
+2025/07/22 06:26:26 [error] 29#29: *158 client intended to send too large body: 2097801 bytes, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 06:26:49 [error] 38#38: *316 client intended to send too large body: 2097801 bytes, client: 192.168.80.1, server: localhost, request: "POST /api/file/3dUpload HTTP/1.1", host: "react.yun3d.com", referrer: "https://react.yun3d.com/print"
+2025/07/22 06:43:17 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:43:17 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:43:17 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:43:17 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:43:17 [notice] 1#1: using the "epoll" event method
+2025/07/22 06:43:17 [notice] 1#1: nginx/1.27.1
+2025/07/22 06:43:17 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 06:43:17 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 06:43:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 06:43:17 [notice] 1#1: start worker processes
+2025/07/22 06:43:17 [notice] 1#1: start worker process 22
+2025/07/22 06:43:17 [notice] 1#1: start worker process 23
+2025/07/22 06:43:17 [notice] 1#1: start worker process 24
+2025/07/22 06:43:17 [notice] 1#1: start worker process 25
+2025/07/22 06:43:17 [notice] 1#1: start worker process 26
+2025/07/22 06:43:17 [notice] 1#1: start worker process 27
+2025/07/22 06:43:17 [notice] 1#1: start worker process 28
+2025/07/22 06:43:17 [notice] 1#1: start worker process 29
+2025/07/22 06:43:17 [notice] 1#1: start worker process 30
+2025/07/22 06:43:17 [notice] 1#1: start worker process 31
+2025/07/22 06:43:17 [notice] 1#1: start worker process 32
+2025/07/22 06:43:17 [notice] 1#1: start worker process 33
+2025/07/22 06:43:17 [notice] 1#1: start worker process 34
+2025/07/22 06:43:17 [notice] 1#1: start worker process 35
+2025/07/22 06:43:17 [notice] 1#1: start worker process 36
+2025/07/22 06:43:17 [notice] 1#1: start worker process 37
+2025/07/22 06:43:17 [notice] 1#1: start worker process 38
+2025/07/22 06:43:17 [notice] 1#1: start worker process 39
+2025/07/22 06:43:17 [notice] 1#1: start worker process 40
+2025/07/22 06:43:17 [notice] 1#1: start worker process 41
+2025/07/22 06:43:17 [notice] 1#1: start worker process 42
+2025/07/22 06:43:17 [notice] 1#1: start worker process 43
+2025/07/22 06:43:17 [notice] 1#1: start worker process 44
+2025/07/22 06:43:17 [notice] 1#1: start worker process 45
+2025/07/22 06:48:45 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:48:45 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:48:45 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:48:45 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:48:45 [notice] 1#1: using the "epoll" event method
+2025/07/22 06:48:45 [notice] 1#1: nginx/1.27.1
+2025/07/22 06:48:45 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 06:48:45 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 06:48:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 06:48:45 [notice] 1#1: start worker processes
+2025/07/22 06:48:45 [notice] 1#1: start worker process 22
+2025/07/22 06:48:45 [notice] 1#1: start worker process 23
+2025/07/22 06:48:45 [notice] 1#1: start worker process 24
+2025/07/22 06:48:45 [notice] 1#1: start worker process 25
+2025/07/22 06:48:45 [notice] 1#1: start worker process 26
+2025/07/22 06:48:45 [notice] 1#1: start worker process 27
+2025/07/22 06:48:45 [notice] 1#1: start worker process 28
+2025/07/22 06:48:45 [notice] 1#1: start worker process 29
+2025/07/22 06:48:45 [notice] 1#1: start worker process 30
+2025/07/22 06:48:45 [notice] 1#1: start worker process 31
+2025/07/22 06:48:45 [notice] 1#1: start worker process 32
+2025/07/22 06:48:45 [notice] 1#1: start worker process 33
+2025/07/22 06:48:45 [notice] 1#1: start worker process 34
+2025/07/22 06:48:45 [notice] 1#1: start worker process 35
+2025/07/22 06:48:45 [notice] 1#1: start worker process 36
+2025/07/22 06:48:45 [notice] 1#1: start worker process 37
+2025/07/22 06:48:45 [notice] 1#1: start worker process 38
+2025/07/22 06:48:45 [notice] 1#1: start worker process 39
+2025/07/22 06:48:45 [notice] 1#1: start worker process 40
+2025/07/22 06:48:45 [notice] 1#1: start worker process 41
+2025/07/22 06:48:45 [notice] 1#1: start worker process 42
+2025/07/22 06:48:45 [notice] 1#1: start worker process 43
+2025/07/22 06:48:45 [notice] 1#1: start worker process 44
+2025/07/22 06:48:45 [notice] 1#1: start worker process 45
+2025/07/22 06:58:01 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:58:01 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 06:58:01 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:58:01 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 06:58:01 [notice] 1#1: using the "epoll" event method
+2025/07/22 06:58:01 [notice] 1#1: nginx/1.27.1
+2025/07/22 06:58:01 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 06:58:01 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 06:58:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 06:58:01 [notice] 1#1: start worker processes
+2025/07/22 06:58:01 [notice] 1#1: start worker process 21
+2025/07/22 06:58:01 [notice] 1#1: start worker process 22
+2025/07/22 06:58:01 [notice] 1#1: start worker process 23
+2025/07/22 06:58:01 [notice] 1#1: start worker process 24
+2025/07/22 06:58:01 [notice] 1#1: start worker process 25
+2025/07/22 06:58:01 [notice] 1#1: start worker process 26
+2025/07/22 06:58:01 [notice] 1#1: start worker process 27
+2025/07/22 06:58:01 [notice] 1#1: start worker process 28
+2025/07/22 06:58:01 [notice] 1#1: start worker process 29
+2025/07/22 06:58:01 [notice] 1#1: start worker process 30
+2025/07/22 06:58:01 [notice] 1#1: start worker process 31
+2025/07/22 06:58:01 [notice] 1#1: start worker process 32
+2025/07/22 06:58:01 [notice] 1#1: start worker process 33
+2025/07/22 06:58:01 [notice] 1#1: start worker process 34
+2025/07/22 06:58:01 [notice] 1#1: start worker process 35
+2025/07/22 06:58:01 [notice] 1#1: start worker process 36
+2025/07/22 06:58:01 [notice] 1#1: start worker process 37
+2025/07/22 06:58:01 [notice] 1#1: start worker process 38
+2025/07/22 06:58:01 [notice] 1#1: start worker process 39
+2025/07/22 06:58:01 [notice] 1#1: start worker process 40
+2025/07/22 06:58:01 [notice] 1#1: start worker process 41
+2025/07/22 06:58:01 [notice] 1#1: start worker process 42
+2025/07/22 06:58:01 [notice] 1#1: start worker process 43
+2025/07/22 06:58:01 [notice] 1#1: start worker process 44
+2025/07/22 07:05:29 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 07:05:29 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 07:05:29 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 07:05:29 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 07:05:29 [notice] 1#1: using the "epoll" event method
+2025/07/22 07:05:29 [notice] 1#1: nginx/1.27.1
+2025/07/22 07:05:29 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 07:05:29 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 07:05:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 07:05:29 [notice] 1#1: start worker processes
+2025/07/22 07:05:29 [notice] 1#1: start worker process 22
+2025/07/22 07:05:29 [notice] 1#1: start worker process 23
+2025/07/22 07:05:29 [notice] 1#1: start worker process 24
+2025/07/22 07:05:29 [notice] 1#1: start worker process 25
+2025/07/22 07:05:29 [notice] 1#1: start worker process 26
+2025/07/22 07:05:29 [notice] 1#1: start worker process 27
+2025/07/22 07:05:29 [notice] 1#1: start worker process 28
+2025/07/22 07:05:29 [notice] 1#1: start worker process 29
+2025/07/22 07:05:29 [notice] 1#1: start worker process 30
+2025/07/22 07:05:29 [notice] 1#1: start worker process 31
+2025/07/22 07:05:29 [notice] 1#1: start worker process 32
+2025/07/22 07:05:29 [notice] 1#1: start worker process 33
+2025/07/22 07:05:29 [notice] 1#1: start worker process 34
+2025/07/22 07:05:29 [notice] 1#1: start worker process 35
+2025/07/22 07:05:29 [notice] 1#1: start worker process 36
+2025/07/22 07:05:29 [notice] 1#1: start worker process 37
+2025/07/22 07:05:29 [notice] 1#1: start worker process 38
+2025/07/22 07:05:29 [notice] 1#1: start worker process 39
+2025/07/22 07:05:29 [notice] 1#1: start worker process 40
+2025/07/22 07:05:29 [notice] 1#1: start worker process 41
+2025/07/22 07:05:29 [notice] 1#1: start worker process 42
+2025/07/22 07:05:29 [notice] 1#1: start worker process 43
+2025/07/22 07:05:29 [notice] 1#1: start worker process 44
+2025/07/22 07:05:29 [notice] 1#1: start worker process 45
+2025/07/22 07:13:05 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 07:13:05 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 07:13:05 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 07:13:05 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 07:13:05 [notice] 1#1: using the "epoll" event method
+2025/07/22 07:13:05 [notice] 1#1: nginx/1.27.1
+2025/07/22 07:13:05 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 07:13:05 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 07:13:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 07:13:05 [notice] 1#1: start worker processes
+2025/07/22 07:13:05 [notice] 1#1: start worker process 23
+2025/07/22 07:13:05 [notice] 1#1: start worker process 24
+2025/07/22 07:13:05 [notice] 1#1: start worker process 25
+2025/07/22 07:13:05 [notice] 1#1: start worker process 26
+2025/07/22 07:13:05 [notice] 1#1: start worker process 27
+2025/07/22 07:13:05 [notice] 1#1: start worker process 28
+2025/07/22 07:13:05 [notice] 1#1: start worker process 29
+2025/07/22 07:13:05 [notice] 1#1: start worker process 30
+2025/07/22 07:13:05 [notice] 1#1: start worker process 31
+2025/07/22 07:13:05 [notice] 1#1: start worker process 32
+2025/07/22 07:13:05 [notice] 1#1: start worker process 33
+2025/07/22 07:13:05 [notice] 1#1: start worker process 34
+2025/07/22 07:13:05 [notice] 1#1: start worker process 35
+2025/07/22 07:13:05 [notice] 1#1: start worker process 36
+2025/07/22 07:13:05 [notice] 1#1: start worker process 37
+2025/07/22 07:13:05 [notice] 1#1: start worker process 38
+2025/07/22 07:13:05 [notice] 1#1: start worker process 39
+2025/07/22 07:13:05 [notice] 1#1: start worker process 40
+2025/07/22 07:13:05 [notice] 1#1: start worker process 41
+2025/07/22 07:13:05 [notice] 1#1: start worker process 42
+2025/07/22 07:13:05 [notice] 1#1: start worker process 43
+2025/07/22 07:13:05 [notice] 1#1: start worker process 44
+2025/07/22 07:13:05 [notice] 1#1: start worker process 45
+2025/07/22 07:13:05 [notice] 1#1: start worker process 46
+2025/07/22 07:39:05 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 07:39:05 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 07:39:05 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 07:39:05 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 07:39:05 [notice] 1#1: using the "epoll" event method
+2025/07/22 07:39:05 [notice] 1#1: nginx/1.27.1
+2025/07/22 07:39:05 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 07:39:05 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 07:39:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 07:39:05 [notice] 1#1: start worker processes
+2025/07/22 07:39:05 [notice] 1#1: start worker process 22
+2025/07/22 07:39:05 [notice] 1#1: start worker process 23
+2025/07/22 07:39:05 [notice] 1#1: start worker process 24
+2025/07/22 07:39:05 [notice] 1#1: start worker process 25
+2025/07/22 07:39:05 [notice] 1#1: start worker process 26
+2025/07/22 07:39:05 [notice] 1#1: start worker process 27
+2025/07/22 07:39:05 [notice] 1#1: start worker process 28
+2025/07/22 07:39:05 [notice] 1#1: start worker process 29
+2025/07/22 07:39:05 [notice] 1#1: start worker process 30
+2025/07/22 07:39:05 [notice] 1#1: start worker process 31
+2025/07/22 07:39:05 [notice] 1#1: start worker process 32
+2025/07/22 07:39:05 [notice] 1#1: start worker process 33
+2025/07/22 07:39:05 [notice] 1#1: start worker process 34
+2025/07/22 07:39:05 [notice] 1#1: start worker process 35
+2025/07/22 07:39:05 [notice] 1#1: start worker process 36
+2025/07/22 07:39:05 [notice] 1#1: start worker process 37
+2025/07/22 07:39:05 [notice] 1#1: start worker process 38
+2025/07/22 07:39:05 [notice] 1#1: start worker process 39
+2025/07/22 07:39:05 [notice] 1#1: start worker process 40
+2025/07/22 07:39:05 [notice] 1#1: start worker process 41
+2025/07/22 07:39:05 [notice] 1#1: start worker process 42
+2025/07/22 07:39:05 [notice] 1#1: start worker process 43
+2025/07/22 07:39:05 [notice] 1#1: start worker process 44
+2025/07/22 07:39:05 [notice] 1#1: start worker process 45
+2025/07/22 07:46:15 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 07:46:15 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 07:46:15 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 07:46:15 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 07:46:15 [notice] 1#1: using the "epoll" event method
+2025/07/22 07:46:15 [notice] 1#1: nginx/1.27.1
+2025/07/22 07:46:15 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 07:46:15 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 07:46:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 07:46:15 [notice] 1#1: start worker processes
+2025/07/22 07:46:15 [notice] 1#1: start worker process 22
+2025/07/22 07:46:15 [notice] 1#1: start worker process 23
+2025/07/22 07:46:15 [notice] 1#1: start worker process 24
+2025/07/22 07:46:15 [notice] 1#1: start worker process 25
+2025/07/22 07:46:15 [notice] 1#1: start worker process 26
+2025/07/22 07:46:15 [notice] 1#1: start worker process 27
+2025/07/22 07:46:15 [notice] 1#1: start worker process 28
+2025/07/22 07:46:15 [notice] 1#1: start worker process 29
+2025/07/22 07:46:15 [notice] 1#1: start worker process 30
+2025/07/22 07:46:15 [notice] 1#1: start worker process 31
+2025/07/22 07:46:15 [notice] 1#1: start worker process 32
+2025/07/22 07:46:15 [notice] 1#1: start worker process 33
+2025/07/22 07:46:15 [notice] 1#1: start worker process 34
+2025/07/22 07:46:15 [notice] 1#1: start worker process 35
+2025/07/22 07:46:15 [notice] 1#1: start worker process 36
+2025/07/22 07:46:15 [notice] 1#1: start worker process 37
+2025/07/22 07:46:15 [notice] 1#1: start worker process 38
+2025/07/22 07:46:15 [notice] 1#1: start worker process 39
+2025/07/22 07:46:15 [notice] 1#1: start worker process 40
+2025/07/22 07:46:15 [notice] 1#1: start worker process 41
+2025/07/22 07:46:15 [notice] 1#1: start worker process 42
+2025/07/22 07:46:15 [notice] 1#1: start worker process 43
+2025/07/22 07:46:15 [notice] 1#1: start worker process 44
+2025/07/22 07:46:15 [notice] 1#1: start worker process 45
+2025/07/22 08:04:36 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 08:04:36 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 08:04:36 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 08:04:36 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 08:04:36 [notice] 1#1: using the "epoll" event method
+2025/07/22 08:04:36 [notice] 1#1: nginx/1.27.1
+2025/07/22 08:04:36 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 08:04:36 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 08:04:36 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 08:04:36 [notice] 1#1: start worker processes
+2025/07/22 08:04:36 [notice] 1#1: start worker process 22
+2025/07/22 08:04:36 [notice] 1#1: start worker process 23
+2025/07/22 08:04:36 [notice] 1#1: start worker process 24
+2025/07/22 08:04:36 [notice] 1#1: start worker process 25
+2025/07/22 08:04:36 [notice] 1#1: start worker process 26
+2025/07/22 08:04:36 [notice] 1#1: start worker process 27
+2025/07/22 08:04:36 [notice] 1#1: start worker process 28
+2025/07/22 08:04:36 [notice] 1#1: start worker process 29
+2025/07/22 08:04:36 [notice] 1#1: start worker process 30
+2025/07/22 08:04:36 [notice] 1#1: start worker process 31
+2025/07/22 08:04:36 [notice] 1#1: start worker process 32
+2025/07/22 08:04:36 [notice] 1#1: start worker process 33
+2025/07/22 08:04:36 [notice] 1#1: start worker process 34
+2025/07/22 08:04:36 [notice] 1#1: start worker process 35
+2025/07/22 08:04:36 [notice] 1#1: start worker process 36
+2025/07/22 08:04:36 [notice] 1#1: start worker process 37
+2025/07/22 08:04:36 [notice] 1#1: start worker process 38
+2025/07/22 08:04:36 [notice] 1#1: start worker process 39
+2025/07/22 08:04:36 [notice] 1#1: start worker process 40
+2025/07/22 08:04:36 [notice] 1#1: start worker process 41
+2025/07/22 08:04:36 [notice] 1#1: start worker process 42
+2025/07/22 08:04:36 [notice] 1#1: start worker process 43
+2025/07/22 08:04:36 [notice] 1#1: start worker process 44
+2025/07/22 08:04:36 [notice] 1#1: start worker process 45
+2025/07/22 08:09:57 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 08:09:57 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 08:09:57 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 08:09:57 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 08:09:57 [notice] 1#1: using the "epoll" event method
+2025/07/22 08:09:57 [notice] 1#1: nginx/1.27.1
+2025/07/22 08:09:57 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 08:09:57 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 08:09:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 08:09:57 [notice] 1#1: start worker processes
+2025/07/22 08:09:57 [notice] 1#1: start worker process 22
+2025/07/22 08:09:57 [notice] 1#1: start worker process 23
+2025/07/22 08:09:57 [notice] 1#1: start worker process 24
+2025/07/22 08:09:57 [notice] 1#1: start worker process 25
+2025/07/22 08:09:57 [notice] 1#1: start worker process 26
+2025/07/22 08:09:57 [notice] 1#1: start worker process 27
+2025/07/22 08:09:57 [notice] 1#1: start worker process 28
+2025/07/22 08:09:57 [notice] 1#1: start worker process 29
+2025/07/22 08:09:57 [notice] 1#1: start worker process 30
+2025/07/22 08:09:57 [notice] 1#1: start worker process 31
+2025/07/22 08:09:57 [notice] 1#1: start worker process 32
+2025/07/22 08:09:57 [notice] 1#1: start worker process 33
+2025/07/22 08:09:57 [notice] 1#1: start worker process 34
+2025/07/22 08:09:57 [notice] 1#1: start worker process 35
+2025/07/22 08:09:57 [notice] 1#1: start worker process 36
+2025/07/22 08:09:57 [notice] 1#1: start worker process 37
+2025/07/22 08:09:57 [notice] 1#1: start worker process 38
+2025/07/22 08:09:57 [notice] 1#1: start worker process 39
+2025/07/22 08:09:57 [notice] 1#1: start worker process 40
+2025/07/22 08:09:57 [notice] 1#1: start worker process 41
+2025/07/22 08:09:57 [notice] 1#1: start worker process 42
+2025/07/22 08:09:57 [notice] 1#1: start worker process 43
+2025/07/22 08:09:57 [notice] 1#1: start worker process 44
+2025/07/22 08:09:57 [notice] 1#1: start worker process 45
+2025/07/22 08:13:03 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 08:13:03 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 08:13:03 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 08:13:03 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 08:13:03 [notice] 1#1: using the "epoll" event method
+2025/07/22 08:13:03 [notice] 1#1: nginx/1.27.1
+2025/07/22 08:13:03 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 08:13:03 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 08:13:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 08:13:03 [notice] 1#1: start worker processes
+2025/07/22 08:13:03 [notice] 1#1: start worker process 22
+2025/07/22 08:13:03 [notice] 1#1: start worker process 23
+2025/07/22 08:13:03 [notice] 1#1: start worker process 24
+2025/07/22 08:13:03 [notice] 1#1: start worker process 25
+2025/07/22 08:13:03 [notice] 1#1: start worker process 26
+2025/07/22 08:13:03 [notice] 1#1: start worker process 27
+2025/07/22 08:13:03 [notice] 1#1: start worker process 28
+2025/07/22 08:13:03 [notice] 1#1: start worker process 29
+2025/07/22 08:13:03 [notice] 1#1: start worker process 30
+2025/07/22 08:13:03 [notice] 1#1: start worker process 31
+2025/07/22 08:13:03 [notice] 1#1: start worker process 32
+2025/07/22 08:13:03 [notice] 1#1: start worker process 33
+2025/07/22 08:13:03 [notice] 1#1: start worker process 34
+2025/07/22 08:13:03 [notice] 1#1: start worker process 35
+2025/07/22 08:13:03 [notice] 1#1: start worker process 36
+2025/07/22 08:13:03 [notice] 1#1: start worker process 37
+2025/07/22 08:13:03 [notice] 1#1: start worker process 38
+2025/07/22 08:13:03 [notice] 1#1: start worker process 39
+2025/07/22 08:13:03 [notice] 1#1: start worker process 40
+2025/07/22 08:13:03 [notice] 1#1: start worker process 41
+2025/07/22 08:13:03 [notice] 1#1: start worker process 42
+2025/07/22 08:13:03 [notice] 1#1: start worker process 43
+2025/07/22 08:13:03 [notice] 1#1: start worker process 44
+2025/07/22 08:13:03 [notice] 1#1: start worker process 45
+2025/07/22 08:40:30 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 08:40:30 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/22 08:40:30 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 08:40:30 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/22 08:40:30 [notice] 1#1: using the "epoll" event method
+2025/07/22 08:40:30 [notice] 1#1: nginx/1.27.1
+2025/07/22 08:40:30 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/22 08:40:30 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/22 08:40:30 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/22 08:40:30 [notice] 1#1: start worker processes
+2025/07/22 08:40:30 [notice] 1#1: start worker process 22
+2025/07/22 08:40:30 [notice] 1#1: start worker process 23
+2025/07/22 08:40:30 [notice] 1#1: start worker process 24
+2025/07/22 08:40:30 [notice] 1#1: start worker process 25
+2025/07/22 08:40:30 [notice] 1#1: start worker process 26
+2025/07/22 08:40:30 [notice] 1#1: start worker process 27
+2025/07/22 08:40:30 [notice] 1#1: start worker process 28
+2025/07/22 08:40:30 [notice] 1#1: start worker process 29
+2025/07/22 08:40:30 [notice] 1#1: start worker process 30
+2025/07/22 08:40:30 [notice] 1#1: start worker process 31
+2025/07/22 08:40:30 [notice] 1#1: start worker process 32
+2025/07/22 08:40:30 [notice] 1#1: start worker process 33
+2025/07/22 08:40:30 [notice] 1#1: start worker process 34
+2025/07/22 08:40:30 [notice] 1#1: start worker process 35
+2025/07/22 08:40:30 [notice] 1#1: start worker process 36
+2025/07/22 08:40:30 [notice] 1#1: start worker process 37
+2025/07/22 08:40:30 [notice] 1#1: start worker process 38
+2025/07/22 08:40:30 [notice] 1#1: start worker process 39
+2025/07/22 08:40:30 [notice] 1#1: start worker process 40
+2025/07/22 08:40:30 [notice] 1#1: start worker process 41
+2025/07/22 08:40:30 [notice] 1#1: start worker process 42
+2025/07/22 08:40:30 [notice] 1#1: start worker process 43
+2025/07/22 08:40:30 [notice] 1#1: start worker process 44
+2025/07/22 08:40:30 [notice] 1#1: start worker process 45
+2025/07/24 00:18:07 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/24 00:18:07 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/24 00:18:07 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/24 00:18:07 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/24 00:18:07 [notice] 1#1: using the "epoll" event method
+2025/07/24 00:18:07 [notice] 1#1: nginx/1.27.1
+2025/07/24 00:18:07 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/24 00:18:07 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/24 00:18:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/24 00:18:07 [notice] 1#1: start worker processes
+2025/07/24 00:18:07 [notice] 1#1: start worker process 22
+2025/07/24 00:18:07 [notice] 1#1: start worker process 23
+2025/07/24 00:18:07 [notice] 1#1: start worker process 24
+2025/07/24 00:18:07 [notice] 1#1: start worker process 25
+2025/07/24 00:18:07 [notice] 1#1: start worker process 26
+2025/07/24 00:18:07 [notice] 1#1: start worker process 27
+2025/07/24 00:18:07 [notice] 1#1: start worker process 28
+2025/07/24 00:18:07 [notice] 1#1: start worker process 29
+2025/07/24 00:18:07 [notice] 1#1: start worker process 30
+2025/07/24 00:18:07 [notice] 1#1: start worker process 31
+2025/07/24 00:18:07 [notice] 1#1: start worker process 32
+2025/07/24 00:18:07 [notice] 1#1: start worker process 33
+2025/07/24 00:18:07 [notice] 1#1: start worker process 34
+2025/07/24 00:18:07 [notice] 1#1: start worker process 35
+2025/07/24 00:18:07 [notice] 1#1: start worker process 36
+2025/07/24 00:18:07 [notice] 1#1: start worker process 37
+2025/07/24 00:18:07 [notice] 1#1: start worker process 38
+2025/07/24 00:18:07 [notice] 1#1: start worker process 39
+2025/07/24 00:18:07 [notice] 1#1: start worker process 40
+2025/07/24 00:18:07 [notice] 1#1: start worker process 41
+2025/07/24 00:18:07 [notice] 1#1: start worker process 42
+2025/07/24 00:18:07 [notice] 1#1: start worker process 43
+2025/07/24 00:18:07 [notice] 1#1: start worker process 44
+2025/07/24 00:18:07 [notice] 1#1: start worker process 45
+2025/07/24 00:51:54 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/24 00:51:54 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/24 00:51:54 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/24 00:51:54 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/24 00:51:54 [notice] 1#1: using the "epoll" event method
+2025/07/24 00:51:54 [notice] 1#1: nginx/1.27.1
+2025/07/24 00:51:54 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/24 00:51:54 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/24 00:51:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/24 00:51:54 [notice] 1#1: start worker processes
+2025/07/24 00:51:54 [notice] 1#1: start worker process 22
+2025/07/24 00:51:54 [notice] 1#1: start worker process 23
+2025/07/24 00:51:54 [notice] 1#1: start worker process 24
+2025/07/24 00:51:54 [notice] 1#1: start worker process 25
+2025/07/24 00:51:54 [notice] 1#1: start worker process 26
+2025/07/24 00:51:54 [notice] 1#1: start worker process 27
+2025/07/24 00:51:54 [notice] 1#1: start worker process 28
+2025/07/24 00:51:54 [notice] 1#1: start worker process 29
+2025/07/24 00:51:54 [notice] 1#1: start worker process 30
+2025/07/24 00:51:54 [notice] 1#1: start worker process 31
+2025/07/24 00:51:54 [notice] 1#1: start worker process 32
+2025/07/24 00:51:54 [notice] 1#1: start worker process 33
+2025/07/24 00:51:54 [notice] 1#1: start worker process 34
+2025/07/24 00:51:54 [notice] 1#1: start worker process 35
+2025/07/24 00:51:54 [notice] 1#1: start worker process 36
+2025/07/24 00:51:54 [notice] 1#1: start worker process 37
+2025/07/24 00:51:54 [notice] 1#1: start worker process 38
+2025/07/24 00:51:54 [notice] 1#1: start worker process 39
+2025/07/24 00:51:54 [notice] 1#1: start worker process 40
+2025/07/24 00:51:54 [notice] 1#1: start worker process 41
+2025/07/24 00:51:54 [notice] 1#1: start worker process 42
+2025/07/24 00:51:54 [notice] 1#1: start worker process 43
+2025/07/24 00:51:54 [notice] 1#1: start worker process 44
+2025/07/24 00:51:54 [notice] 1#1: start worker process 45
+2025/07/25 07:51:25 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/25 07:51:25 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/25 07:51:25 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/25 07:51:25 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/25 07:51:25 [notice] 1#1: using the "epoll" event method
+2025/07/25 07:51:25 [notice] 1#1: nginx/1.27.1
+2025/07/25 07:51:25 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/25 07:51:25 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/25 07:51:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/25 07:51:25 [notice] 1#1: start worker processes
+2025/07/25 07:51:25 [notice] 1#1: start worker process 22
+2025/07/25 07:51:25 [notice] 1#1: start worker process 23
+2025/07/25 07:51:25 [notice] 1#1: start worker process 24
+2025/07/25 07:51:25 [notice] 1#1: start worker process 25
+2025/07/25 07:51:25 [notice] 1#1: start worker process 26
+2025/07/25 07:51:25 [notice] 1#1: start worker process 27
+2025/07/25 07:51:25 [notice] 1#1: start worker process 28
+2025/07/25 07:51:25 [notice] 1#1: start worker process 29
+2025/07/25 07:51:25 [notice] 1#1: start worker process 30
+2025/07/25 07:51:25 [notice] 1#1: start worker process 31
+2025/07/25 07:51:25 [notice] 1#1: start worker process 32
+2025/07/25 07:51:25 [notice] 1#1: start worker process 33
+2025/07/25 07:51:25 [notice] 1#1: start worker process 34
+2025/07/25 07:51:25 [notice] 1#1: start worker process 35
+2025/07/25 07:51:25 [notice] 1#1: start worker process 36
+2025/07/25 07:51:25 [notice] 1#1: start worker process 37
+2025/07/25 07:51:25 [notice] 1#1: start worker process 38
+2025/07/25 07:51:25 [notice] 1#1: start worker process 39
+2025/07/25 07:51:25 [notice] 1#1: start worker process 40
+2025/07/25 07:51:25 [notice] 1#1: start worker process 41
+2025/07/25 07:51:25 [notice] 1#1: start worker process 42
+2025/07/25 07:51:25 [notice] 1#1: start worker process 43
+2025/07/25 07:51:25 [notice] 1#1: start worker process 44
+2025/07/25 07:51:25 [notice] 1#1: start worker process 45
+2025/07/28 02:29:42 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 02:29:42 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 02:29:42 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 02:29:42 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 02:29:42 [notice] 1#1: using the "epoll" event method
+2025/07/28 02:29:42 [notice] 1#1: nginx/1.27.1
+2025/07/28 02:29:42 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/28 02:29:42 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/28 02:29:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/28 02:29:42 [notice] 1#1: start worker processes
+2025/07/28 02:29:42 [notice] 1#1: start worker process 22
+2025/07/28 02:29:42 [notice] 1#1: start worker process 23
+2025/07/28 02:29:42 [notice] 1#1: start worker process 24
+2025/07/28 02:29:42 [notice] 1#1: start worker process 25
+2025/07/28 02:29:42 [notice] 1#1: start worker process 26
+2025/07/28 02:29:42 [notice] 1#1: start worker process 27
+2025/07/28 02:29:42 [notice] 1#1: start worker process 28
+2025/07/28 02:29:42 [notice] 1#1: start worker process 29
+2025/07/28 02:29:42 [notice] 1#1: start worker process 30
+2025/07/28 02:29:42 [notice] 1#1: start worker process 31
+2025/07/28 02:29:42 [notice] 1#1: start worker process 32
+2025/07/28 02:29:42 [notice] 1#1: start worker process 33
+2025/07/28 02:29:42 [notice] 1#1: start worker process 34
+2025/07/28 02:29:42 [notice] 1#1: start worker process 35
+2025/07/28 02:29:42 [notice] 1#1: start worker process 36
+2025/07/28 02:29:42 [notice] 1#1: start worker process 37
+2025/07/28 02:29:42 [notice] 1#1: start worker process 38
+2025/07/28 02:29:42 [notice] 1#1: start worker process 39
+2025/07/28 02:29:42 [notice] 1#1: start worker process 40
+2025/07/28 02:29:42 [notice] 1#1: start worker process 41
+2025/07/28 02:29:42 [notice] 1#1: start worker process 42
+2025/07/28 02:29:42 [notice] 1#1: start worker process 43
+2025/07/28 02:29:42 [notice] 1#1: start worker process 44
+2025/07/28 02:29:42 [notice] 1#1: start worker process 45
+2025/07/28 02:32:45 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 02:32:45 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 02:32:45 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 02:32:45 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 02:32:45 [notice] 1#1: using the "epoll" event method
+2025/07/28 02:32:45 [notice] 1#1: nginx/1.27.1
+2025/07/28 02:32:45 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/28 02:32:45 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/28 02:32:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/28 02:32:45 [notice] 1#1: start worker processes
+2025/07/28 02:32:45 [notice] 1#1: start worker process 22
+2025/07/28 02:32:45 [notice] 1#1: start worker process 23
+2025/07/28 02:32:45 [notice] 1#1: start worker process 24
+2025/07/28 02:32:45 [notice] 1#1: start worker process 25
+2025/07/28 02:32:45 [notice] 1#1: start worker process 26
+2025/07/28 02:32:45 [notice] 1#1: start worker process 27
+2025/07/28 02:32:45 [notice] 1#1: start worker process 28
+2025/07/28 02:32:45 [notice] 1#1: start worker process 29
+2025/07/28 02:32:45 [notice] 1#1: start worker process 30
+2025/07/28 02:32:45 [notice] 1#1: start worker process 31
+2025/07/28 02:32:45 [notice] 1#1: start worker process 32
+2025/07/28 02:32:45 [notice] 1#1: start worker process 33
+2025/07/28 02:32:45 [notice] 1#1: start worker process 34
+2025/07/28 02:32:45 [notice] 1#1: start worker process 35
+2025/07/28 02:32:45 [notice] 1#1: start worker process 36
+2025/07/28 02:32:45 [notice] 1#1: start worker process 37
+2025/07/28 02:32:45 [notice] 1#1: start worker process 38
+2025/07/28 02:32:45 [notice] 1#1: start worker process 39
+2025/07/28 02:32:45 [notice] 1#1: start worker process 40
+2025/07/28 02:32:45 [notice] 1#1: start worker process 41
+2025/07/28 02:32:45 [notice] 1#1: start worker process 42
+2025/07/28 02:32:45 [notice] 1#1: start worker process 43
+2025/07/28 02:32:45 [notice] 1#1: start worker process 44
+2025/07/28 02:32:45 [notice] 1#1: start worker process 45
+2025/07/28 02:38:28 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 02:38:28 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 02:38:28 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 02:38:28 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 02:38:28 [notice] 1#1: using the "epoll" event method
+2025/07/28 02:38:28 [notice] 1#1: nginx/1.27.1
+2025/07/28 02:38:28 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/28 02:38:28 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/28 02:38:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/28 02:38:28 [notice] 1#1: start worker processes
+2025/07/28 02:38:28 [notice] 1#1: start worker process 22
+2025/07/28 02:38:28 [notice] 1#1: start worker process 23
+2025/07/28 02:38:28 [notice] 1#1: start worker process 24
+2025/07/28 02:38:28 [notice] 1#1: start worker process 25
+2025/07/28 02:38:28 [notice] 1#1: start worker process 26
+2025/07/28 02:38:28 [notice] 1#1: start worker process 27
+2025/07/28 02:38:28 [notice] 1#1: start worker process 28
+2025/07/28 02:38:28 [notice] 1#1: start worker process 29
+2025/07/28 02:38:28 [notice] 1#1: start worker process 30
+2025/07/28 02:38:28 [notice] 1#1: start worker process 31
+2025/07/28 02:38:28 [notice] 1#1: start worker process 32
+2025/07/28 02:38:28 [notice] 1#1: start worker process 33
+2025/07/28 02:38:28 [notice] 1#1: start worker process 34
+2025/07/28 02:38:28 [notice] 1#1: start worker process 35
+2025/07/28 02:38:28 [notice] 1#1: start worker process 36
+2025/07/28 02:38:28 [notice] 1#1: start worker process 37
+2025/07/28 02:38:28 [notice] 1#1: start worker process 38
+2025/07/28 02:38:28 [notice] 1#1: start worker process 39
+2025/07/28 02:38:28 [notice] 1#1: start worker process 40
+2025/07/28 02:38:28 [notice] 1#1: start worker process 41
+2025/07/28 02:38:28 [notice] 1#1: start worker process 42
+2025/07/28 02:38:28 [notice] 1#1: start worker process 43
+2025/07/28 02:38:28 [notice] 1#1: start worker process 44
+2025/07/28 02:38:28 [notice] 1#1: start worker process 45
+2025/07/28 02:40:13 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 02:40:13 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 02:40:13 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 02:40:13 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 02:40:13 [notice] 1#1: using the "epoll" event method
+2025/07/28 02:40:13 [notice] 1#1: nginx/1.27.1
+2025/07/28 02:40:13 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/28 02:40:13 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/28 02:40:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/28 02:40:13 [notice] 1#1: start worker processes
+2025/07/28 02:40:13 [notice] 1#1: start worker process 22
+2025/07/28 02:40:13 [notice] 1#1: start worker process 23
+2025/07/28 02:40:13 [notice] 1#1: start worker process 24
+2025/07/28 02:40:13 [notice] 1#1: start worker process 25
+2025/07/28 02:40:13 [notice] 1#1: start worker process 26
+2025/07/28 02:40:13 [notice] 1#1: start worker process 27
+2025/07/28 02:40:13 [notice] 1#1: start worker process 28
+2025/07/28 02:40:13 [notice] 1#1: start worker process 29
+2025/07/28 02:40:13 [notice] 1#1: start worker process 30
+2025/07/28 02:40:13 [notice] 1#1: start worker process 31
+2025/07/28 02:40:13 [notice] 1#1: start worker process 32
+2025/07/28 02:40:13 [notice] 1#1: start worker process 33
+2025/07/28 02:40:13 [notice] 1#1: start worker process 34
+2025/07/28 02:40:13 [notice] 1#1: start worker process 35
+2025/07/28 02:40:13 [notice] 1#1: start worker process 36
+2025/07/28 02:40:13 [notice] 1#1: start worker process 37
+2025/07/28 02:40:13 [notice] 1#1: start worker process 38
+2025/07/28 02:40:13 [notice] 1#1: start worker process 39
+2025/07/28 02:40:13 [notice] 1#1: start worker process 40
+2025/07/28 02:40:13 [notice] 1#1: start worker process 41
+2025/07/28 02:40:13 [notice] 1#1: start worker process 42
+2025/07/28 02:40:13 [notice] 1#1: start worker process 43
+2025/07/28 02:40:13 [notice] 1#1: start worker process 44
+2025/07/28 02:40:13 [notice] 1#1: start worker process 45
+2025/07/28 02:48:10 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 02:48:10 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 02:48:10 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 02:48:10 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 02:48:10 [notice] 1#1: using the "epoll" event method
+2025/07/28 02:48:10 [notice] 1#1: nginx/1.27.1
+2025/07/28 02:48:10 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/28 02:48:10 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/28 02:48:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/28 02:48:10 [notice] 1#1: start worker processes
+2025/07/28 02:48:10 [notice] 1#1: start worker process 23
+2025/07/28 02:48:10 [notice] 1#1: start worker process 24
+2025/07/28 02:48:10 [notice] 1#1: start worker process 25
+2025/07/28 02:48:10 [notice] 1#1: start worker process 26
+2025/07/28 02:48:10 [notice] 1#1: start worker process 27
+2025/07/28 02:48:10 [notice] 1#1: start worker process 28
+2025/07/28 02:48:10 [notice] 1#1: start worker process 29
+2025/07/28 02:48:10 [notice] 1#1: start worker process 30
+2025/07/28 02:48:10 [notice] 1#1: start worker process 31
+2025/07/28 02:48:10 [notice] 1#1: start worker process 32
+2025/07/28 02:48:10 [notice] 1#1: start worker process 33
+2025/07/28 02:48:10 [notice] 1#1: start worker process 34
+2025/07/28 02:48:10 [notice] 1#1: start worker process 35
+2025/07/28 02:48:10 [notice] 1#1: start worker process 36
+2025/07/28 02:48:10 [notice] 1#1: start worker process 37
+2025/07/28 02:48:10 [notice] 1#1: start worker process 38
+2025/07/28 02:48:10 [notice] 1#1: start worker process 39
+2025/07/28 02:48:10 [notice] 1#1: start worker process 40
+2025/07/28 02:48:10 [notice] 1#1: start worker process 41
+2025/07/28 02:48:10 [notice] 1#1: start worker process 42
+2025/07/28 02:48:10 [notice] 1#1: start worker process 43
+2025/07/28 02:48:10 [notice] 1#1: start worker process 44
+2025/07/28 02:48:10 [notice] 1#1: start worker process 45
+2025/07/28 02:48:10 [notice] 1#1: start worker process 46
+2025/07/28 03:15:09 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 03:15:09 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 03:15:09 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 03:15:09 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 03:15:09 [notice] 1#1: using the "epoll" event method
+2025/07/28 03:15:09 [notice] 1#1: nginx/1.27.1
+2025/07/28 03:15:09 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/28 03:15:09 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/28 03:15:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/28 03:15:09 [notice] 1#1: start worker processes
+2025/07/28 03:15:09 [notice] 1#1: start worker process 22
+2025/07/28 03:15:09 [notice] 1#1: start worker process 23
+2025/07/28 03:15:09 [notice] 1#1: start worker process 24
+2025/07/28 03:15:09 [notice] 1#1: start worker process 25
+2025/07/28 03:15:09 [notice] 1#1: start worker process 26
+2025/07/28 03:15:09 [notice] 1#1: start worker process 27
+2025/07/28 03:15:09 [notice] 1#1: start worker process 28
+2025/07/28 03:15:09 [notice] 1#1: start worker process 29
+2025/07/28 03:15:09 [notice] 1#1: start worker process 30
+2025/07/28 03:15:09 [notice] 1#1: start worker process 31
+2025/07/28 03:15:09 [notice] 1#1: start worker process 32
+2025/07/28 03:15:09 [notice] 1#1: start worker process 33
+2025/07/28 03:15:09 [notice] 1#1: start worker process 34
+2025/07/28 03:15:09 [notice] 1#1: start worker process 35
+2025/07/28 03:15:09 [notice] 1#1: start worker process 36
+2025/07/28 03:15:09 [notice] 1#1: start worker process 37
+2025/07/28 03:15:09 [notice] 1#1: start worker process 38
+2025/07/28 03:15:09 [notice] 1#1: start worker process 39
+2025/07/28 03:15:09 [notice] 1#1: start worker process 40
+2025/07/28 03:15:09 [notice] 1#1: start worker process 41
+2025/07/28 03:15:09 [notice] 1#1: start worker process 42
+2025/07/28 03:15:09 [notice] 1#1: start worker process 43
+2025/07/28 03:15:09 [notice] 1#1: start worker process 44
+2025/07/28 03:15:09 [notice] 1#1: start worker process 45
+2025/07/28 03:16:26 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 03:16:26 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 03:16:26 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 03:16:26 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 03:16:26 [notice] 1#1: using the "epoll" event method
+2025/07/28 03:16:26 [notice] 1#1: nginx/1.27.1
+2025/07/28 03:16:26 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/28 03:16:26 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/28 03:16:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/28 03:16:26 [notice] 1#1: start worker processes
+2025/07/28 03:16:26 [notice] 1#1: start worker process 22
+2025/07/28 03:16:26 [notice] 1#1: start worker process 23
+2025/07/28 03:16:26 [notice] 1#1: start worker process 24
+2025/07/28 03:16:26 [notice] 1#1: start worker process 25
+2025/07/28 03:16:26 [notice] 1#1: start worker process 26
+2025/07/28 03:16:26 [notice] 1#1: start worker process 27
+2025/07/28 03:16:26 [notice] 1#1: start worker process 28
+2025/07/28 03:16:26 [notice] 1#1: start worker process 29
+2025/07/28 03:16:26 [notice] 1#1: start worker process 30
+2025/07/28 03:16:26 [notice] 1#1: start worker process 31
+2025/07/28 03:16:26 [notice] 1#1: start worker process 32
+2025/07/28 03:16:26 [notice] 1#1: start worker process 33
+2025/07/28 03:16:26 [notice] 1#1: start worker process 34
+2025/07/28 03:16:26 [notice] 1#1: start worker process 35
+2025/07/28 03:16:26 [notice] 1#1: start worker process 36
+2025/07/28 03:16:26 [notice] 1#1: start worker process 37
+2025/07/28 03:16:26 [notice] 1#1: start worker process 38
+2025/07/28 03:16:26 [notice] 1#1: start worker process 39
+2025/07/28 03:16:26 [notice] 1#1: start worker process 40
+2025/07/28 03:16:26 [notice] 1#1: start worker process 41
+2025/07/28 03:16:26 [notice] 1#1: start worker process 42
+2025/07/28 03:16:26 [notice] 1#1: start worker process 43
+2025/07/28 03:16:26 [notice] 1#1: start worker process 44
+2025/07/28 03:16:26 [notice] 1#1: start worker process 45
+2025/07/28 06:21:18 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 06:21:18 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/28 06:21:18 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 06:21:18 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/28 06:21:18 [notice] 1#1: using the "epoll" event method
+2025/07/28 06:21:18 [notice] 1#1: nginx/1.27.1
+2025/07/28 06:21:18 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/28 06:21:18 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/28 06:21:18 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/28 06:21:18 [notice] 1#1: start worker processes
+2025/07/28 06:21:18 [notice] 1#1: start worker process 22
+2025/07/28 06:21:18 [notice] 1#1: start worker process 23
+2025/07/28 06:21:18 [notice] 1#1: start worker process 24
+2025/07/28 06:21:18 [notice] 1#1: start worker process 25
+2025/07/28 06:21:18 [notice] 1#1: start worker process 26
+2025/07/28 06:21:18 [notice] 1#1: start worker process 27
+2025/07/28 06:21:18 [notice] 1#1: start worker process 28
+2025/07/28 06:21:18 [notice] 1#1: start worker process 29
+2025/07/28 06:21:18 [notice] 1#1: start worker process 30
+2025/07/28 06:21:18 [notice] 1#1: start worker process 31
+2025/07/28 06:21:18 [notice] 1#1: start worker process 32
+2025/07/28 06:21:18 [notice] 1#1: start worker process 33
+2025/07/28 06:21:18 [notice] 1#1: start worker process 34
+2025/07/28 06:21:18 [notice] 1#1: start worker process 35
+2025/07/28 06:21:18 [notice] 1#1: start worker process 36
+2025/07/28 06:21:18 [notice] 1#1: start worker process 37
+2025/07/28 06:21:18 [notice] 1#1: start worker process 38
+2025/07/28 06:21:18 [notice] 1#1: start worker process 39
+2025/07/28 06:21:18 [notice] 1#1: start worker process 40
+2025/07/28 06:21:18 [notice] 1#1: start worker process 41
+2025/07/28 06:21:18 [notice] 1#1: start worker process 42
+2025/07/28 06:21:18 [notice] 1#1: start worker process 43
+2025/07/28 06:21:18 [notice] 1#1: start worker process 44
+2025/07/28 06:21:18 [notice] 1#1: start worker process 45
+2025/07/29 02:58:36 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/29 02:58:36 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/07/29 02:58:36 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/29 02:58:36 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/07/29 02:58:36 [notice] 1#1: using the "epoll" event method
+2025/07/29 02:58:36 [notice] 1#1: nginx/1.27.1
+2025/07/29 02:58:36 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/29 02:58:36 [notice] 1#1: OS: Linux 6.8.0-58-generic
+2025/07/29 02:58:36 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/29 02:58:36 [notice] 1#1: start worker processes
+2025/07/29 02:58:36 [notice] 1#1: start worker process 22
+2025/07/29 02:58:36 [notice] 1#1: start worker process 23
+2025/07/29 02:58:36 [notice] 1#1: start worker process 24
+2025/07/29 02:58:36 [notice] 1#1: start worker process 25
+2025/07/29 02:58:36 [notice] 1#1: start worker process 26
+2025/07/29 02:58:36 [notice] 1#1: start worker process 27
+2025/07/29 02:58:36 [notice] 1#1: start worker process 28
+2025/07/29 02:58:36 [notice] 1#1: start worker process 29
+2025/07/29 02:58:36 [notice] 1#1: start worker process 30
+2025/07/29 02:58:36 [notice] 1#1: start worker process 31
+2025/07/29 02:58:36 [notice] 1#1: start worker process 32
+2025/07/29 02:58:36 [notice] 1#1: start worker process 33
+2025/07/29 02:58:36 [notice] 1#1: start worker process 34
+2025/07/29 02:58:36 [notice] 1#1: start worker process 35
+2025/07/29 02:58:36 [notice] 1#1: start worker process 36
+2025/07/29 02:58:36 [notice] 1#1: start worker process 37
+2025/07/29 02:58:36 [notice] 1#1: start worker process 38
+2025/07/29 02:58:36 [notice] 1#1: start worker process 39
+2025/07/29 02:58:36 [notice] 1#1: start worker process 40
+2025/07/29 02:58:36 [notice] 1#1: start worker process 41
+2025/07/29 02:58:36 [notice] 1#1: start worker process 42
+2025/07/29 02:58:36 [notice] 1#1: start worker process 43
+2025/07/29 02:58:36 [notice] 1#1: start worker process 44
+2025/07/29 02:58:36 [notice] 1#1: start worker process 45
+2025/08/04 06:48:43 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/08/04 06:48:43 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/08/04 06:48:43 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/08/04 06:48:43 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/08/04 06:48:43 [notice] 1#1: using the "epoll" event method
+2025/08/04 06:48:43 [notice] 1#1: nginx/1.27.1
+2025/08/04 06:48:43 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/08/04 06:48:43 [notice] 1#1: OS: Linux 6.8.0-71-generic
+2025/08/04 06:48:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/08/04 06:48:43 [notice] 1#1: start worker processes
+2025/08/04 06:48:43 [notice] 1#1: start worker process 22
+2025/08/04 06:48:43 [notice] 1#1: start worker process 23
+2025/08/04 06:48:43 [notice] 1#1: start worker process 24
+2025/08/04 06:48:43 [notice] 1#1: start worker process 25
+2025/08/04 06:48:43 [notice] 1#1: start worker process 26
+2025/08/04 06:48:43 [notice] 1#1: start worker process 27
+2025/08/04 06:48:43 [notice] 1#1: start worker process 28
+2025/08/04 06:48:43 [notice] 1#1: start worker process 29
+2025/08/04 06:48:43 [notice] 1#1: start worker process 30
+2025/08/04 06:48:43 [notice] 1#1: start worker process 31
+2025/08/04 06:48:43 [notice] 1#1: start worker process 32
+2025/08/04 06:48:43 [notice] 1#1: start worker process 33
+2025/08/04 06:48:43 [notice] 1#1: start worker process 34
+2025/08/04 06:48:43 [notice] 1#1: start worker process 35
+2025/08/04 06:48:43 [notice] 1#1: start worker process 36
+2025/08/04 06:48:43 [notice] 1#1: start worker process 37
+2025/08/04 06:48:43 [notice] 1#1: start worker process 38
+2025/08/04 06:48:43 [notice] 1#1: start worker process 39
+2025/08/04 06:48:43 [notice] 1#1: start worker process 40
+2025/08/04 06:48:43 [notice] 1#1: start worker process 41
+2025/08/04 06:48:43 [notice] 1#1: start worker process 42
+2025/08/04 06:48:43 [notice] 1#1: start worker process 43
+2025/08/04 06:48:43 [notice] 1#1: start worker process 44
+2025/08/04 06:48:43 [notice] 1#1: start worker process 45
+2025/08/04 06:51:27 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/08/04 06:51:27 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/08/04 06:51:27 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/08/04 06:51:27 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/08/04 06:51:27 [notice] 1#1: using the "epoll" event method
+2025/08/04 06:51:27 [notice] 1#1: nginx/1.27.1
+2025/08/04 06:51:27 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/08/04 06:51:27 [notice] 1#1: OS: Linux 6.8.0-71-generic
+2025/08/04 06:51:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/08/04 06:51:27 [notice] 1#1: start worker processes
+2025/08/04 06:51:27 [notice] 1#1: start worker process 22
+2025/08/04 06:51:27 [notice] 1#1: start worker process 23
+2025/08/04 06:51:27 [notice] 1#1: start worker process 24
+2025/08/04 06:51:27 [notice] 1#1: start worker process 25
+2025/08/04 06:51:27 [notice] 1#1: start worker process 26
+2025/08/04 06:51:27 [notice] 1#1: start worker process 27
+2025/08/04 06:51:27 [notice] 1#1: start worker process 28
+2025/08/04 06:51:27 [notice] 1#1: start worker process 29
+2025/08/04 06:51:27 [notice] 1#1: start worker process 30
+2025/08/04 06:51:27 [notice] 1#1: start worker process 31
+2025/08/04 06:51:27 [notice] 1#1: start worker process 32
+2025/08/04 06:51:27 [notice] 1#1: start worker process 33
+2025/08/04 06:51:27 [notice] 1#1: start worker process 34
+2025/08/04 06:51:27 [notice] 1#1: start worker process 35
+2025/08/04 06:51:27 [notice] 1#1: start worker process 36
+2025/08/04 06:51:27 [notice] 1#1: start worker process 37
+2025/08/04 06:51:27 [notice] 1#1: start worker process 38
+2025/08/04 06:51:27 [notice] 1#1: start worker process 39
+2025/08/04 06:51:27 [notice] 1#1: start worker process 40
+2025/08/04 06:51:27 [notice] 1#1: start worker process 41
+2025/08/04 06:51:27 [notice] 1#1: start worker process 42
+2025/08/04 06:51:27 [notice] 1#1: start worker process 43
+2025/08/04 06:51:27 [notice] 1#1: start worker process 44
+2025/08/04 06:51:27 [notice] 1#1: start worker process 45
+2025/08/05 11:23:02 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/08/05 11:23:02 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/08/05 11:23:02 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/08/05 11:23:02 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/08/05 11:23:02 [notice] 1#1: using the "epoll" event method
+2025/08/05 11:23:02 [notice] 1#1: nginx/1.27.1
+2025/08/05 11:23:02 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/08/05 11:23:02 [notice] 1#1: OS: Linux 6.8.0-71-generic
+2025/08/05 11:23:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/08/05 11:23:02 [notice] 1#1: start worker processes
+2025/08/05 11:23:02 [notice] 1#1: start worker process 22
+2025/08/05 11:23:02 [notice] 1#1: start worker process 23
+2025/08/05 11:23:02 [notice] 1#1: start worker process 24
+2025/08/05 11:23:02 [notice] 1#1: start worker process 25
+2025/08/05 11:23:02 [notice] 1#1: start worker process 26
+2025/08/05 11:23:02 [notice] 1#1: start worker process 27
+2025/08/05 11:23:02 [notice] 1#1: start worker process 28
+2025/08/05 11:23:02 [notice] 1#1: start worker process 29
+2025/08/05 11:23:02 [notice] 1#1: start worker process 30
+2025/08/05 11:23:02 [notice] 1#1: start worker process 31
+2025/08/05 11:23:02 [notice] 1#1: start worker process 32
+2025/08/05 11:23:02 [notice] 1#1: start worker process 33
+2025/08/05 11:23:02 [notice] 1#1: start worker process 34
+2025/08/05 11:23:02 [notice] 1#1: start worker process 35
+2025/08/05 11:23:02 [notice] 1#1: start worker process 36
+2025/08/05 11:23:02 [notice] 1#1: start worker process 37
+2025/08/05 11:23:02 [notice] 1#1: start worker process 38
+2025/08/05 11:23:02 [notice] 1#1: start worker process 39
+2025/08/05 11:23:02 [notice] 1#1: start worker process 40
+2025/08/05 11:23:02 [notice] 1#1: start worker process 41
+2025/08/05 11:23:02 [notice] 1#1: start worker process 42
+2025/08/05 11:23:02 [notice] 1#1: start worker process 43
+2025/08/05 11:23:02 [notice] 1#1: start worker process 44
+2025/08/05 11:23:02 [notice] 1#1: start worker process 45
+2025/08/05 11:40:54 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/08/05 11:40:54 [notice] 22#22: gracefully shutting down
+2025/08/05 11:40:54 [notice] 24#24: gracefully shutting down
+2025/08/05 11:40:54 [notice] 26#26: gracefully shutting down
+2025/08/05 11:40:54 [notice] 25#25: gracefully shutting down
+2025/08/05 11:40:54 [notice] 28#28: gracefully shutting down
+2025/08/05 11:40:54 [notice] 22#22: exiting
+2025/08/05 11:40:54 [notice] 31#31: gracefully shutting down
+2025/08/05 11:40:54 [notice] 34#34: gracefully shutting down
+2025/08/05 11:40:54 [notice] 30#30: gracefully shutting down
+2025/08/05 11:40:54 [notice] 32#32: gracefully shutting down
+2025/08/05 11:40:54 [notice] 33#33: gracefully shutting down
+2025/08/05 11:40:54 [notice] 24#24: exiting
+2025/08/05 11:40:54 [notice] 23#23: gracefully shutting down
+2025/08/05 11:40:54 [notice] 35#35: gracefully shutting down
+2025/08/05 11:40:54 [notice] 39#39: gracefully shutting down
+2025/08/05 11:40:54 [notice] 37#37: gracefully shutting down
+2025/08/05 11:40:54 [notice] 38#38: gracefully shutting down
+2025/08/05 11:40:54 [notice] 40#40: gracefully shutting down
+2025/08/05 11:40:54 [notice] 26#26: exiting
+2025/08/05 11:40:54 [notice] 42#42: gracefully shutting down
+2025/08/05 11:40:54 [notice] 29#29: gracefully shutting down
+2025/08/05 11:40:54 [notice] 41#41: gracefully shutting down
+2025/08/05 11:40:54 [notice] 27#27: gracefully shutting down
+2025/08/05 11:40:54 [notice] 25#25: exiting
+2025/08/05 11:40:54 [notice] 43#43: gracefully shutting down
+2025/08/05 11:40:54 [notice] 28#28: exiting
+2025/08/05 11:40:54 [notice] 36#36: gracefully shutting down
+2025/08/05 11:40:54 [notice] 31#31: exiting
+2025/08/05 11:40:54 [notice] 34#34: exiting
+2025/08/05 11:40:54 [notice] 22#22: exit
+2025/08/05 11:40:54 [notice] 30#30: exiting
+2025/08/05 11:40:54 [notice] 32#32: exiting
+2025/08/05 11:40:54 [notice] 33#33: exiting
+2025/08/05 11:40:54 [notice] 23#23: exiting
+2025/08/05 11:40:54 [notice] 24#24: exit
+2025/08/05 11:40:54 [notice] 35#35: exiting
+2025/08/05 11:40:54 [notice] 39#39: exiting
+2025/08/05 11:40:54 [notice] 37#37: exiting
+2025/08/05 11:40:54 [notice] 38#38: exiting
+2025/08/05 11:40:54 [notice] 40#40: exiting
+2025/08/05 11:40:54 [notice] 42#42: exiting
+2025/08/05 11:40:54 [notice] 29#29: exiting
+2025/08/05 11:40:54 [notice] 26#26: exit
+2025/08/05 11:40:54 [notice] 41#41: exiting
+2025/08/05 11:40:54 [notice] 27#27: exiting
+2025/08/05 11:40:54 [notice] 43#43: exiting
+2025/08/05 11:40:54 [notice] 36#36: exiting
+2025/08/05 11:40:54 [notice] 25#25: exit
+2025/08/05 11:40:54 [notice] 28#28: exit
+2025/08/05 11:40:54 [notice] 31#31: exit
+2025/08/05 11:40:54 [notice] 34#34: exit
+2025/08/05 11:40:54 [notice] 30#30: exit
+2025/08/05 11:40:54 [notice] 32#32: exit
+2025/08/05 11:40:54 [notice] 33#33: exit
+2025/08/05 11:40:54 [notice] 23#23: exit
+2025/08/05 11:40:54 [notice] 39#39: exit
+2025/08/05 11:40:54 [notice] 37#37: exit
+2025/08/05 11:40:54 [notice] 35#35: exit
+2025/08/05 11:40:54 [notice] 38#38: exit
+2025/08/05 11:40:54 [notice] 40#40: exit
+2025/08/05 11:40:54 [notice] 42#42: exit
+2025/08/05 11:40:54 [notice] 29#29: exit
+2025/08/05 11:40:54 [notice] 43#43: exit
+2025/08/05 11:40:54 [notice] 27#27: exit
+2025/08/05 11:40:54 [notice] 41#41: exit
+2025/08/05 11:40:54 [notice] 36#36: exit
+2025/08/05 11:40:54 [notice] 44#44: gracefully shutting down
+2025/08/05 11:40:54 [notice] 44#44: exiting
+2025/08/05 11:40:54 [notice] 44#44: exit
+2025/08/05 11:40:54 [notice] 45#45: gracefully shutting down
+2025/08/05 11:40:54 [notice] 45#45: exiting
+2025/08/05 11:40:54 [notice] 45#45: exit
+2025/08/05 11:40:54 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/08/05 11:40:54 [notice] 1#1: worker process 22 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: signal 29 (SIGIO) received
+2025/08/05 11:40:54 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/08/05 11:40:54 [notice] 1#1: worker process 23 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 31 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: signal 29 (SIGIO) received
+2025/08/05 11:40:54 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2025/08/05 11:40:54 [notice] 1#1: signal 17 (SIGCHLD) received from 42
+2025/08/05 11:40:54 [notice] 1#1: worker process 42 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 25 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 27 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 29 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 32 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 34 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 36 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 37 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 41 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 43 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 44 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 45 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 28 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: signal 29 (SIGIO) received
+2025/08/05 11:40:54 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2025/08/05 11:40:54 [notice] 1#1: worker process 26 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: signal 29 (SIGIO) received
+2025/08/05 11:40:54 [notice] 1#1: signal 17 (SIGCHLD) received from 40
+2025/08/05 11:40:54 [notice] 1#1: worker process 35 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 40 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 30 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 33 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 39 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: worker process 24 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: signal 29 (SIGIO) received
+2025/08/05 11:40:54 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2025/08/05 11:40:54 [notice] 1#1: signal 17 (SIGCHLD) received from 38
+2025/08/05 11:40:54 [notice] 1#1: worker process 38 exited with code 0
+2025/08/05 11:40:54 [notice] 1#1: exit
+2025/08/05 13:09:33 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/08/05 13:09:33 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/08/05 13:09:33 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/08/05 13:09:33 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/08/05 13:09:33 [notice] 1#1: using the "epoll" event method
+2025/08/05 13:09:33 [notice] 1#1: nginx/1.27.1
+2025/08/05 13:09:33 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/08/05 13:09:33 [notice] 1#1: OS: Linux 6.8.0-71-generic
+2025/08/05 13:09:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/08/05 13:09:33 [notice] 1#1: start worker processes
+2025/08/05 13:09:33 [notice] 1#1: start worker process 22
+2025/08/05 13:09:33 [notice] 1#1: start worker process 23
+2025/08/05 13:09:33 [notice] 1#1: start worker process 24
+2025/08/05 13:09:33 [notice] 1#1: start worker process 25
+2025/08/05 13:09:33 [notice] 1#1: start worker process 26
+2025/08/05 13:09:33 [notice] 1#1: start worker process 27
+2025/08/05 13:09:33 [notice] 1#1: start worker process 28
+2025/08/05 13:09:33 [notice] 1#1: start worker process 29
+2025/08/05 13:09:33 [notice] 1#1: start worker process 30
+2025/08/05 13:09:33 [notice] 1#1: start worker process 31
+2025/08/05 13:09:33 [notice] 1#1: start worker process 32
+2025/08/05 13:09:33 [notice] 1#1: start worker process 33
+2025/08/05 13:09:33 [notice] 1#1: start worker process 34
+2025/08/05 13:09:33 [notice] 1#1: start worker process 35
+2025/08/05 13:09:33 [notice] 1#1: start worker process 36
+2025/08/05 13:09:33 [notice] 1#1: start worker process 37
+2025/08/05 13:09:33 [notice] 1#1: start worker process 38
+2025/08/05 13:09:33 [notice] 1#1: start worker process 39
+2025/08/05 13:09:33 [notice] 1#1: start worker process 40
+2025/08/05 13:09:33 [notice] 1#1: start worker process 41
+2025/08/05 13:09:33 [notice] 1#1: start worker process 42
+2025/08/05 13:09:33 [notice] 1#1: start worker process 43
+2025/08/05 13:09:33 [notice] 1#1: start worker process 44
+2025/08/05 13:09:33 [notice] 1#1: start worker process 45
+2025/08/06 08:08:19 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/08/06 08:08:19 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/08/06 08:08:19 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/08/06 08:08:19 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/08/06 08:08:19 [notice] 1#1: using the "epoll" event method
+2025/08/06 08:08:19 [notice] 1#1: nginx/1.27.1
+2025/08/06 08:08:19 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/08/06 08:08:19 [notice] 1#1: OS: Linux 6.8.0-71-generic
+2025/08/06 08:08:19 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/08/06 08:08:19 [notice] 1#1: start worker processes
+2025/08/06 08:08:19 [notice] 1#1: start worker process 22
+2025/08/06 08:08:19 [notice] 1#1: start worker process 23
+2025/08/06 08:08:19 [notice] 1#1: start worker process 24
+2025/08/06 08:08:19 [notice] 1#1: start worker process 25
+2025/08/06 08:08:19 [notice] 1#1: start worker process 26
+2025/08/06 08:08:19 [notice] 1#1: start worker process 27
+2025/08/06 08:08:19 [notice] 1#1: start worker process 28
+2025/08/06 08:08:19 [notice] 1#1: start worker process 29
+2025/08/06 08:08:19 [notice] 1#1: start worker process 30
+2025/08/06 08:08:19 [notice] 1#1: start worker process 31
+2025/08/06 08:08:19 [notice] 1#1: start worker process 32
+2025/08/06 08:08:19 [notice] 1#1: start worker process 33
+2025/08/06 08:08:19 [notice] 1#1: start worker process 34
+2025/08/06 08:08:19 [notice] 1#1: start worker process 35
+2025/08/06 08:08:19 [notice] 1#1: start worker process 36
+2025/08/06 08:08:19 [notice] 1#1: start worker process 37
+2025/08/06 08:08:19 [notice] 1#1: start worker process 38
+2025/08/06 08:08:19 [notice] 1#1: start worker process 39
+2025/08/06 08:08:19 [notice] 1#1: start worker process 40
+2025/08/06 08:08:19 [notice] 1#1: start worker process 41
+2025/08/06 08:08:19 [notice] 1#1: start worker process 42
+2025/08/06 08:08:19 [notice] 1#1: start worker process 43
+2025/08/06 08:08:19 [notice] 1#1: start worker process 44
+2025/08/06 08:08:19 [notice] 1#1: start worker process 45
+2025/11/21 01:27:15 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 01:27:15 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 01:27:15 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 01:27:15 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 01:27:15 [notice] 1#1: using the "epoll" event method
+2025/11/21 01:27:15 [notice] 1#1: nginx/1.29.3
+2025/11/21 01:27:15 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2025/11/21 01:27:15 [notice] 1#1: OS: Linux 5.15.0-117-generic
+2025/11/21 01:27:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/11/21 01:27:15 [notice] 1#1: start worker processes
+2025/11/21 01:27:15 [notice] 1#1: start worker process 22
+2025/11/21 01:27:15 [notice] 1#1: start worker process 23
+2025/11/21 01:27:34 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/11/21 01:27:34 [notice] 23#23: gracefully shutting down
+2025/11/21 01:27:34 [notice] 23#23: exiting
+2025/11/21 01:27:34 [notice] 23#23: exit
+2025/11/21 01:27:34 [notice] 22#22: gracefully shutting down
+2025/11/21 01:27:34 [notice] 22#22: exiting
+2025/11/21 01:27:34 [notice] 22#22: exit
+2025/11/21 01:27:34 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/11/21 01:27:34 [notice] 1#1: worker process 23 exited with code 0
+2025/11/21 01:27:34 [notice] 1#1: signal 29 (SIGIO) received
+2025/11/21 01:27:34 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/11/21 01:27:34 [notice] 1#1: worker process 22 exited with code 0
+2025/11/21 01:27:34 [notice] 1#1: exit
+2025/11/21 01:44:39 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 01:44:39 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 01:44:39 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 01:44:39 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 01:44:39 [notice] 1#1: using the "epoll" event method
+2025/11/21 01:44:39 [notice] 1#1: nginx/1.29.3
+2025/11/21 01:44:39 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2025/11/21 01:44:39 [notice] 1#1: OS: Linux 5.15.0-117-generic
+2025/11/21 01:44:39 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/11/21 01:44:39 [notice] 1#1: start worker processes
+2025/11/21 01:44:39 [notice] 1#1: start worker process 22
+2025/11/21 01:44:39 [notice] 1#1: start worker process 23
+2025/11/21 01:57:24 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 01:57:24 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 01:57:24 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 01:57:24 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 01:57:24 [notice] 1#1: using the "epoll" event method
+2025/11/21 01:57:24 [notice] 1#1: nginx/1.29.3
+2025/11/21 01:57:24 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2025/11/21 01:57:24 [notice] 1#1: OS: Linux 5.15.0-117-generic
+2025/11/21 01:57:24 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/11/21 01:57:24 [notice] 1#1: start worker processes
+2025/11/21 01:57:24 [notice] 1#1: start worker process 21
+2025/11/21 01:57:24 [notice] 1#1: start worker process 22
+2025/11/21 02:43:50 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 02:43:50 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 02:43:50 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 02:43:50 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 02:43:50 [notice] 1#1: using the "epoll" event method
+2025/11/21 02:43:50 [notice] 1#1: nginx/1.29.3
+2025/11/21 02:43:50 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2025/11/21 02:43:50 [notice] 1#1: OS: Linux 5.15.0-117-generic
+2025/11/21 02:43:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/11/21 02:43:50 [notice] 1#1: start worker processes
+2025/11/21 02:43:50 [notice] 1#1: start worker process 21
+2025/11/21 02:43:50 [notice] 1#1: start worker process 22
+2025/11/21 02:59:38 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 02:59:38 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 02:59:38 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 02:59:38 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 02:59:38 [notice] 1#1: using the "epoll" event method
+2025/11/21 02:59:38 [notice] 1#1: nginx/1.29.3
+2025/11/21 02:59:38 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2025/11/21 02:59:38 [notice] 1#1: OS: Linux 5.15.0-117-generic
+2025/11/21 02:59:38 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/11/21 02:59:38 [notice] 1#1: start worker processes
+2025/11/21 02:59:38 [notice] 1#1: start worker process 22
+2025/11/21 02:59:38 [notice] 1#1: start worker process 23
+2025/11/21 03:12:31 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 03:12:31 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 03:12:31 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 03:12:31 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 03:12:31 [notice] 1#1: using the "epoll" event method
+2025/11/21 03:12:31 [notice] 1#1: nginx/1.29.3
+2025/11/21 03:12:31 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2025/11/21 03:12:31 [notice] 1#1: OS: Linux 5.15.0-117-generic
+2025/11/21 03:12:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/11/21 03:12:31 [notice] 1#1: start worker processes
+2025/11/21 03:12:31 [notice] 1#1: start worker process 22
+2025/11/21 03:12:31 [notice] 1#1: start worker process 23
+2025/11/21 03:28:05 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/11/21 03:28:05 [notice] 23#23: gracefully shutting down
+2025/11/21 03:28:05 [notice] 22#22: gracefully shutting down
+2025/11/21 03:28:05 [notice] 22#22: exiting
+2025/11/21 03:28:05 [notice] 23#23: exiting
+2025/11/21 03:28:05 [notice] 23#23: exit
+2025/11/21 03:28:05 [notice] 22#22: exit
+2025/11/21 03:28:05 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/11/21 03:28:05 [notice] 1#1: worker process 22 exited with code 0
+2025/11/21 03:28:05 [notice] 1#1: signal 29 (SIGIO) received
+2025/11/21 03:28:05 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/11/21 03:28:05 [notice] 1#1: worker process 23 exited with code 0
+2025/11/21 03:28:05 [notice] 1#1: exit
+2025/11/21 03:28:06 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 03:28:06 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/11/21 03:28:06 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 03:28:06 [warn] 1#1: conflicting server name "localhost" on [::]:80, ignored
+2025/11/21 03:28:06 [notice] 1#1: using the "epoll" event method
+2025/11/21 03:28:06 [notice] 1#1: nginx/1.29.3
+2025/11/21 03:28:06 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2025/11/21 03:28:06 [notice] 1#1: OS: Linux 5.15.0-117-generic
+2025/11/21 03:28:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/11/21 03:28:06 [notice] 1#1: start worker processes
+2025/11/21 03:28:06 [notice] 1#1: start worker process 23
+2025/11/21 03:28:06 [notice] 1#1: start worker process 24
