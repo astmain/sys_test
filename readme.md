@@ -1,29 +1,24 @@
 插件
 
-
-
 # vscode插件
+
 - TODO Highlight           代码高亮
 - SQLite Viewer            sqlite数据库可视化
 - Code Runner              单独允许ts需要全局安装    npm install -g ts-node ts-node-dev
 - Error lens               设置成中文提示  在vscode.setting中 搜索  typescript.local  选中zh
 - Live Server
 - Prettier - Code formatter
-- Prisma
-- Path Intellisense 
-- eslint
+- Prisma             指定版本6.19.0
+- Path Intellisense
+- eslint            指定版本3.0.16
 - Tailwind CSS snippets
-- Vue (Official)
-- VSCode Great Icons   
+- Vue (Official)  指定版本3.1.4
+- VSCode Great Icons
 - Chinese (Simplified)
 
-
-
-
-
 # webstrom插件
-- ts-node         Run Configuration For typeScript
 
+- ts-node         Run Configuration For typeScript
 
 #首次gitbash设置邮箱和用户名0
 #git config --global user.email "1311192345@qq.com"
@@ -39,6 +34,5 @@
 #本地分支跟踪远程分支  git branch --set-upstream-to=origin/master master
 
 #nuxt网络问题
-#  185.199.108.133 raw.githubusercontent.com
 
-
+# 185.199.108.133 raw.githubusercontent.com
