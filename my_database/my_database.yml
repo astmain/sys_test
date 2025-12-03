@@ -1,0 +1,302 @@
+#🟢 连接pg数据库
+# 数据库   103.119.2.223      2001       back      root/123456
+# VITE_url_db_pg="postgresql://root:123456@103.119.2.223:2001/back?schema=public"
+
+#🟢 连接pg数据库
+# 数据库   103.119.2.223      3001       back      root/123456
+
+#🟢 基本命令
+# sudo docker-compose  -f my_database.yml    down              停止并删除容器
+# sudo docker-compose  -f my_database.yml    up -d             重新创建并启动容器
+# sudo docker ps -a
+
+#🟢 删除文件夹db_mysql1,才能再次执行my_database_init_data_mysql.sql
+# sudo docker-compose  -f my_database.yml    down 
+# rm -rf ./db_mysql1
+# sudo docker-compose  -f my_database.yml    up -d 
+# echo "✅ MySQL 已重置并重新初始化！"
+
+#🟢 docker rm -f db_pg1,db_pg2,db_pg3,db_pg4,db_pg5,db_pg6,db_pg7,db_pg8,db_pg9
+# 基础清理（停止并删除容器、网络、匿名卷）            docker compose down -v
+# 除未被使用的镜像、网络、构建缓存等                docker system prune -f
+
+# 批量删除指定容器 docker rm -f $(docker ps -aq --filter "name=db_pg[0-9]") 2>/dev/null || true
+# 批量删除指定容器 docker rm -f $(docker ps -aq ) 2>/dev/null || true
+
+
+services:
+  db_pg0:
+    container_name: db_pg0
+    ports:
+      - '2000:5432'
+    environment:
+      - 'POSTGRES_DB=back'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin'
+      - 'GOSU_VERSION=1.17'
+      - 'LANG=en_US.utf8'
+      - 'PG_MAJOR=17'
+    image: postgres:17
+    restart: always
+    command:
+      - 'postgres'
+    entrypoint:
+      - 'docker-entrypoint.sh'
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - '../my_database/db_pg0:/var/lib/postgresql/data'
+
+  db_pg1:
+    container_name: db_pg1
+    ports:
+      - '2001:5432'
+    environment:
+      - 'POSTGRES_DB=back'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin'
+      - 'GOSU_VERSION=1.17'
+      - 'LANG=en_US.utf8'
+      - 'PG_MAJOR=17'
+    image: postgres:17
+    restart: always
+    command:
+      - 'postgres'
+    entrypoint:
+      - 'docker-entrypoint.sh'
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - '../my_database/db_pg1:/var/lib/postgresql/data'
+
+  db_pg2:
+    container_name: db_pg2
+    ports:
+      - '2002:5432'
+    environment:
+      - 'POSTGRES_DB=back'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin'
+      - 'GOSU_VERSION=1.17'
+      - 'LANG=en_US.utf8'
+      - 'PG_MAJOR=17'
+    image: postgres:17
+    restart: always
+    command:
+      - 'postgres'
+    entrypoint:
+      - 'docker-entrypoint.sh'
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - '../my_database/db_pg2:/var/lib/postgresql/data'
+
+  db_pg3:
+    container_name: db_pg3
+    ports:
+      - '2003:5432'
+    environment:
+      - 'POSTGRES_DB=back'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin'
+      - 'GOSU_VERSION=1.17'
+      - 'LANG=en_US.utf8'
+      - 'PG_MAJOR=17'
+    image: postgres:17
+    restart: always
+    command:
+      - 'postgres'
+    entrypoint:
+      - 'docker-entrypoint.sh'
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - '../my_database/db_pg3:/var/lib/postgresql/data'
+
+  db_pg4:
+    container_name: db_pg4
+    ports:
+      - '2004:5432'
+    environment:
+      - 'POSTGRES_DB=back'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin'
+      - 'GOSU_VERSION=1.17'
+      - 'LANG=en_US.utf8'
+      - 'PG_MAJOR=17'
+    image: postgres:17
+    restart: always
+    command:
+      - 'postgres'
+    entrypoint:
+      - 'docker-entrypoint.sh'
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - '../my_database/db_pg4:/var/lib/postgresql/data'
+
+  db_pg5:
+    container_name: db_pg5
+    ports:
+      - '2005:5432'
+    environment:
+      - 'POSTGRES_DB=back'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin'
+      - 'GOSU_VERSION=1.17'
+      - 'LANG=en_US.utf8'
+      - 'PG_MAJOR=17'
+    image: postgres:17
+    restart: always
+    command:
+      - 'postgres'
+    entrypoint:
+      - 'docker-entrypoint.sh'
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - '../my_database/db_pg5:/var/lib/postgresql/data'
+
+  db_pg6:
+    container_name: db_pg6
+    ports:
+      - '2006:5432'
+    environment:
+      - 'POSTGRES_DB=back'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin'
+      - 'GOSU_VERSION=1.17'
+      - 'LANG=en_US.utf8'
+      - 'PG_MAJOR=17'
+    image: postgres:17
+    restart: always
+    command:
+      - 'postgres'
+    entrypoint:
+      - 'docker-entrypoint.sh'
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - '../my_database/db_pg6:/var/lib/postgresql/data'
+
+  db_pg7:
+    container_name: db_pg7
+    ports:
+      - '2007:5432'
+    environment:
+      - 'POSTGRES_DB=back'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin'
+      - 'GOSU_VERSION=1.17'
+      - 'LANG=en_US.utf8'
+      - 'PG_MAJOR=17'
+    image: postgres:17
+    restart: always
+    command:
+      - 'postgres'
+    entrypoint:
+      - 'docker-entrypoint.sh'
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - '../my_database/db_pg7:/var/lib/postgresql/data'
+
+  db_pg8:
+    container_name: db_pg8
+    ports:
+      - '2008:5432'
+    environment:
+      - 'POSTGRES_DB=back'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin'
+      - 'GOSU_VERSION=1.17'
+      - 'LANG=en_US.utf8'
+      - 'PG_MAJOR=17'
+    image: postgres:17
+    restart: always
+    command:
+      - 'postgres'
+    entrypoint:
+      - 'docker-entrypoint.sh'
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - '../my_database/db_pg8:/var/lib/postgresql/data'
+
+  db_pg9:
+    container_name: db_pg9
+    ports:
+      - '2009:5432'
+    environment:
+      - 'POSTGRES_DB=back'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin'
+      - 'GOSU_VERSION=1.17'
+      - 'LANG=en_US.utf8'
+      - 'PG_MAJOR=17'
+    image: postgres:17
+    restart: always
+    command:
+      - 'postgres'
+    entrypoint:
+      - 'docker-entrypoint.sh'
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - '../my_database/db_pg9:/var/lib/postgresql/data'
+
+      #my_database.yml文件
+  db_mysql1:
+    container_name: db_mysql1
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      # 可选：创建默认数据库（但这里我们用 init.sql 控制更灵活）
+      # MYSQL_DATABASE: my_db1
+    ports:
+      - '3001:3306'
+    volumes:
+      - ./my_database/db_mysql1:/var/lib/mysql
+      # - ./my_database_init_data_mysql.sql:/docker-entrypoint-initdb.d/my_database_init_data_mysql.sql:ro #有注解乱码问题
+    command: --default-authentication-plugin=mysql_native_password
+    restart: unless-stopped

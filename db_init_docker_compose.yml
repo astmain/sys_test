@@ -1,8 +1,8 @@
 # docker-compose
 # 数据库   103.119.2.223      2001       back      root/123456
 # VITE_url_db_pg="postgresql://root:123456@103.119.2.223:2001/back?schema=public"
-# sudo docker-compose   -f mysql-demo.yml down              停止并删除容器
-# sudo docker-compose up -d             重新创建并启动容器
+# sudo docker-compose  down              停止并删除容器
+# sudo docker-compose  up -d             重新创建并启动容器
 # sudo docker ps -a
 services:
   db_pg0:
