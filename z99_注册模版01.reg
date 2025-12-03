@@ -1,0 +1,36 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\*\shell\my_hbuild222]
+@="my_hbuild222"
+"Icon"="C:\\AAA_desktop\\hbuilderx_222\\HBuilderX.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\my_hbuild222\command]
+@="\"C:\\AAA_desktop\\hbuilderx_222\\HBuilderX.exe\" \"%1\""
+    
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\my_hbuild222]
+@="my_hbuild222"
+"Icon"="C:\\AAA_desktop\\hbuilderx_222\\HBuilderX.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\my_hbuild222\command]
+@="\"C:\\AAA_desktop\\hbuilderx_222\\HBuilderX.exe\" \"%V\""
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\my_hbuild222]
+@="my_hbuild222"
+"Icon"="C:\\AAA_desktop\\hbuilderx_222\\HBuilderX.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\my_hbuild222\command]
+@="\"C:\\AAA_desktop\\hbuilderx_222\\HBuilderX.exe\" \"%V\""
+
+
+
+
+
+
+
+
+
+
+

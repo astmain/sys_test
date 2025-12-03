@@ -11,6 +11,17 @@ CREATE TABLE IF NOT EXISTS test_demo1 (
 ) engine=innodb COMMENT='测试_样板1表';
 
 
+CREATE TABLE IF NOT EXISTS test_student1 (
+    name VARCHAR(100) NOT NULL                               COMMENT '姓名',
+    age INT                                                  COMMENT '年龄(整数)',
+    sex ENUM('MALE', 'FEMALE', 'OTHER') DEFAULT 'OTHER'      COMMENT '性别(MALE=男性的,FEMALE=女性的,OTHER=其他)',
+    city VARCHAR(100)                                        COMMENT '城市',
+    id INT AUTO_INCREMENT PRIMARY KEY                        COMMENT '自增主键'
+) engine=innodb COMMENT='测试_学生1表';
+
+INSERT INTO `my_db1`.`test_student1` (`id`, `name`, `age`, `sex`, `city`) VALUES (1, '赵一', 1, 'MALE', '泉州');
+INSERT INTO `my_db1`.`test_student1` (`id`, `name`, `age`, `sex`, `city`) VALUES (2, '钱二', 1, 'OTHER', '厦门');
+
 
 
 
