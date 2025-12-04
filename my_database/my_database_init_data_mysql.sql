@@ -36,6 +36,14 @@ INSERT INTO `my_db1`.`test_position1` (`user_id`, `postition_name`, `id`) VALUES
 
 
 
+CREATE TABLE IF NOT EXISTS test_upload_file (
+    file_name VARCHAR(100)                                    COMMENT '文件名',
+    file_path VARCHAR(100)                                    COMMENT '文件路径',
+    student_id INT                                            COMMENT '学生id',
+    id INT AUTO_INCREMENT PRIMARY KEY                         COMMENT '自增主键'
+) engine=innodb COMMENT='测试_学生1表';
+
+
 
 -- ============================== my_db2 ==============================
 CREATE DATABASE IF NOT EXISTS my_db2 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
