@@ -20,7 +20,6 @@
 
 #git config --global user.name "astmain"
 
-
 # vscode插件
 
 - TODO Highlight           代码高亮
@@ -39,21 +38,17 @@
 
 # webstrom插件
 
-- ts-node         Run Configuration For typeScript
+- ts-node                    Run Configuration For typeScript
+- 汉化                            Chinese (Simplified)
+- 文件图标                   Atom Material Icons
+- 编译器主题               Visual Studio Code Dark Plus
+- 彩色括号                   Rainbow Brackets
+- 阿里巴巴AI插件     Lingma - Alibaba Cloud AI Coding Assistant
+- 腾讯AI插件              Tencent Cloud CodeBuddy
+- 字节跳动AI插件     Trae AI
+- 硅心科技AI插件      aiXcoder Code Completer
+- 自动补齐代码          Tabnine AI Code
 
-#首次gitbash设置邮箱和用户名0
-#git config --global user.email "1311192345@qq.com"
-#git config --global user.name "astmain"
-
-#git取消追踪          git rm --cached *.db
-#git取消追踪          git rm --cached D:\AAA\dayu_system_03\dayu04_end\src\db_orm_prisma\db_dev_sqlited.db
-
-#1绑定文件            git init && git remote add origin  git@github.com:astmain/sys_nestjs.git
-
-#强制上传             echo "确定:强制上传吗?" && TIMEOUT /T 60 && echo "如果确定:请回车" && git add . && git commit -m "强制上传" && git push -f origin  master
-
-#本地分支跟踪远程分支  git branch --set-upstream-to=origin/master master
-
-#nuxt网络问题
+# nuxt网络问题
 
 # 185.199.108.133 raw.githubusercontent.com
