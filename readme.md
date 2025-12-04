@@ -1,5 +1,26 @@
 插件
 
+# github上次代码
+
+#绑定文件            git init && git remote add origin  git@github.com:astmain/study_java.git
+
+#强制上传             echo "确定:强制上传吗?" && TIMEOUT /T 60 && echo "如果确定:请回车" && git add . && git commit -m "强制上传" && git push -f origin  master
+
+#本地分支跟踪远程分支     git branch --set-upstream-to=origin/master master
+
+#git取消追踪___________________________________
+
+#git取消追踪          git rm --cached *.db
+
+#git取消追踪          git rm --cached D:\AAA\dayu_system_03\dayu04_end\src\db_orm_prisma\db_dev_sqlited.db
+
+#首次gitbash设置邮箱和用户名____________________
+
+#git config --global user.email "1311192345@qq.com"
+
+#git config --global user.name "astmain"
+
+
 # vscode插件
 
 - TODO Highlight           代码高亮
