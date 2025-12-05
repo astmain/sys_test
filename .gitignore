@@ -5,10 +5,17 @@
 # .env.*
 # env/
 # .env/
+# bin/
 
 
 # ==============================
 # 通用忽略规则
+dist/
+build/
+
+
+
+
 # ==============================
 # 系统文件
 .DS_Store
@@ -34,8 +41,6 @@ pnpm-debug.log*
 # Vue / React / NuxtJS / NestJS
 # ==============================
 # 构建产物
-dist/
-build/
 .out/
 .nuxt/
 .output/
@@ -66,8 +71,6 @@ __pycache__/
 venv/
 # 依赖/构建
 *.egg-info/
-dist/
-build/
 # 测试/缓存
 .pytest_cache/
 .mypy_cache/
@@ -86,7 +89,6 @@ target/
 *.iws
 *.ipr
 .gradle/
-build/
 # 日志/配置
 *.log
 *.properties
@@ -98,7 +100,6 @@ build/
 # ==============================
 # C#
 # ==============================
-bin/
 obj/
 *.user
 *.suo
@@ -113,7 +114,7 @@ publish/
 # ==============================
 .gradle/
 local.properties
-build/
+
 captures/
 *.iml
 # Android Studio
@@ -137,7 +138,6 @@ captures/
 *.dll
 *.dylib
 # 构建目录
-build/
 cmake-build-*/
 # 调试文件
 *.dSYM/
@@ -157,5 +157,4 @@ cmake-build-*/
 go.sum
 go.mod
 # 构建目录
-bin/
 pkg/
