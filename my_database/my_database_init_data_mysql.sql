@@ -57,3 +57,9 @@ CREATE TABLE IF NOT EXISTS test_demo1 (
     password VARCHAR(255) NOT NULL                           COMMENT '密码(加密存储)',
     gender ENUM('MALE', 'FEMALE', 'OTHER') DEFAULT 'OTHER'   COMMENT '性别(MALE=男性的,FEMALE=女性的,OTHER=其他)'
 ) engine=innodb COMMENT='测试_样板1表';
+
+
+
+-- ============================== my_db2 ==============================
+CREATE DATABASE IF NOT EXISTS my_db2 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE my_db2;
