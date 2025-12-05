@@ -4,6 +4,7 @@
 
 #绑定文件            git init && git remote add origin  git@github.com:astmain/history_project.git
 #绑定文件            git init && git remote add origin  git@github.com:astmain/study_android.git
+#绑定文件            git init && git remote add origin  git@github.com:astmain/study_java.git
 
 #强制上传             echo "确定:强制上传吗?" && TIMEOUT /T 60 && echo "如果确定:请回车" && git add . && git commit -m "强制上传" && git push -f origin  master
 
