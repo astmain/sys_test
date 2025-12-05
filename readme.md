@@ -52,3 +52,6 @@
 # nuxt网络问题
 
 # 185.199.108.133 raw.githubusercontent.com
+
+# 开启启动软件
+win+r 输入  shell:startup  再将快捷方式复制到文件夹中
