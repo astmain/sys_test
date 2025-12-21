@@ -1,3 +1,4 @@
+// 代码片段_my_code
 {
 	"con1": {
 		"scope": "javascript,typescript",

@@ -20,6 +20,7 @@ packages:
 #git取消追踪          git rm --cached D:\AAA\dayu_system_03\dayu04_end\src\db_orm_prisma\db_dev_sqlited.db
 
 #1绑定文件            git init && git remote add origin  git@github.com:astmain/sys_nestjs.git
+#1绑定文件            git init && git remote add origin  git@github.com:astmain/order_xiaoyong.git
 #1绑定文件            git init && git remote add origin  git@github.com:astmain/sys_chrome.git
 #1绑定文件            git init && git remote add origin  git@github.com:astmain/interview_problem.git
 #1绑定文件            git init && git remote add origin  git@github.com:astmain/study_java.git
