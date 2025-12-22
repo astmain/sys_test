@@ -1,5 +1,11 @@
 # 帮我生产一份.gitignore支持vue,react,uniapp,python,fastapi,springboot,nestjs,nuxtjs,c#,android_java,c,c++,go的文件
 
+# 自定义忽略==============================
+# env_node/
+
+
+
+
 # 环境变量==============================
 # .env
 # .env.*
@@ -12,7 +18,8 @@
 # 通用忽略规则
 dist/
 build/
-
+release/
+dist_electron/
 
 
 
