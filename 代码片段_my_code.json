@@ -1,0 +1,38 @@
+// 代码片段_my_code
+{
+	"con1": {
+		"scope": "javascript,typescript",
+		"prefix": "con1",
+		"body": [
+			"console.log(`111---:`,111)"
+		]
+
+	},
+	"sle1": {
+		"scope": "javascript,typescript",
+		"prefix": "sle1",
+		"body": [
+			"await new Promise((resolve) => setTimeout(resolve, 999999 * 1000))"
+		]
+
+	},
+		"main": {
+		"scope": "javascript,typescript",
+		"prefix": "main1",
+		"body": [
+				"// 测试代码函数",
+				"export function test1() {",
+				"  console.log(`111`)",
+				"}",
+
+				"// 测试代码调用",
+				"if (require.main === module) {",
+				"  test1()",
+				"}",
+
+		]
+
+	}
+
+// C:\Users\admin\AppData\Roaming\Cursor\User\snippets\my_code.code-snippets
+}
