@@ -18,8 +18,7 @@
 # 通用忽略规则
 dist/
 build/
-release/
-dist_electron/
+
 
 
 
@@ -99,7 +98,6 @@ target/
 # 日志/配置
 *.log
 *.properties
-*.yml
 !.gitignore
 !.README.md
 
@@ -113,7 +111,7 @@ obj/
 *.cache
 *.sln.docstates
 # 发布产物
-
+publish/
 
 
 # ==============================
