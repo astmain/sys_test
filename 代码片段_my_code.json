@@ -1,15 +1,51 @@
 // 代码片段_my_code
 {
-	"con1": {
-		"scope": "javascript,typescript",
-		"prefix": "con1",
+	"ts1": {
+		"scope": "javascript,typescript,vue,html",
+		"prefix": "ts1",
 		"body": [
-			"console.log(`111---:`,111)"
+			"// @ts-ignore"
 		]
 	},
-	"sle1": {
+	"try1": {
+		"scope": "javascript,typescript,vue,html",
+		"prefix": "try1",
+		"body": [
+			"try{",
+			"",
+			"}",
+			"catch(e){",
+			"  console.log(`报错-e`,e)",
+			"}",
+			"finally{",
+			"",
+			"}"
+		]
+	},
+	"con1": {
+		"scope": "javascript,typescript,vue,html",
+		"prefix": "con1",
+		"body": [
+			"console.log(`111-`,111)"
+		]
+	},
+	"day1": {
+		"scope": "javascript,typescript,vue,html",
+		"prefix": "day1",
+		"body": [
+			"dayjs().format('YYYY-MM-DD HH:mm:ss')"
+		]
+	},
+	"json3": {
+		"scope": "javascript,typescript,vue,html",
+		"prefix": "json3",
+		"body": [
+			"JSON.parse(JSON.stringify(111))"
+		]
+	},
+	"sl1": {
 		"scope": "javascript,typescript",
-		"prefix": "sle1",
+		"prefix": "sl1",
 		"body": [
 			"await new Promise((resolve) => setTimeout(resolve, 999999 * 1000))"
 		]
@@ -19,6 +55,61 @@
 		"prefix": "desc1",
 		"body": [
 			"// ==================== 备注 ===================="
+		]
+	},
+	"fun1": {
+		"scope": "javascript,typescript",
+		"prefix": "fun1",
+		"body": [
+			"const fun1 = async ()=>{",
+			"console.log(`111-`,111)",
+			"}"
+		]
+	},
+	"fun2": {
+		"scope": "javascript,typescript",
+		"prefix": "fun2",
+		"body": [
+			"async function fun2 (){",
+			"console.log(`111-`,111)",
+			"}"
+		]
+	},
+	"elb1": {
+		"scope": "javascript,typescript,vue,html",
+		"prefix": "elb1",
+		"body": [
+			"<el-button @click='666'  type='primary'>删除</el-button>"
+		]
+	},
+	"eli1": {
+		"scope": "javascript,typescript,vue,html",
+		"prefix": "eli1",
+		"body": [
+			"<el-input v-model='666' style='width: 90%'  placeholder='请输入'></el-input>"
+		]
+	},
+	"eld1": {
+		"scope": "javascript,typescript,vue,html",
+		"prefix": "eld1",
+		"body": [
+			"<el-dialog v-model=\"visible_value\" :title=\"'未设置标题'\" width='95%' top='20px' :body-style='{ height: \"400px\", overflow: \"auto\" }' draggable :close-on-click-modal='false'>",
+			"  <div style='height: 700px; overflow: auto; padding-right: 20px'>",
+			"      <el-button type='primary' @click=''>goto</el-button>",
+			"  </div>",
+			"  <template #footer>",
+			"     <!-- <el-button type='primary' @click='submit'>确定</el-button> -->",
+			"  </template>",
+			"</el-dialog>",
+		]
+	},
+	"els1": {
+		"scope": "javascript,typescript,vue,html",
+		"prefix": "els1",
+		"body": [
+			"<el-select v-model=\"value1\" value-key=\"option_value1\" placeholder=\"请选择\" style=\"width: 240px\">",
+			"    <el-option v-for=\"item in option_list\" :key=\"item.value1\" :label=\"item.label1\" :value=\"item\"/>",
+			"</el-select>"
 		]
 	},
 	"main": {
