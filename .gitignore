@@ -3,9 +3,6 @@
 #1绑定文件      git init && git remote add origin  git@github.com:astmain/sys_nestjs.git
 #强制上传       echo "确定:强制上传吗?" && TIMEOUT /T 60 && echo "如果确定:请回车" && git add . && git commit -m "强制上传" && git push -f origin  master
 
-
-
-
 # 帮我生产一份.gitignore支持vue,react,uniapp,python,fastapi,springboot,nestjs,nuxtjs,c#,android_java,c,c++,go的文件
 
 # 自定义忽略==============================
@@ -23,6 +20,13 @@ results
 
 # ai项目_faster_whisper
 my_ai_model
+
+# ai项目_CosyVoice
+pretrained_models
+
+# ai项目_infinitetalk
+weights
+
 
 # 环境变量==============================
 # .env
