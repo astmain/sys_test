@@ -44,7 +44,7 @@ modelscope download --model iic/CosyVoice-ttsfrd --local_dir pretrained_models/C
  
  教程 https://www.bilibili.com/video/BV1Qr421F7PT
 # 如何判断windows电脑有没有安装cuda
-# 
+# 我的电脑显卡配置
 NVIDIA-SMI 546.26                 Driver Version: 546.26       CUDA Version: 12.3
 nvcc --version
 
