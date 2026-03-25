@@ -1,0 +1,20 @@
+# 服务端连接配置（核心修正）
+serverAddr = "103.119.2.223"  # 服务端公网IP，确认正确
+serverPort = 7100             # 改为frps的bindPort，而非web端口
+auth.method = "token"
+auth.token = "testtoken"    # 和服务端保持一致，正确
+
+# 代理配置（修正remotePort避免冲突）
+[[proxies]]
+name = "c1"
+type = "tcp"
+localIP = "127.0.0.1"        # 本地服务IP，正确
+localPort = 8001             # 本地服务端口，确认服务已启动
+remotePort = 7101            # 改为未被占用的端口（需在frps的allowPorts范围内）
+
+
+
+
+# 客户端运行方式    .\frpc.exe -c  frpc.toml
+# 测试是否可以访问   127.0.0.1:8001/docs     103.119.2.223:7101/docs
+#   

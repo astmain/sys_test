@@ -1,0 +1,1 @@
+https://github.com/sanjeed5/awesome-cursor-rules-mdc

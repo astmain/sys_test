@@ -1,0 +1,24 @@
+# 基础通信配置
+bindAddr = "0.0.0.0"
+bindPort = 7100          # 客户端连接的核心端口
+kcpBindPort = 7101       # 避免和bindPort冲突，也可注释掉kcp（如果不用）
+
+# 管理后台配置
+webServer.addr = "0.0.0.0"
+webServer.port = 7500
+webServer.user = "admin"
+webServer.password = "123456"
+
+# 日志配置
+log.to = "frpslog/log.log"
+log.level = "info"
+log.maxDays = 3
+
+# 认证配置
+auth.method = "token"
+auth.token = "testtoken"
+
+# 允许的远程端口范围（需包含客户端配置的remotePort）
+allowPorts = [
+    {start = 1000, end = 35000},
+]

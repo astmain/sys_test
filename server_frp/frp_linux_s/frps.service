@@ -1,0 +1,68 @@
+[Unit]
+Description=frp server
+After=network.target syslog.target
+Wants=network.target
+
+[Service]
+Type=simple
+# 启动frps的命令，需要修改为您的frps的安装路径
+ExecStart=/my_frp_linux_s/frps  -c   /my_frp_linux_s/frps.toml
+ExecStop=/bin/kill $MAINPID
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+
+# 将文件复制到           /etc/systemd/system/frps.service
+# 重新加载systemd     sudo systemctl daemon-reload
+# 启动服务            sudo systemctl start frps
+# 启用服务            sudo systemctl enable frps
+# 检查状态              sudo systemctl status frps
+
+# 停止frps服务       sudo systemctl stop frps
+
+
+# 禁用服务（开机不自动启动）    sudo systemctl disable frps
+
+# 停止并禁用服务
+
+# sudo systemctl stop frps
+# sudo systemctl disable frps
+
+
+
+
+
+#看看防火墙============================
+# 检查FRP服务是否运行 sudo systemctl status frps
+# 检查端口是否监听    netstat -tlnp | grep 7500
+
+# 检查防火墙状态                   sudo ufw status
+# 如果防火墙开启，添加7500端口      sudo ufw allow 7500
+
+# 开放全部端口  sudo ufw allow 1000:35000/tcp
+
+# 开放全部端口  sudo ufw allow 7000:9000/tcp
+# 添加规则后，重新加载防火墙：   sudo ufw reload
+# 验证规则是否生效：    sudo ufw status
+
+# 然后重新启动 frp 服务：   sudo systemctl restart frps
+
+
+
+
+
+# http://103.119.2.223:7500/ 
+
+
+# Frp项目地址：https://github.com/fatedier/frp
+# Frp文档：https://gofrp.org/zh-cn/docs/
+
+
+
+# frpc.exe -c frpc.toml
