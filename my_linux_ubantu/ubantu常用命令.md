@@ -1,3 +1,11 @@
+
+
+在服务器终端执行，赋予普通用户根目录写入权限：
+sudo chmod 755 /
+sudo chmod 777 /
+
+
+
 查看当前操作系统
  cat /etc/os-release
 结果
