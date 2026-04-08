@@ -29,6 +29,32 @@
 
 
 services:
+  db_pg0:
+    container_name: db_pg0
+    ports:
+      - '2000:5432'
+    environment:
+      - 'POSTGRES_DB=back'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/17/bin'
+      - 'GOSU_VERSION=1.17'
+      - 'LANG=en_US.utf8'
+      - 'PG_MAJOR=17'
+    image: postgres:17
+    restart: always
+    command:
+      - 'postgres'
+    entrypoint:
+      - 'docker-entrypoint.sh'
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - '../my_database/db_pg0:/var/lib/postgresql/data'
+
   db_pg1:
     container_name: db_pg1
     ports:
@@ -80,3 +106,19 @@ services:
       retries: 5
     volumes:
       - '../my_database/db_pg2:/var/lib/postgresql/data'
+
+      #my_database.yml文件
+  db_mysql1:
+    container_name: db_mysql1
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      # 可选：创建默认数据库（但这里我们用 init.sql 控制更灵活）
+      # MYSQL_DATABASE: my_db1
+    ports:
+      - '3001:3306'
+    volumes:
+      - ./my_database/db_mysql1:/var/lib/mysql
+      # - ./my_database_init_data_mysql.sql:/docker-entrypoint-initdb.d/my_database_init_data_mysql.sql:ro #有注解乱码问题
+    command: --default-authentication-plugin=mysql_native_password
+    restart: unless-stopped
