@@ -19,6 +19,11 @@ dist_vue
 dist_electron
 dist_electron_win
 
+
+# nextjs项目
+.next
+
+
 # ai项目_数字人SadTalker的模型包
 gfpgan
 checkpoints
